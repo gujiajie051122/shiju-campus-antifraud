@@ -124,7 +124,7 @@ export default function Home(){
     {view==="practice"&&<>
      <div className="page-heading"><div><div className="eyebrow">校园生活 · 求职与兼职</div><h1>一份课余兼职邀请<span className="heading-dot">.</span></h1><p>从一则招聘信息开始，用自己的方式了解、核实，再作决定。</p></div><button className="secondary small" onClick={()=>setSettings(true)}><Settings2 size={16}/>练习设置</button></div>
      <div className="scene-meta"><span><Briefcase size={15}/>兼职招聘</span><span><Clock size={15}/>建议体验 5–8 分钟</span><span><Video size={15}/>图文 · 交流 · 核实</span><span className="meta-end">{session?.mode==="independent"?"独立演练":"学习模式"}<span className="light-dot"/></span></div>
-     <div className="journey" aria-label="演练流程">{["查看招聘","交流了解","核实信息","作出决定"].map((x,i)=><div className={session&&((i===0)||(i===1&&session.stage>=1)||(i===2&&session.verified.length>0)||(i===3&&session.decision))?"journey-step done":"journey-step"} key={x}><span>{session&&((i===0)||(i===1&&session.stage>=1)||(i===2&&session.verified.length>0)||(i===3&&session.decision))?<Check size={13}/>:String(i+1).padStart(2,"0")}</span>{x}{i<3&&<div className="journey-line"/>}</div>)}</div>
+     <div className="journey" aria-label="演练流程">{["查看招聘","交流了解","核实信息","作出决定"].map((x,i)=><div className={session&&((i===0)||(i===1&&chat.length>0)||(i===2&&session.verified.length>0)||(i===3&&session.decision))?"journey-step done":"journey-step"} key={x}><span>{session&&((i===0)||(i===1&&chat.length>0)||(i===2&&session.verified.length>0)||(i===3&&session.decision))?<Check size={13}/>:String(i+1).padStart(2,"0")}</span>{x}{i<3&&<div className="journey-line"/>}</div>)}</div>
      <div className="workspace">
       <section className="materials-column">
        <div className="column-title"><span>情境材料</span><span className="count-tag">01</span></div>
