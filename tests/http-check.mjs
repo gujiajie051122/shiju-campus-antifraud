@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+const base=process.env.CHECK_URL||'http://127.0.0.1:5173';
+const state=await fetch(base+'/api/status');
+assert.equal(state.status,200);assert.equal((await state.json()).avatarConfigured,false);
+assert.equal((await fetch(base+'/api/avatar')).status,503);
+const post=(body,headers={})=>fetch(base+'/api/dialogue',{method:'POST',headers:{'Content-Type':'application/json',...headers},body:JSON.stringify(body)});
+const reply=await post({text:'我想核实你的身份'});assert.equal(reply.status,200);const data=await reply.json();assert.equal(data.engine,'rules');assert.equal(data.replyId,'verify');
+assert.equal((await post({text:''})).status,400);
+assert.equal((await post({text:'字'.repeat(1001)})).status,400);
+assert.equal((await post({text:'你好'},{Origin:'https://untrusted.example'})).status,403);
+assert.equal((await fetch(base+'/api/dialogue',{method:'POST',body:'{broken'})).status,400);
+console.log('PASS: 7 HTTP checks (no provider credentials configured)');

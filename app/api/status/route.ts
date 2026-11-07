@@ -1,0 +1,1 @@
+export async function GET(){return Response.json({dialogue:process.env.LLM_API_KEY&&process.env.LLM_BASE_URL&&process.env.LLM_MODEL?"configured":"rules",avatarConfigured:Boolean(process.env.DID_AGENT_ID&&process.env.DID_CLIENT_KEY),version:"0.1.0"},{headers:{"Cache-Control":"no-store"}});}
