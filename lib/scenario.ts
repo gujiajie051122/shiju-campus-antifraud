@@ -6,12 +6,20 @@ export type Event={id:string;at:string;branch:string;kind:string;title:string;te
 export type Checkpoint={events:Event[];stage:number;verified:Tool[];requirementShown:boolean};
 export type Session={version:1;id:string;variant:Variant;mode:Mode;branch:string;stage:number;verified:Tool[];requirementShown:boolean;events:Event[];checkpoint?:Checkpoint;archives:{branch:string;events:Event[];decision?:Decision}[];decision?:Decision;reason?:string};
 export const STORAGE_KEY="shiju.pilot.session.v1";
+export const JOB_CODE="QH-061";
+export type Observation="identity"|"settlement"|"requirement";
+export const observations:Record<Observation,{title:string;text:string}>={
+ identity:{title:"联系人身份",text:"林老师自称工作室招聘联系人，需通过其他渠道核对。"},
+ settlement:{title:"报酬与结算",text:"当前说明未写明单价与结算周期，需进一步确认。"},
+ requirement:{title:"入职要求",text:"需要将联系人提出的入职要求与独立渠道结果对照。"}
+};
 export const guidance=[{title:"针对大学生群体的常见诈骗类型",publisher:"湖南公安",date:"2026-07-16",url:"https://gat.hunan.gov.cn/gat/ztzl2/qfqz/202607/t20260716_34027484.html"},{title:"大学校园电诈套路提示",publisher:"武汉公安",date:"2026-09-11",url:"https://gaj.wuhan.gov.cn/jmzx/jfts/202609/t20260911_2846437.html"}];
 export const uid=()=>crypto.randomUUID();
 export function event(s:Session,kind:string,title:string,text:string,channel?:string):Session{return {...s,events:[...s.events,{id:uid(),at:new Date().toISOString(),branch:s.branch,kind,title,text,channel}]};}
 export function createSession(variant:Variant,mode:Mode):Session{
  const s:Session={version:1,id:uid(),variant,mode,branch:uid(),stage:0,verified:[],requirementShown:false,events:[],archives:[]};
- return event(s,"material","已查看招聘信息","青禾校园内容工作室（虚构）· 内容运营助理；每周约6小时，报酬按双方确认的工作量结算。");
+ const material=event(s,"material","已查看招聘信息","青禾校园内容工作室（虚构）· 内容运营助理；编号 "+JOB_CODE+"；每周约6小时，报酬按双方确认的工作量结算。");
+ return event(material,"actor","林老师 · 情境开场","你好，我是这份兼职的联系人林老师。我们招内容运营助理，主要做活动资料和文案整理，你想先了解哪方面？","scenario");
 }
 export const requirement=(v:Variant)=>v==="R"?"上岗前需本人先支付298元培训费。此处仅为模拟要求，不提供支付入口。":"培训由工作室承担，应聘者无需支付培训费。";
 export function showRequirement(s:Session):Session{
@@ -23,7 +31,29 @@ export function verify(s:Session,tool:Tool):Session{
  if(s.decision)return s;
  const name={posting:"查询岗位目录",contact:"核实联系人",callback:"通过独立渠道模拟回拨"}[tool];
  const text=s.variant==="R"?(tool==="posting"?"岗位编号未获该工作室发布授权；工作室不要求应聘者先付此项培训费。":"该联系人未获该工作室本次招聘授权。"):(tool==="posting"?"岗位编号与该工作室招聘目录一致；培训由工作室承担。":"该联系人获得该工作室本次招聘授权。");
- return event({...s,verified:[...new Set([...s.verified,tool])]},"verification",name+" · 结果已显示",text+"【平台预置模拟结果，无真实查询或拨号】");
+ return event({...s,verified:[...new Set([...s.verified,tool])]},"verification",name+" · 结果已显示",text+"【平台预置模拟结果，无真实查询或拨号】",tool);
+}
+// A source choice or a failed search is an attempt, never a successful verification.
+export function lookup(s:Session,tool:Tool,query:string,source:"directory"|"sender"="directory"):Session{
+ if(s.decision)return s;
+ if(tool==="callback"&&source==="sender")return event(s,"verification_attempt","联系了对方提供的号码","该号码中的联系人重复了原来的说法。来源仍由对方提供，不能作为独立身份确认。","sender");
+ const value=query.trim().replace(/\s/g,"").toUpperCase();
+ if(tool!=="callback"&&value!==(tool==="posting"?JOB_CODE:"林老师"))return event(s,"verification_attempt","未查到匹配记录","查询内容：“"+query.trim().slice(0,80)+"”。未找到匹配项，请核对材料后重试；未查到不等于已确认虚假。",tool);
+ return verify(s,tool);
+}
+export function recordObservation(s:Session,id:Observation):Session{
+ if(s.decision||(id==="requirement"&&!s.requirementShown)||s.events.some(e=>e.kind==="material_note"&&e.channel===id))return s;
+ return event(s,"material_note","记下待确认项 · "+observations[id].title,observations[id].text,id);
+}
+export function reviewContext(s:Session){
+ const hasIdentity=s.verified.includes("contact")||s.verified.includes("callback"),hasPosting=s.verified.includes("posting");
+ const cards=[
+  {label:"联系人身份",claim:"对方自称：工作室招聘联系人。",result:hasIdentity?(s.variant==="R"?"独立名录：该联系人未获招聘授权。":"独立名录：该联系人获得本次招聘授权。"):(hasPosting?"已核对岗位，尚未单独核对联系人。":"本轮尚未取得独立核实结果。"),state:hasIdentity?(s.variant==="R"?"说法有冲突":"授权信息一致"):"仍待确认"},
+  {label:"培训与费用",claim:s.requirementShown?requirement(s.variant):"本轮未打开联系人提供的入职要求。",result:hasPosting?"岗位目录：培训由工作室承担，不要求应聘者先付培训费。":"本轮未取得岗位目录的费用说明。",state:s.requirementShown&&hasPosting?(s.variant==="R"?"说法有冲突":"费用说明一致"):"材料未齐全"}
+ ];
+ const incomplete=!hasIdentity||!hasPosting;
+ const next=!s.verified.length?"下次先选择对方以外的渠道，取得可对照的信息。":!s.requirementShown?"下次可以打开入职要求，再把条件与独立渠道的结果放在一起判断。":incomplete?`本轮还有${!hasIdentity?"联系人身份":"岗位费用说明"}未核实。${cards.some(c=>c.state==="说法有冲突")?"已取得的信息存在冲突，可先处理冲突，再补齐缺少的核实。":"先补齐缺少的信息，再判断两边说法是否一致。"}`:s.variant==="R"?(s.decision==="continue"?"本轮独立结果与对方说法存在冲突。可以重演，在继续之前先处理这些冲突。":"你可以重演一次，练习用具体材料解释暂停或结束沟通的原因。"):(s.decision==="report"?"本轮已取得的信息支持正常对照。重演时可以区分“还有疑问”和“已有反证”。":"本轮材料相互支持。仍可继续确认单价、结算周期和书面安排，继续或拒绝都由你决定。");
+ return {cards,next,notes:s.events.filter(e=>e.kind==="material_note"),attempts:s.events.filter(e=>e.kind==="verification_attempt")};
 }
 export function decide(s:Session,d:Decision):Session{
  if(s.decision)return s;

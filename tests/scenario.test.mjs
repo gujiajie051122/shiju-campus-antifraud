@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {createSession,event,showRequirement,verify,decide,replay,summarize,isSession,classify} from "../lib/scenario.ts";
+import {createSession,event,showRequirement,verify,decide,replay,summarize,isSession,classify,lookup,recordObservation,reviewContext} from "../lib/scenario.ts";
 test("independent verification is available immediately and results remain fixed",()=>{const s=createSession("R","independent");const first=verify(s,"contact"),again=verify(first,"contact");assert.equal(first.events.at(-1).text,again.events.at(-1).text);assert.deepEqual(again.verified,["contact"]);});
 test("normal and risk controls return different fixed facts",()=>{assert.match(verify(createSession("N","learning"),"posting").events.at(-1).text,/一致/);assert.match(verify(createSession("R","learning"),"posting").events.at(-1).text,/未获/);});
 test("saying verification does not count as obtaining a result",()=>{const s=event(createSession("R","learning"),"user","我的回复","我要核实身份");assert.equal(summarize(s).findings[0].status,"尚未取得核实信息");assert.equal(classify("我要核实身份"),"verify");});
@@ -15,4 +15,42 @@ test("verification acquired before checkpoint remains visible on replay",()=>{co
 test("hints are explicitly recorded",()=>{assert.equal(summarize(event(createSession("R","learning"),"hint","查看提示","核实来源")).usedHints,true);});
 test("malformed persisted data is rejected",()=>{assert.equal(isSession({version:1,variant:"R"}),false);assert.equal(isSession(createSession("N","independent")),true);});
 test("ambiguous response does not execute any consequential action",()=>{assert.equal(classify("那就这样"),"unknown");const s=event(createSession("R","learning"),"user","回复","那就这样");assert.equal(s.decision,undefined);});
+test("an unsuccessful directory search is not evidence of a fake job",()=>{
+ const s=lookup(createSession("N","learning"),"posting","wrong-code");
+ assert.deepEqual(s.verified,[]);assert.equal(s.events.at(-1).kind,"verification_attempt");assert.match(s.events.at(-1).text,/不等于已确认虚假/);
+ assert.equal(reviewContext(s).cards[1].state,"材料未齐全");
+});
+test("verification requires the matching job or person and preserves source provenance",()=>{
+ const s=lookup(createSession("R","learning"),"posting"," qh-061 ");
+ assert.deepEqual(s.verified,["posting"]);assert.equal(s.events.at(-1).channel,"posting");
+ const wrong=lookup(s,"contact","王老师");assert.deepEqual(wrong.verified,["posting"]);
+ const right=lookup(wrong,"contact","林老师");assert.deepEqual(right.verified,["posting","contact"]);
+});
+test("a sender-supplied callback never counts as independent verification",()=>{
+ const s=lookup(createSession("R","learning"),"callback","","sender");
+ assert.deepEqual(s.verified,[]);assert.equal(s.events.at(-1).channel,"sender");
+ const independent=lookup(s,"callback","","directory");assert.deepEqual(independent.verified,["callback"]);
+});
+test("notes cannot mark unseen requirements and replay removes later observations",()=>{
+ let s=createSession("R","learning");assert.equal(recordObservation(s,"requirement"),s);
+ s=recordObservation(s,"identity");s=showRequirement(s);s=recordObservation(s,"requirement");
+ assert.equal(reviewContext(s).notes.length,2);
+ const r=replay(decide(s,"pause"));assert.equal(reviewContext(r).notes.length,1);assert.equal(reviewContext(r).notes[0].channel,"identity");
+});
+test("comparisons do not infer person authorization from job lookup or claim unseen material",()=>{
+ let s=lookup(createSession("R","independent"),"posting","QH-061");
+ const first=reviewContext(s);assert.equal(first.cards[0].state,"仍待确认");assert.match(first.cards[1].claim,/未打开/);
+ s=showRequirement(s);assert.equal(reviewContext(s).cards[1].state,"说法有冲突");
+ const n=showRequirement(lookup(createSession("N","learning"),"posting","QH-061"));assert.equal(reviewContext(n).cards[1].state,"费用说明一致");
+});
+test("completed sessions cannot gain observations or lookup results",()=>{
+ const s=decide(showRequirement(createSession("R","learning")),"exit");
+ assert.equal(recordObservation(s,"requirement"),s);assert.equal(lookup(s,"posting","QH-061"),s);
+});
+test("partial checks never produce a blanket agreement in the next-step advice",()=>{
+ const n=decide(showRequirement(lookup(createSession("N","learning"),"posting","QH-061")),"continue");
+ assert.match(reviewContext(n).next,/联系人身份未核实/);assert.doesNotMatch(reviewContext(n).next,/材料相互支持/);
+ const r=decide(showRequirement(lookup(createSession("R","learning"),"contact","林老师")),"pause");
+ assert.match(reviewContext(r).next,/岗位费用说明未核实/);assert.match(reviewContext(r).next,/存在冲突/);
+});
 
