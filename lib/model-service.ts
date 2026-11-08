@@ -1,6 +1,6 @@
 // Server-only transport: never import in client components.
 export type ModelTelemetry={status?:number;promptTokens?:number;completionTokens?:number;totalTokens?:number};
-export type ModelConfig={base:string;key:string;model:string;format:"schema"|"json";observe?:(event:ModelTelemetry)=>void};
+export type ModelConfig={base:string;key:string;model:string;format:"schema"|"json";enableThinking?:boolean;observe?:(event:ModelTelemetry)=>void};
 export function tokenTelemetry(raw:unknown):ModelTelemetry{
  if(!raw||typeof raw!=="object")return {};
  const u=raw as Record<string,unknown>,n=(v:unknown)=>typeof v==="number"&&Number.isSafeInteger(v)&&v>=0&&v<=10000000?v:undefined;
@@ -14,7 +14,7 @@ export function modelConfig(env:Record<string,string|undefined>=process.env):Mod
  return {base:base.replace(/\/$/,""),key,model,format:env.LLM_OUTPUT_FORMAT==="json"?"json":"schema"};
 }
 export async function completeJSON(config:ModelConfig,system:string,payload:unknown,schema:Record<string,unknown>,name:string,signal?:AbortSignal,transport:typeof fetch=fetch):Promise<unknown>{
- const response=await transport(config.base+"/chat/completions",{method:"POST",headers:{"Content-Type":"application/json",Authorization:"Bearer "+config.key},signal:AbortSignal.any([AbortSignal.timeout(18000),...(signal?[signal]:[])]),body:JSON.stringify({model:config.model,stream:false,messages:[{role:"system",content:system},{role:"user",content:JSON.stringify(payload)}],response_format:config.format==="json"?{type:"json_object"}:{type:"json_schema",json_schema:{name,strict:true,schema}}})});
+ const response=await transport(config.base+"/chat/completions",{method:"POST",headers:{"Content-Type":"application/json",Authorization:"Bearer "+config.key},signal:AbortSignal.any([AbortSignal.timeout(18000),...(signal?[signal]:[])]),body:JSON.stringify({model:config.model,stream:false,...(config.enableThinking===undefined?{}:{enable_thinking:config.enableThinking}),messages:[{role:"system",content:system},{role:"user",content:JSON.stringify(payload)}],response_format:config.format==="json"?{type:"json_object"}:{type:"json_schema",json_schema:{name,strict:true,schema}}})});
  config.observe?.({status:response.status});
  if(!response.ok)throw Error("Model request failed");const raw=await response.text();if(raw.length>40000)throw Error("Model response too large");
  const data=JSON.parse(raw) as {usage?:unknown;choices?:{finish_reason?:string;message?:{content?:string;refusal?:unknown}}[]};config.observe?.(tokenTelemetry(data.usage));const choice=data.choices?.[0];

@@ -1,10 +1,11 @@
+import {isReflectionRecord,type ReflectionRecord} from "./reflection-types.ts";
 export type Variant="R"|"N";
 export type Mode="learning"|"independent";
 export type Decision="pause"|"exit"|"report"|"continue";
 export type Tool="posting"|"contact"|"callback";
 export type Event={id:string;at:string;branch:string;kind:string;title:string;text:string;channel?:string};
 export type Checkpoint={events:Event[];stage:number;verified:Tool[];requirementShown:boolean};
-export type Session={version:1;id:string;variant:Variant;mode:Mode;branch:string;stage:number;verified:Tool[];requirementShown:boolean;events:Event[];checkpoint?:Checkpoint;archives:{branch:string;events:Event[];decision?:Decision}[];decision?:Decision;reason?:string};
+export type Session={version:1;id:string;variant:Variant;mode:Mode;branch:string;stage:number;verified:Tool[];requirementShown:boolean;events:Event[];checkpoint?:Checkpoint;archives:{branch:string;events:Event[];decision?:Decision;reflection?:ReflectionRecord}[];decision?:Decision;reason?:string;reflection?:ReflectionRecord};
 export const STORAGE_KEY="shiju.pilot.session.v1";
 export const JOB_CODE="QH-061";
 export type Observation="identity"|"settlement"|"requirement";
@@ -61,7 +62,7 @@ export function decide(s:Session,d:Decision):Session{
 }
 export function replay(s:Session):Session{
  if(!s.checkpoint)return s; const c=s.checkpoint;
- return event({...s,...c,events:[...c.events],verified:[...c.verified],branch:uid(),decision:undefined,reason:undefined,archives:[...s.archives,{branch:s.branch,events:[...s.events],decision:s.decision}]},"replay","已回到入职要求之前","本次为学习重演，不能作为独立训练效果证明。");
+ return event({...s,...c,events:[...c.events],verified:[...c.verified],branch:uid(),decision:undefined,reason:undefined,reflection:undefined,archives:[...s.archives,{branch:s.branch,events:[...s.events],decision:s.decision,reflection:s.reflection}]},"replay","已回到入职要求之前","本次为学习重演，不能作为独立训练效果证明。");
 }
 export function setReason(s:Session,reason:string):Session{if(!s.decision)return s;return event({...s,reason},"reason","你对当时选择的解释",reason);}
 export function summarize(s:Session){
@@ -95,6 +96,6 @@ export function isSession(x:unknown):x is Session{
  const events=(es:unknown):es is Event[]=>Array.isArray(es)&&es.length<1000&&es.every(e=>e&&typeof e.id==="string"&&typeof e.title==="string"&&typeof e.text==="string"&&typeof e.kind==="string"&&typeof e.branch==="string"&&typeof e.at==="string"&&!Number.isNaN(Date.parse(e.at)));
  const verified=(ts:unknown):ts is Tool[]=>Array.isArray(ts)&&ts.every(t=>["posting","contact","callback"].includes(t));
  const decision=(d:unknown)=>d===undefined||["pause","exit","report","continue"].includes(d as string);
- return s.version===1&&typeof s.id==="string"&&(s.variant==="R"||s.variant==="N")&&(s.mode==="learning"||s.mode==="independent")&&events(s.events)&&verified(s.verified)&&typeof s.requirementShown==="boolean"&&Array.isArray(s.archives)&&s.archives.length<100&&s.archives.every(a=>a&&typeof a.branch==="string"&&events(a.events)&&decision(a.decision))&&Number.isFinite(s.stage)&&typeof s.branch==="string"&&decision(s.decision)&&(s.reason===undefined||typeof s.reason==="string")&&(!s.checkpoint||(events(s.checkpoint.events)&&verified(s.checkpoint.verified)&&Number.isFinite(s.checkpoint.stage)&&typeof s.checkpoint.requirementShown==="boolean"));
+ return s.version===1&&typeof s.id==="string"&&(s.variant==="R"||s.variant==="N")&&(s.mode==="learning"||s.mode==="independent")&&events(s.events)&&verified(s.verified)&&typeof s.requirementShown==="boolean"&&Array.isArray(s.archives)&&s.archives.length<100&&s.archives.every(a=>a&&typeof a.branch==="string"&&events(a.events)&&decision(a.decision)&&(a.reflection===undefined||isReflectionRecord(a.reflection)))&&Number.isFinite(s.stage)&&typeof s.branch==="string"&&decision(s.decision)&&(s.reason===undefined||typeof s.reason==="string")&&(s.reflection===undefined||isReflectionRecord(s.reflection))&&(!s.checkpoint||(events(s.checkpoint.events)&&verified(s.checkpoint.verified)&&Number.isFinite(s.checkpoint.stage)&&typeof s.checkpoint.requirementShown==="boolean"));
 }
 

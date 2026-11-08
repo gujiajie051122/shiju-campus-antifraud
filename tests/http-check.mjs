@@ -18,4 +18,11 @@ const missing=await ask({question:'番茄炒蛋怎么做'});assert.equal((await 
 assert.equal((await ask({question:''})).status,400);
 assert.equal((await ask({question:'字'.repeat(301)})).status,400);
 assert.equal((await ask({question:'兼职培训费'},{Origin:'https://untrusted.example'})).status,403);
-console.log('PASS: HTTP validation, source boundaries and deterministic actions; zero provider calls');
+const review=(body,headers={})=>fetch(base+'/api/reflection',{method:'POST',headers:{'Content-Type':'application/json',...headers},body:JSON.stringify(body)});
+const reviewInput={variant:'R',actions:[{id:'end',kind:'decision',decision:'pause'}]};
+assert.equal((await review({input:reviewInput})).status,400);
+assert.equal((await review({input:{...reviewInput,actions:[]},consent:true})).status,400);
+assert.equal((await review({input:reviewInput,consent:true},{Origin:'https://untrusted.example'})).status,403);
+const safeReview=await review({input:reviewInput,consent:true});assert.equal(safeReview.status,200);assert.match(safeReview.headers.get('Cache-Control'),/no-store/);
+const reviewed=await safeReview.json();assert.equal(reviewed.engine,'rules');assert.equal(reviewed.factorId,'insufficient');assert.equal(reviewed.budgetCode,'signin');
+console.log('PASS: HTTP validation, source boundaries, review consent and deterministic actions; zero provider calls');

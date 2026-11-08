@@ -46,7 +46,7 @@ function blocked(c:Counts,p:BudgetPolicy,now:number):BudgetCode|null{
  return null;
 }
 async function counts(db:BudgetDB,hash:string,now:number){return db.prepare(COUNTS_SQL).bind(budgetDay(now).day,hash,now-60000,now).first<Counts>();}
-export async function reserve(db:BudgetDB,hash:string,feature:"dialogue"|"knowledge",model:string,p:BudgetPolicy,now:number){
+export async function reserve(db:BudgetDB,hash:string,feature:"dialogue"|"knowledge"|"reflection",model:string,p:BudgetPolicy,now:number){
  const id=crypto.randomUUID();
  const result=await db.prepare(RESERVE_SQL).bind(id,hash,budgetDay(now).day,feature,model.slice(0,120),now,now+45000,p.siteDaily,p.userDaily,now-60000,p.perMinute,now-p.minIntervalMs,p.userConcurrent,p.siteConcurrent).run();
  if(result.meta.changes===1)return {id,code:null};
@@ -58,7 +58,7 @@ export async function finish(db:BudgetDB,id:string,outcome:string,now:number,tel
  await db.prepare(FINISH_SQL).bind(id,now,outcome,telemetry.status??null,telemetry.promptTokens??null,telemetry.completionTokens??null,telemetry.totalTokens??null).run();
 }
 type EngineResult={engine:string;warning?:string};
-export async function metered<T extends EngineResult>(ctx:BudgetContext,feature:"dialogue"|"knowledge",config:ModelConfig|null,work:(config:ModelConfig|null,transport:typeof fetch)=>Promise<T>):Promise<T&{budgetCode?:BudgetCode}>{
+export async function metered<T extends EngineResult>(ctx:BudgetContext,feature:"dialogue"|"knowledge"|"reflection",config:ModelConfig|null,work:(config:ModelConfig|null,transport:typeof fetch)=>Promise<T>):Promise<T&{budgetCode?:BudgetCode}>{
  let id:string|null=null,code:BudgetCode|undefined,telemetry:ModelTelemetry={},providerFailed=false,attempted=false;
  const now=ctx.now??Date.now;
  const guarded:typeof fetch=async(input,init)=>{
@@ -83,6 +83,6 @@ export async function usageSnapshot(ctx:BudgetContext,configured:boolean){
  try{
   const hash=await actorHash(ctx.userId),c=await counts(ctx.db,hash,now);if(!c)throw Error("Missing usage");
   const stats=await ctx.db.prepare(`SELECT COUNT(*) AS attempts, SUM(CASE WHEN outcome='model' THEN 1 ELSE 0 END) AS succeeded, SUM(CASE WHEN outcome IN ('failed','fallback','cancelled') OR (outcome='reserved' AND lease_until<=?3) THEN 1 ELSE 0 END) AS failures, SUM(total_tokens) AS tokens, SUM(CASE WHEN total_tokens IS NULL THEN 1 ELSE 0 END) AS unknown_tokens FROM ai_requests WHERE actor_hash=?1 AND day=?2`).bind(hash,budgetDay(now).day,now).first<{attempts:number;succeeded:number|null;failures:number|null;tokens:number|null;unknown_tokens:number|null}>();
-  const reason=blocked(c,p,now);return {...base,available:configured&&!reason,used:c.personal,remaining:Math.max(0,p.userDaily-c.personal),succeeded:stats?.succeeded??0,failures:stats?.failures??0,tokens:stats?.tokens??null,unknownTokens:stats?.unknown_tokens??0,message:!configured?"尚未连接模型，可继续使用预设演练与资料检索。":reason?messages[reason]:"对话与资料整理共用额度。"};
+  const reason=blocked(c,p,now);return {...base,available:configured&&!reason,used:c.personal,remaining:Math.max(0,p.userDaily-c.personal),succeeded:stats?.succeeded??0,failures:stats?.failures??0,tokens:stats?.tokens??null,unknownTokens:stats?.unknown_tokens??0,message:!configured?"尚未连接模型，可继续使用预设演练与资料检索。":reason?messages[reason]:"对话、资料整理与AI复盘共用额度。"};
  }catch{return {...base,available:false,message:messages.unavailable};}
 }
