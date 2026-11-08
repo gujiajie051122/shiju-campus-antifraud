@@ -3,6 +3,8 @@ const base=process.env.CHECK_URL||'http://127.0.0.1:5173';
 const state=await fetch(base+'/api/status');
 assert.equal(state.status,200);const status=await state.json();assert.equal(typeof status.avatarConfigured,'boolean');assert.ok(['configured','rules'].includes(status.dialogue));assert.equal('LLM_API_KEY' in status,false);
 if(!status.avatarConfigured)assert.equal((await fetch(base+'/api/avatar')).status,503);
+const usageResponse=await fetch(base+'/api/usage');assert.equal(usageResponse.status,200);assert.match(usageResponse.headers.get('Cache-Control'),/no-store/);
+const usage=await usageResponse.json();assert.equal(typeof usage.limit,'number');assert.equal(typeof usage.message,'string');assert.equal('actor_hash' in usage,false);assert.equal('LLM_API_KEY' in usage,false);
 const post=(body,headers={})=>fetch(base+'/api/dialogue',{method:'POST',headers:{'Content-Type':'application/json',...headers},body:JSON.stringify(body)});
 assert.equal((await post({text:''})).status,400);
 assert.equal((await post({text:'字'.repeat(1001)})).status,400);
