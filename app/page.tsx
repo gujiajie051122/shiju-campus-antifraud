@@ -82,12 +82,12 @@ export default function Home(){
   update(s=>event({...s,stage:Math.max(s.stage,1)},"user","我的回复",text,"text"));
   try{
    const history=snapshot.events.filter(e=>e.kind==="actor"||e.kind==="user").slice(-8).map(e=>({role:e.kind==="user"?"user":"assistant",content:e.text.slice(0,1000)}));
-   const r=await fetch("/api/dialogue",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({text,variant:snapshot.variant,requirementShown:snapshot.requirementShown,history}),signal:ctl.signal});
+   const r=await fetch("/api/dialogue",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({text,variant:snapshot.variant,requirementShown:snapshot.requirementShown,history}),signal:AbortSignal.any([ctl.signal,AbortSignal.timeout(25000)])});
    const data=await r.json() as {error?:string;reply:string;engine:string;warning?:string};if(!r.ok)throw Error(data.error||"请求失败");if(typeof data.reply!=="string")throw Error("回复格式不正确");if(token!==epoch.current)return;
    update(s=>event(s,"actor","林老师 · "+(data.engine==="model"?"模型生成 / 材料约束":"预设规则回复"),data.reply,data.engine==="model"?"model_generated":"rules"));
-   if(data.warning)note(data.warning);
+   note(data.warning??"");
    void speak(data.reply);
-  }catch(e){if(token===epoch.current){note(e instanceof Error?e.message:"回复未成功，请重新发送。");update(s=>event(s,"error","回复服务异常","本条未生成回复，可重新输入；不影响已有材料与核实结果。"));}}
+  }catch(e){if(token===epoch.current){note(e instanceof Error&&e.name==="TimeoutError"?"回复等待超时，可以重新发送；已有材料和核实结果已保留。":e instanceof Error?e.message:"回复未成功，请重新发送。");update(s=>event(s,"error","回复服务异常","本条未生成回复，可重新输入；不影响已有材料与核实结果。"));}}
   finally{if(token===epoch.current)setBusy(false);}
  }
  async function microphone(){

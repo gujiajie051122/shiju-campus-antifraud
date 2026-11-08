@@ -53,4 +53,23 @@ test("partial checks never produce a blanket agreement in the next-step advice",
  const r=decide(showRequirement(lookup(createSession("R","learning"),"contact","林老师")),"pause");
  assert.match(reviewContext(r).next,/岗位费用说明未核实/);assert.match(reviewContext(r).next,/存在冲突/);
 });
+test('partial normal checks also remain qualified in the decision explanation',()=>{
+ const s=decide(lookup(createSession('N','learning'),'posting','QH-061'),'exit');
+ const choice=summarize(s).findings.find(f=>f.label==='本次选择');
+ assert.match(choice.text,/未核实事项仍待确认/);assert.doesNotMatch(choice.text,/核实结果一致/);
+});
+test('256 decision paths retain only obtained evidence and never modify completed outcomes',()=>{
+ let paths=0;
+ for(const variant of ['R','N'])for(const mode of ['learning','independent'])for(const shown of [false,true])for(let mask=0;mask<8;mask++)for(const decision of ['pause','exit','report','continue']){
+  let s=createSession(variant,mode);const tools=['posting','contact','callback'];
+  for(let i=0;i<3;i++)if(mask&(1<<i))s=verify(s,tools[i]);if(shown)s=showRequirement(s);s=decide(s,decision);
+  const report=summarize(s),context=reviewContext(s);
+  assert.equal(report.findings[0].ids.length,tools.filter((_,i)=>mask&(1<<i)).length);
+  assert.equal(report.findings[1].status,shown?'已查看':'未展示，不作评价');
+  if(!(mask&6))assert.equal(context.cards[0].state,'仍待确认');
+  if(!shown||!(mask&1))assert.equal(context.cards[1].state,'材料未齐全');
+  assert.equal(lookup(s,'posting','QH-061'),s);assert.equal(showRequirement(s),s);assert.equal(decide(s,'pause'),s);paths++;
+ }
+ assert.equal(paths,256);
+});
 

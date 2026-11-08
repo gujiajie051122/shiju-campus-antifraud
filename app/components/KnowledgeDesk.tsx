@@ -8,8 +8,8 @@ export function KnowledgeDesk({modelConfigured=false}:{modelConfigured?:boolean}
  useEffect(()=>()=>{epoch.current++;controller.current?.abort();},[]);
  async function ask(value=question){
   if(!value.trim()||busy)return;setQuestion(value);setBusy(true);setAnswer(null);setError("");const token=++epoch.current,ctl=new AbortController();controller.current=ctl;
-  try{const r=await fetch("/api/knowledge",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({question:value.trim()}),signal:ctl.signal});const data=await r.json() as KnowledgeAnswer&{error?:string};if(!r.ok)throw Error(data.error||"资料查询未完成");if(token===epoch.current)setAnswer(data);}
-  catch(e){if(token===epoch.current)setError(e instanceof Error?e.message:"资料查询未完成，请重试。");}
+  try{const r=await fetch("/api/knowledge",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({question:value.trim()}),signal:AbortSignal.any([ctl.signal,AbortSignal.timeout(25000)])});const data=await r.json() as KnowledgeAnswer&{error?:string};if(!r.ok)throw Error(data.error||"资料查询未完成");if(token===epoch.current)setAnswer(data);}
+  catch(e){if(token===epoch.current)setError(e instanceof Error&&e.name==="TimeoutError"?"资料查询等待超时，可以修改问题后重试。":e instanceof Error?e.message:"资料查询未完成，请重试。");}
   finally{if(token===epoch.current)setBusy(false);}
  }
  function cancel(){epoch.current++;controller.current?.abort();setBusy(false);setError("已停止本次查询，可以修改问题后再查。");}

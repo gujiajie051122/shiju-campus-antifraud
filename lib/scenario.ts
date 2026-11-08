@@ -69,7 +69,7 @@ export function summarize(s:Session){
  const findings=[
  {label:"独立核实",status:verified?"已取得核实信息":"尚未取得核实信息",text:verified?"你通过操作台获得了模拟独立渠道的结果。是否理解核实结果，还需结合你的说明。":"当前没有独立核实结果。表达核实意愿或阅读对方材料，不等于完成核实。",ids:evidence.map(e=>e.id)},
  {label:"入职条件",status:s.requirementShown?"已查看":"未展示，不作评价",text:s.requirementShown?requirement(s.variant):"你尚未打开要求卡，不能据此评价你的判断。",ids:visible.filter(e=>e.title==="已查看入职要求").map(e=>e.id)},
- {label:"本次选择",status:s.decision?{pause:"已暂停",exit:"已退出",report:"已模拟报告",continue:"继续了解"}[s.decision]:"尚未结束",text:s.decision==="exit"&&!verified?"你选择了退出，但联系人身份尚未确认。退出不等于识破了全部问题。":s.variant==="N"&&verified?"核实结果一致。继续或拒绝均可，不能仅因拒绝正常招聘就判断能力不足。":"本次记录只反映模拟情境中的行为，不生成防骗等级。",ids:s.events.filter(e=>e.kind==="decision").map(e=>e.id)},
+ {label:"本次选择",status:s.decision?{pause:"已暂停",exit:"已退出",report:"已模拟报告",continue:"继续了解"}[s.decision]:"尚未结束",text:s.decision==="exit"&&!verified?"你选择了退出，但联系人身份尚未确认。退出不等于识破了全部问题。":s.variant==="N"&&verified?"本轮已取得的核实信息支持正常对照；未核实事项仍待确认。继续或拒绝均可，不能仅因拒绝正常招聘就判断能力不足。":"本次记录只反映模拟情境中的行为，不生成防骗等级。",ids:s.events.filter(e=>e.kind==="decision").map(e=>e.id)},
  {label:"敏感信息保护",status:"本场景不适用",text:"当前流程未要求提交真实敏感信息，因此不对这一项作正负评价。",ids:[]}
  ];
  return {findings,evidence,visible,usedHints:s.events.some(e=>e.kind==="hint"),isReplay:s.archives.length>0};
