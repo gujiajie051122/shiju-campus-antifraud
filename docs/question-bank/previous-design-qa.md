@@ -12,8 +12,8 @@ final result: passed
 
 类型检查、120项自动测试及生产构建通过；定向ESLint无错误，保留4项原生img建议。浏览器实际检查电脑端全部30课×5部分共150个面板、390 CSS px手机端六专题×5部分共30个面板，未发现损坏图片、横向溢出或同时显示多个章节。情境图及核实图放大、关闭均已检查。新截图和检查数据见docs/reading-photos-2026-11-16/。
 
-直接覆盖桌面现有v0.3.1无数字人压缩包，不新增版本包；含数字人保留版不变。本机预览：http://127.0.0.1:5173/learn?lesson=identity 。
+直接覆盖桌面现有v0.3.1压缩包，不新增版本包本机预览：http://127.0.0.1:5173/learn?lesson=identity 。
 
 实际截图：trade-scene.jpg、trade-method.jpg、identity-scene.jpg、mobile-scene.jpg。电脑端窗口默认CSS宽度1112 px；手机端390 px。截图已打开视觉检查。
 
-本轮不改变题库内容，不改数字人代码。旧版课程纯原生材料的记录保存在docs/reading-visuals-2026-11-16/design-qa-before-photos.md，不代表本轮照片实现。
+本轮不改变题库内容。旧版课程纯原生材料的记录保存在docs/reading-visuals-2026-11-16/design-qa-before-photos.md，不代表本轮照片实现。
