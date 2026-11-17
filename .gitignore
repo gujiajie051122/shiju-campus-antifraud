@@ -1,4 +1,6 @@
 # Dependencies
+/.venv-video/
+__pycache__/
 /node_modules/
 /.pnp
 .pnp.*

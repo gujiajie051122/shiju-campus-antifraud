@@ -1,0 +1,56 @@
+/* Shared case-document reading surface, scoped away from video and practice dialogs. */
+.case-dialog.case-article-dialog{width:min(860px,calc(100vw - 48px));max-height:calc(100dvh - 48px);padding:0;overflow:hidden;background:#fff;color:#272b2e;border:1px solid #e1e4e6;border-radius:8px;box-shadow:0 24px 90px #0004}
+.case-dialog.case-article-dialog[open]{display:flex;flex-direction:column}
+.case-article-dialog::backdrop{background:#111b25cc;backdrop-filter:blur(5px)}
+.case-document-bar{display:flex;align-items:center;justify-content:space-between;flex-shrink:0;min-height:62px;margin:0 32px;border-bottom:1px solid #dfe2e4;gap:20px}
+.case-document-brand{display:flex;align-items:center;gap:16px;font-size:15px;color:#3e4549}
+.case-document-brand .shiju-logo{width:76px;height:auto}
+.case-document-brand>span:nth-child(2){color:#9a9d9f}
+.case-document-close{display:grid;place-items:center;min-width:44px;height:44px;margin-right:-10px;border-radius:4px;color:#5b6266}
+.case-document-close:hover{background:#f2f3f3;color:#20272d}
+.case-document-scroll{min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;scroll-padding-top:24px}
+.case-article{padding:28px 44px 22px;font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+.case-article .case-article-category{display:flex;align-items:center;gap:16px;padding:0;color:#696f73;font-size:14px;line-height:1.6;letter-spacing:0;margin:0}
+.case-article h2{margin:16px 0 0;padding:0;font-family:"Noto Serif SC","Songti SC","Noto Serif CJK SC","Source Han Serif SC","STZhongsong","SimSun",serif;font-synthesis:weight;font-size:36px;font-weight:700;line-height:1.4;letter-spacing:0;color:#202427;overflow-wrap:anywhere}
+.case-article h2>span{display:block}
+.case-article .case-article-meta{display:flex;flex-wrap:wrap;gap:8px 28px;margin:20px 0 0!important;font-size:14px;line-height:1.7;color:#666d72}
+.case-article-meta>div{display:flex;gap:10px;align-items:baseline}
+.case-article-meta dt{font-weight:500;color:#555d62}
+.case-article-meta dd{margin:0}
+.case-article figure{margin:24px 0 26px}
+.case-article figure img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;background:transparent;border-radius:2px}
+.case-article figcaption{display:flex;align-items:center;flex-wrap:wrap;gap:4px 14px;margin-top:8px;font-size:11px;line-height:1.7;color:#737a80}
+.case-article figcaption a{display:inline-flex;align-items:center;gap:4px;min-height:28px;text-decoration:underline;text-underline-offset:4px;color:#666d73}
+.case-article .case-article-section h3{display:flex;align-items:center;gap:12px;margin:0 0 12px;font-family:"Noto Serif SC","Songti SC","Noto Serif CJK SC","Source Han Serif SC","STZhongsong","SimSun",serif;font-synthesis:weight;font-size:22px;line-height:1.5;font-weight:700;letter-spacing:0;color:#242b30}
+.case-article-section h3::before{content:"";width:4px;height:17px;flex-shrink:0;background:#bd9658}
+.case-article-summary,.case-article-guidance>p{font-size:17px;line-height:1.95;color:#454d52;overflow-wrap:anywhere}
+.case-article-summary p+p{margin-top:10px}
+.case-article-guidance{border-top:1px solid #e1e4e6;padding-top:20px;margin-top:22px}
+.case-article-section-heading{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.case-article-section-heading>span{font-size:12px;color:#6f777c}
+.case-article footer{display:block;border-top:1px solid #dfe2e4;padding-top:12px;margin-top:26px}
+.case-article-source-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.case-article-source-row>span{font-size:11px;line-height:1.7;color:#70787e}
+.case-article .case-original{display:inline-flex;align-items:center;gap:8px;margin:0;min-height:40px;font-size:13px;font-weight:500;color:#8b6630;text-decoration:underline;text-underline-offset:5px}
+.case-article .case-original:hover{color:#65481d}
+.case-article footer small{display:block;font-size:11px;line-height:1.8;color:#767d82;margin-top:3px}
+@media(max-width:640px){
+ .case-dialog.case-article-dialog{width:calc(100vw - 20px);max-height:calc(100dvh - 24px);padding:0;border-radius:7px}
+ .case-document-bar{min-height:58px;margin:0 18px}
+ .case-document-brand{font-size:13px;gap:12px}
+ .case-document-brand .shiju-logo{width:66px}
+ .case-article{padding:22px 20px 20px}
+ .case-article .case-article-category{font-size:12px;gap:12px}
+ .case-article h2{font-size:clamp(23px,6.3vw,28px);margin-top:13px;line-height:1.5}
+ .case-article .case-article-meta{gap:6px 18px;margin-top:16px!important;font-size:11px}
+ .case-article-meta>div{gap:8px}
+ .case-article figure{margin:20px 0 22px}
+ .case-article figure img{max-height:none}
+ .case-article figcaption{font-size:10px}
+ .case-article .case-article-section h3{font-size:19px;gap:10px}
+ .case-article-summary,.case-article-guidance>p{font-size:14px;line-height:1.95}
+ .case-article-guidance{margin-top:20px;padding-top:18px}
+ .case-article-source-row{gap:0 12px}
+ .case-article-source-row>span{font-size:10px}
+ .case-article footer small{font-size:10px}
+}

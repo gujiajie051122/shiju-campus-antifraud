@@ -1,0 +1,54 @@
+{
+  "catalog-comparison-final": [
+    {
+      "file": "C:/Users/联想/.codex/generated_images/01a1b562-e25a-7881-8e1d-8153c5cac636/exec-d54b67e4-2107-4da8-83f2-3a2a414bea9e.png",
+      "width": 1422,
+      "height": 1106,
+      "crop": null
+    },
+    {
+      "file": "C:\\Users\\联想\\Documents\\Codex\\2026-11-07\\web\\outputs\\shiju-pilot\\docs\\illustrated-lessons\\qa/catalog-desktop-final.png",
+      "width": 1407,
+      "height": 1094,
+      "crop": null
+    }
+  ],
+  "reader-comparison-final": [
+    {
+      "file": "C:/Users/联想/.codex/generated_images/01a1b562-e25a-7881-8e1d-8153c5cac636/exec-46735e5a-5245-40c3-bbec-f0771003960e.png",
+      "width": 1470,
+      "height": 1070,
+      "crop": null
+    },
+    {
+      "file": "C:\\Users\\联想\\Documents\\Codex\\2026-11-07\\web\\outputs\\shiju-pilot\\docs\\illustrated-lessons\\qa/reader-desktop-final.png",
+      "width": 1455,
+      "height": 1059,
+      "crop": null
+    }
+  ],
+  "reader-detail-comparison": [
+    {
+      "file": "C:/Users/联想/.codex/generated_images/01a1b562-e25a-7881-8e1d-8153c5cac636/exec-46735e5a-5245-40c3-bbec-f0771003960e.png",
+      "width": 1470,
+      "height": 1070,
+      "crop": {
+        "left": 840,
+        "top": 320,
+        "width": 550,
+        "height": 520
+      }
+    },
+    {
+      "file": "C:\\Users\\联想\\Documents\\Codex\\2026-11-07\\web\\outputs\\shiju-pilot\\docs\\illustrated-lessons\\qa/reader-desktop-final.png",
+      "width": 1455,
+      "height": 1059,
+      "crop": {
+        "left": 830,
+        "top": 328,
+        "width": 550,
+        "height": 520
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+/* Homepage cover: shared navigation, compact reading area and a five-position rail. */
+.case-home{padding:0;background:#f3f1ed}
+.case-stage{height:calc(100svh - 42px);min-height:700px;max-height:none;border-radius:0}
+.case-header{height:72px;margin:0;padding:0 4%;background:#151e25;border-bottom:1px solid #ffffff16;gap:24px}
+.case-brand{gap:14px}
+.case-brand .shiju-logo{width:142px}
+.case-brand>span{font-size:12px;letter-spacing:1px;color:#d2d7db;padding-left:20px;margin-left:0}
+.case-header nav{gap:30px;height:100%}
+.case-header nav a{position:relative;display:flex;align-items:center;height:100%;padding:0;border:0;font-size:14px;letter-spacing:0;color:#d9dee2}
+.case-header nav a:hover{color:#fff;border:0}
+.case-header nav a[aria-current=page]{color:#f0d296;border:0}
+.case-header nav a[aria-current=page]::after{content:"";position:absolute;bottom:6px;left:0;right:0;height:2px;background:#e2c18f;border-radius:2px}
+.case-shade{background:linear-gradient(90deg,#0c1420f2 0%,#0c1420dc 28%,#0c14206b 65%,#0c142057 100%),linear-gradient(0deg,#111923ed 0%,#11192300 45%);box-shadow:none}
+.case-slide>img{object-position:65% center}
+.case-slide-evidence>img{transform:scale(1.5);transform-origin:left 48%}
+.case-copy{margin:clamp(68px,10vh,112px) 0 0 6%;width:min(610px,57%);text-shadow:0 2px 16px #0005}
+.case-kicker{font-size:14px;letter-spacing:1px;gap:14px;color:#e3c38a}
+.case-copy h1{font-size:clamp(32px,3.2vw,46px);line-height:1.4;letter-spacing:0;font-weight:600;margin-top:22px}
+.case-copy>p{max-width:450px;font-size:18px;line-height:1.9;letter-spacing:0;color:#e5e8eb;margin-top:24px}
+.case-source{font-size:14px;margin-top:16px;color:#c7cdd3;letter-spacing:.2px}
+.case-actions{gap:26px;margin-top:24px}
+.case-watch{display:inline-flex;gap:11px;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;background:#f2f0ec;border:1px solid #f2f0ec;color:#18212a;border-radius:3px;font-size:16px;font-weight:600;text-shadow:none}
+.case-watch:hover{background:#fff;color:#18212a}
+.case-watch svg{fill:currentColor}
+.case-read{display:inline-flex;align-items:center;gap:9px;padding:8px 0;border:0;min-height:44px;border-radius:0;background:transparent;font-size:15px;letter-spacing:0}
+.case-read:hover{background:transparent;color:#f0d296}
+.case-practice-link{display:flex;align-items:center;gap:14px;width:max-content;max-width:100%;border-top:1px solid #ffffff3d;padding-top:18px;margin-top:24px;min-height:48px;font-size:14px;color:#e6e9ed}
+.case-practice-link>span{background:#d5b77924;color:#e2c18f;padding:5px 9px;border-radius:2px;font-size:12px;white-space:nowrap}
+.case-practice-link:hover{color:#f0d296}
+.case-video-toolbar{right:4%;top:100px;font-size:11px}
+.case-bottom{left:auto;right:3%;bottom:28px;width:min(560px,43vw);display:flex;flex-direction:column;align-items:stretch;gap:0;z-index:2}
+.case-auto{display:flex;align-items:center;align-self:flex-end;gap:8px;font-size:12px;min-height:36px;padding:3px 12px;margin-right:23px;color:#e4e8ed}
+.case-auto svg{border:1px solid #ffffff60;border-radius:3px;width:25px;height:25px;padding:4px}
+.case-auto:hover{color:#f0d296}
+.case-carousel-row{display:flex;align-items:center;gap:0;min-width:0}
+.case-carousel-arrow{display:grid;place-items:center;width:32px;min-width:32px;height:44px;color:#e7ebf0;background:transparent;border:0}
+.case-carousel-arrow:hover{color:#f0d296}
+.case-thumbnails{display:block;overflow:hidden;flex:1;min-width:0;max-width:none;padding:12px 0 8px;touch-action:pan-y pinch-zoom;mask-image:linear-gradient(to right,transparent,#000 14%,#000 86%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,#000 14%,#000 86%,transparent);overscroll-behavior-inline:contain}
+.case-thumb-track{display:flex;gap:0;min-width:0}
+.case-thumb-slide{flex:0 0 25%;min-width:0;padding:0 5px}
+.case-thumbnails .case-thumb-slide>button{position:relative;display:block;width:100%;height:auto;aspect-ratio:1.48;border:1px solid #ffffff5c;border-radius:5px;overflow:hidden;background:#17212b;transform:scale(.96);transform-origin:50% 100%;transition:transform .35s,border-color .25s;cursor:grab}
+.case-thumbnails .case-thumb-slide>button:active{cursor:grabbing}
+.case-thumbnails .case-thumb-slide>button.selected{border:2px solid #e5c58c;transform:translateY(-5px) scale(1.045)}
+.case-thumbnails img{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover;filter:brightness(.75)}
+.case-thumbnails .case-thumb-slide>button>span{position:absolute;inset:auto 0 0;padding:15px 8px 7px;font-size:12px;line-height:1.3;white-space:nowrap;text-align:left;background:#101923aa;text-shadow:0 1px 3px #000}
+.case-thumbnails .case-thumb-slide>button:hover img,.case-thumbnails .case-thumb-slide>button.selected img{filter:brightness(1)}
+.case-footer{height:42px;padding:0 3%;gap:24px;font-size:10px;letter-spacing:.4px}
+.case-footer>span:nth-child(2){display:none}
+.case-footer button{font-size:10px;min-height:32px}
+.is-playing .case-header{background:#151e25;border-radius:0}
+.is-playing .case-bottom{opacity:0;visibility:hidden;pointer-events:none}
+.case-auto:focus-visible,.case-carousel-arrow:focus-visible{outline-offset:0}
+@media(min-width:1600px){
+ .case-bottom{width:580px}
+ .case-copy>p{font-size:17px;max-width:520px}
+ .case-header nav{gap:38px}
+}
+@media(max-height:800px) and (min-width:801px){
+ .case-stage{min-height:660px}
+ .case-copy{margin-top:45px}
+ .case-copy h1{font-size:clamp(32px,3vw,42px);margin-top:16px}
+ .case-copy>p{font-size:15px;margin-top:16px;line-height:1.8}
+ .case-source{margin-top:10px}
+ .case-actions{margin-top:16px}
+ .case-practice-link{margin-top:16px;padding-top:12px}
+ .case-bottom{bottom:20px}
+}
+@media(max-width:1050px){
+ .case-brand>span{display:none}
+ .case-header nav{gap:22px}
+ .case-copy{width:62%;margin-top:90px}
+ .case-copy h1{font-size:36px}
+ .case-copy>p{font-size:15px;max-width:450px}
+ .case-bottom{width:510px;max-width:65vw}
+ .case-video-toolbar{top:94px}
+}
+@media(max-width:640px){
+ .case-stage{min-height:820px;height:calc(100svh - 42px);max-height:none}
+ .case-header{min-height:112px;height:auto;padding:16px 20px 0;gap:13px;flex-direction:column;align-items:flex-start}
+ .case-brand .shiju-logo{width:124px}
+ .case-header nav{width:100%;height:38px;justify-content:space-between;gap:10px}
+ .case-header nav a{font-size:11px;padding:0 0 9px}
+ .case-header nav a[aria-current=page]::after{bottom:0}
+ .case-copy{margin:86px 22px 0;width:auto}
+ .case-kicker{font-size:11px;gap:10px}
+ .case-copy h1{font-size:clamp(27px,7.2vw,34px);margin-top:17px;line-height:1.42}
+ .case-copy>p{font-size:13px;line-height:1.9;max-width:340px;margin-top:19px}
+ .case-source{font-size:10px;margin-top:12px}
+ .case-actions{margin-top:18px;gap:22px}
+ .case-watch{min-height:44px;padding:10px 14px;font-size:13px}
+ .case-read{font-size:13px}
+ .case-practice-link{font-size:12px;gap:9px;margin-top:18px;padding-top:14px}
+ .case-practice-link>span{font-size:10px;padding:4px 7px}
+ .case-video-toolbar{top:132px;left:auto;right:20px;font-size:9px}
+ .case-video-toolbar>button{font-size:9px;min-height:32px;padding:7px 9px}
+ .case-bottom{width:min(380px,calc(100% - 20px));max-width:none;left:auto;right:10px;bottom:22px;gap:0;flex-direction:column;align-items:stretch}
+ .case-auto{min-height:36px;font-size:10px;margin-right:20px}
+ .case-carousel-arrow{width:25px;min-width:25px}
+ .case-thumb-slide{padding:0 3px}
+ .case-thumbnails .case-thumb-slide>button{aspect-ratio:1.22}
+ .case-thumbnails .case-thumb-slide>button>span{font-size:10px;padding:12px 5px 6px}
+ .case-slide>img{object-position:65% center}
+ .case-shade{background:linear-gradient(90deg,#0c1420d9,#0c14209c),linear-gradient(0deg,#111923ed 0%,#11192300 50%);box-shadow:none}
+ .is-playing .case-header{margin:0;padding:16px 20px 0}
+ .case-footer{min-height:42px;height:42px;padding:0 18px;font-size:8px;flex-wrap:nowrap}
+ .case-footer button{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.case-home *{scroll-behavior:auto!important;transition:none!important;animation:none!important}}

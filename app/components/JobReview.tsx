@@ -1,0 +1,27 @@
+"use client";
+import {jobOutcome} from '@/lib/job-outcome';
+import Link from 'next/link';
+import {ArrowRight,ShieldCheck,Check,MessageSquare} from 'lucide-react';
+import {SiteNav} from './SiteNav';
+import {JobAIReflection} from './JobAIReflection';
+import {jobReviewBasis,jobReviewInput} from '@/lib/job-reflection';
+import type {ReflectionRecord} from '@/lib/reflection-types';
+import {jobActionLabels,jobReview,jobReviewPlan,jobStories,type JobMode,type JobRun} from '@/lib/job-workshop';
+
+export function JobReview({run,onStart,onSaveReflection}:{run:JobRun;onStart:(mode:JobMode)=>void;onSaveReflection:(record:ReflectionRecord)=>boolean}){
+ const plan=jobReviewPlan(run),outcome=jobOutcome(run),earned=outcome.badges.filter(b=>b.earned); const missing=[['contact','联系人招聘授权'],['directory','岗位公开目录'],['attachment','附件中的办理要求']].filter(([action])=>!run.logs.some(l=>l.action===action)).map(([,label])=>label);
+ const decision={pause:'暂缓办理',continue:'继续办理',exit:'结束沟通',report:'标记并报告'}[run.decision??'pause'];
+ return <div className="job-module job-review-page job-review-refined"><SiteNav active="/review"/>
+ <main className="job-report"><div className="job-report-breadcrumb">情境模拟 / 本轮复盘</div><header className="job-report-heading"><div><span>求职兼职 · {run.mode==='learning'?'引导演练':'独立挑战'}</span><h1>本轮演练复盘</h1><p>{jobStories[run.mode].title}</p></div><a href="/simulation">返回情境模拟 ↗</a></header>
+ <section className={'job-result-banner job-result-'+outcome.state} aria-label="本轮结果"><ShieldCheck size={36}/><div><span>本轮结果</span><h2>{outcome.title}</h2><p>{outcome.description}</p></div><dl><div><dt>最终行动</dt><dd>{decision}</dd></div><div><dt>风险操作</dt><dd>{outcome.install?'曾点击模拟安装（未安装）':run.decision==='continue'?'选择继续按当前要求办理':'未记录风险操作'}</dd></div></dl></section><p className="job-result-footnote">本轮结论依据已记录的操作与提交判断，不代表全面防骗能力。</p>
+ <div className="job-report-layout"><section aria-label="判断复盘"><section className="job-basis-ledger"><h2>你的判断，有哪些依据？</h2>{jobReview(run).map((item,i)=><article key={item.title}><span>0{i+1}</span><div><header><h3>{item.title}</h3><small>{item.state}</small></header><p>{item.text}</p>{i===2&&<blockquote>{run.rationale?`“${run.rationale}”`:'本轮未填写判断理由。'}<small>用户自述，需结合上方材料理解。</small></blockquote>}</div></article>)}</section>
+ <section className="job-earned-section" aria-label="本轮成就"><h2>{earned.length?'这次做对了什么':'本轮行动反馈'}</h2>{earned.length?<div className="job-earned-chips">{earned.map(b=><span key={b.id} title={b.reason}><Check size={16}/>{b.title}</span>)}</div>:<p>本轮尚未形成可授予成就的行动依据。可以从下方待核实事项开始补充练习。</p>}<details className="job-other-paths"><summary>查看{earned.length?'成就依据与其他行动路径':'行动路径'}</summary><div>{outcome.badges.map(b=><p key={b.id}><strong>{b.title}<small>{b.earned?'已达成':'待探索'}</small></strong>{b.reason}</p>)}</div></details><small>不同成就记录不同应对方式，无需集齐，也无需尝试风险操作。</small></section>
+ <section className="job-next-check"><h2>下一次，可以补上这一步</h2>{plan.gaps.length?<ul>{plan.gaps.map(g=><li key={g}>{g}</li>)}</ul>:<p>已取得岗位目录与联系人授权材料。下一次可进一步说明两类来源分别证明了什么，以及它们如何影响你的决定。</p>}</section>
+ <JobAIReflection key={run.id+jobReviewBasis(jobReviewInput(run))} run={run} onSave={onSaveReflection}/>
+ <details className="job-review-more"><summary>理解情境中的影响因素</summary><section className="job-psych">{plan.factors.map(f=><div key={f.title}><h3>{f.title}</h3><p>{f.text}</p></div>)}<small>这些是情境诱因与行动提示，不是个人心理诊断。</small></section></details>
+ <details className="job-review-more"><summary>针对本轮问题继续学习</summary><div className="job-compact-practice">{plan.practice.map(p=><article key={p.lesson}><h3>{p.title}</h3><p>{p.why}</p><Link href={'/learn?lesson='+p.lesson}>阅读课程 ↗</Link><Link href={'/learn?tab=quiz&scope='+p.lesson}>专项练习 ↗</Link></article>)}</div></details>
+ <details className="job-transcript" id="job-review-chat"><summary><MessageSquare size={16}/>回看本轮对话 · {run.logs.filter(l=>l.action==='user'||l.action==='actor').length} 条消息</summary><ol>{run.logs.filter(l=>l.action==='user'||l.action==='actor').map(l=><li key={l.id}><header><strong>{l.action==='user'?'我':jobStories[run.mode].name}</strong><time>{new Date(l.at).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'})}</time></header>{l.quote&&<blockquote>{l.quote.name}：{l.quote.text}</blockquote>}<p>{l.text}</p></li>)}</ol></details>
+ </section><aside><h2>本轮行动记录</h2><p className="job-timeline-intro">按实际发生顺序保留</p><ol className="job-review-timeline">{run.logs.filter(l=>l.action!=='actor'&&l.action!=='user').map(l=><li key={l.id}><time>{new Date(l.at).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'})}</time><strong>{l.action==='decision'?decision:jobActionLabels[l.action]}</strong>{!['hint','decision'].includes(l.action)&&<details><summary>查看当时的材料 ↗</summary><p>{l.text}</p></details>}</li>)}</ol><section className="job-sidebar-gaps"><h3>待核实事项</h3>{missing.length?<ul>{missing.map(g=><li key={g}>{g}</li>)}</ul>:<p>已取得本轮两类独立核实材料。</p>}</section><section className="job-sidebar-note"><h3>记录说明</h3><p>结果根据本轮材料、操作和提交判断整理。AI复盘需主动生成，并标明实际使用的整理方式。</p></section></aside></div>
+ <footer className="job-report-bottom"><span>本轮记录已保存在当前浏览器</span><button onClick={()=>{const el=document.getElementById('job-review-chat') as HTMLDetailsElement|null;if(el){el.open=true;el.scrollIntoView({behavior:'smooth',block:'center'});}}}>回看对话</button><button className="job-solid-button" onClick={()=>onStart(run.mode==='learning'?'independent':'learning')}>{run.mode==='learning'?'开始独立挑战':'回到引导演练'}<ArrowRight size={16}/></button></footer>
+ </main></div>;
+}

@@ -2,7 +2,7 @@ import type {ModelConfig, ModelTelemetry} from "./model-service.ts";
 
 export type BudgetPolicy={userDaily:number;siteDaily:number;perMinute:number;minIntervalMs:number;userConcurrent:number;siteConcurrent:number};
 export type BudgetDB=Pick<D1Database,"prepare">;
-export type BudgetContext={db:BudgetDB|undefined;userId:string|null;policy:BudgetPolicy|null;now?:()=>number;transport?:typeof fetch};
+export type BudgetContext={db:BudgetDB|undefined;userId:string|null;policy:BudgetPolicy|null;guest?:boolean;setCookie?:string;now?:()=>number;transport?:typeof fetch};
 export type BudgetCode="signin"|"unavailable"|"user_daily"|"site_daily"|"busy"|"rapid";
 const messages:Record<BudgetCode,string>={
  signin:"登录后可使用智能回复；当前仍可使用预设演练与资料检索。",
@@ -77,12 +77,12 @@ export async function metered<T extends EngineResult>(ctx:BudgetContext,feature:
  return code?{...result,warning:messages[code],budgetCode:code}:result;
 }
 export async function usageSnapshot(ctx:BudgetContext,configured:boolean){
- const now=(ctx.now??Date.now)(),p=ctx.policy;const base={configured,limit:p?.userDaily??0,resetsAt:budgetDay(now).resetsAt};
+ const now=(ctx.now??Date.now)(),p=ctx.policy;const base={configured,guest:ctx.guest===true,limit:p?.userDaily??0,resetsAt:budgetDay(now).resetsAt};
  if(!ctx.userId)return {...base,available:false,requiresSignIn:true,message:messages.signin};
  if(!ctx.db||!p)return {...base,available:false,message:messages.unavailable};
  try{
   const hash=await actorHash(ctx.userId),c=await counts(ctx.db,hash,now);if(!c)throw Error("Missing usage");
   const stats=await ctx.db.prepare(`SELECT COUNT(*) AS attempts, SUM(CASE WHEN outcome='model' THEN 1 ELSE 0 END) AS succeeded, SUM(CASE WHEN outcome IN ('failed','fallback','cancelled') OR (outcome='reserved' AND lease_until<=?3) THEN 1 ELSE 0 END) AS failures, SUM(total_tokens) AS tokens, SUM(CASE WHEN total_tokens IS NULL THEN 1 ELSE 0 END) AS unknown_tokens FROM ai_requests WHERE actor_hash=?1 AND day=?2`).bind(hash,budgetDay(now).day,now).first<{attempts:number;succeeded:number|null;failures:number|null;tokens:number|null;unknown_tokens:number|null}>();
-  const reason=blocked(c,p,now);return {...base,available:configured&&!reason,used:c.personal,remaining:Math.max(0,p.userDaily-c.personal),succeeded:stats?.succeeded??0,failures:stats?.failures??0,tokens:stats?.tokens??null,unknownTokens:stats?.unknown_tokens??0,message:!configured?"尚未连接模型，可继续使用预设演练与资料检索。":reason?messages[reason]:"对话、资料整理与AI复盘共用额度。"};
+  const reason=blocked(c,p,now);return {...base,available:configured&&!reason,used:c.personal,remaining:Math.max(0,p.userDaily-c.personal),succeeded:stats?.succeeded??0,failures:stats?.failures??0,tokens:stats?.tokens??null,unknownTokens:stats?.unknown_tokens??0,message:!configured?"尚未连接模型，可继续使用预设演练与资料检索。":reason?messages[reason]:ctx.guest?"无需登录即可体验智能问答、情境对话与AI复盘，三项功能共用体验额度。":"对话、资料整理与AI复盘共用额度。"};
  }catch{return {...base,available:false,message:messages.unavailable};}
 }

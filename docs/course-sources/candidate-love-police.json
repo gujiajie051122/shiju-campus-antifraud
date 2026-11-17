@@ -1,0 +1,136 @@
+{
+  "bvid": "BV14e411b7SY",
+  "aid": 240019907,
+  "videos": 1,
+  "tid": 21,
+  "tid_v2": 2207,
+  "tname": "",
+  "tname_v2": "",
+  "copyright": 1,
+  "pic": "http://i0.hdslb.com/bfs/archive/18f1d3c7ebe11dded6b3d3079c8b9b290ab2172f.jpg",
+  "title": "【始于网恋，终于诈骗】",
+  "pubdate": 1703058593,
+  "ctime": 1703058499,
+  "desc": "-",
+  "desc_v2": [
+    {
+      "raw_text": "-",
+      "type": 1,
+      "biz_id": 0
+    }
+  ],
+  "state": 0,
+  "duration": 155,
+  "rights": {
+    "bp": 0,
+    "elec": 0,
+    "download": 1,
+    "movie": 0,
+    "pay": 0,
+    "hd5": 0,
+    "no_reprint": 1,
+    "autoplay": 1,
+    "ugc_pay": 0,
+    "is_cooperation": 0,
+    "ugc_pay_preview": 0,
+    "no_background": 0,
+    "clean_mode": 0,
+    "is_stein_gate": 0,
+    "is_360": 0,
+    "no_share": 0,
+    "arc_pay": 0,
+    "free_watch": 0
+  },
+  "owner": {
+    "mid": 3546591394794204,
+    "name": "青岛网警",
+    "face": "https://i0.hdslb.com/bfs/face/e618eba9c8ef5a2ac618cf1cdd81e35c1ac175bf.jpg"
+  },
+  "stat": {
+    "aid": 240019907,
+    "view": 2690,
+    "danmaku": 0,
+    "reply": 5,
+    "favorite": 41,
+    "coin": 3,
+    "share": 112,
+    "now_rank": 0,
+    "his_rank": 0,
+    "like": 25,
+    "dislike": 0,
+    "evaluation": "",
+    "vt": 0
+  },
+  "argue_info": {
+    "argue_msg": "",
+    "argue_type": 0,
+    "argue_link": ""
+  },
+  "dynamic": "",
+  "cid": 1374205397,
+  "dimension": {
+    "width": 1280,
+    "height": 720,
+    "rotate": 0
+  },
+  "premiere": null,
+  "teenage_mode": 0,
+  "is_chargeable_season": false,
+  "is_story": false,
+  "is_upower_exclusive": false,
+  "is_upower_play": false,
+  "is_upower_preview": false,
+  "enable_vt": 0,
+  "vt_display": "",
+  "is_upower_exclusive_with_qa": false,
+  "is_hua_sheng": false,
+  "no_cache": false,
+  "pages": [
+    {
+      "cid": 1374205397,
+      "page": 1,
+      "from": "vupload",
+      "part": "【始于网恋，终于诈骗】",
+      "duration": 155,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1280,
+        "height": 720,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n231220sa1q2eoeev8kfcj1s0waaqspf_firsti.jpg",
+      "ctime": 1703058499
+    }
+  ],
+  "subtitle": {
+    "allow_submit": false,
+    "list": []
+  },
+  "is_season_display": false,
+  "user_garb": {
+    "url_image_ani_cut": ""
+  },
+  "honor_reply": {},
+  "like_icon": "",
+  "need_jump_bv": false,
+  "disable_show_up_info": false,
+  "is_story_play": 1,
+  "is_view_self": false,
+  "embedPlayer": {
+    "p": 1,
+    "aid": 240019907,
+    "bvid": "BV14e411b7SY",
+    "cid": 1374205397,
+    "vid": "",
+    "vtype": "vupload",
+    "stats": {
+      "spmId": "333.788.0.0",
+      "spmIdFrom": "333.788.0.0",
+      "trackId": ""
+    },
+    "t": 0,
+    "fromDid": null,
+    "featureList": {}
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "bvid": "BV1J2tA62EAC",
+  "aid": 117172160567463,
+  "videos": 1,
+  "tid": 138,
+  "tid_v2": 2071,
+  "tname": "",
+  "tname_v2": "",
+  "copyright": 3,
+  "pic": "http://i2.hdslb.com/bfs/archive/0ce1b5533f5b4fb0c49843b9448151d4500cd9f2.jpg",
+  "title": "冒充客服恐吓退款？识破骗局巧求助！",
+  "pubdate": 1787907600,
+  "ctime": 1787905514,
+  "desc": "【和平反诈小剧场】深圳南山公安×和平精英联动反诈！8倍镜提醒特种兵们：冒充客服、恐吓&quot;未成年违规&quot;、诱导凑单退款，都是诈骗套路！遇可疑情况，立即告知家长或报警！守护财产安全！",
+  "desc_v2": [
+    {
+      "raw_text": "【和平反诈小剧场】深圳南山公安×和平精英联动反诈！8倍镜提醒特种兵们：冒充客服、恐吓\"未成年违规\"、诱导凑单退款，都是诈骗套路！遇可疑情况，立即告知家长或报警！守护财产安全！",
+      "type": 1,
+      "biz_id": 0
+    }
+  ],
+  "state": 0,
+  "duration": 157,
+  "rights": {
+    "bp": 0,
+    "elec": 0,
+    "download": 1,
+    "movie": 0,
+    "pay": 0,
+    "hd5": 0,
+    "no_reprint": 0,
+    "autoplay": 1,
+    "ugc_pay": 0,
+    "is_cooperation": 0,
+    "ugc_pay_preview": 0,
+    "no_background": 0,
+    "clean_mode": 0,
+    "is_stein_gate": 0,
+    "is_360": 0,
+    "no_share": 0,
+    "arc_pay": 0,
+    "free_watch": 0
+  },
+  "owner": {
+    "mid": 434786180,
+    "name": "和平精英",
+    "face": "https://i2.hdslb.com/bfs/face/8152b9af2954665e532030ecbcf90704f735e242.jpg"
+  },
+  "stat": {
+    "aid": 117172160567463,
+    "view": 161759,
+    "danmaku": 41,
+    "reply": 52,
+    "favorite": 1212,
+    "coin": 72,
+    "share": 8,
+    "now_rank": 0,
+    "his_rank": 0,
+    "like": 1980,
+    "dislike": 0,
+    "evaluation": "",
+    "vt": 0
+  },
+  "argue_info": {
+    "argue_msg": "",
+    "argue_type": 0,
+    "argue_link": ""
+  },
+  "dynamic": "",
+  "cid": 41357478700,
+  "dimension": {
+    "width": 1920,
+    "height": 1080,
+    "rotate": 0
+  },
+  "premiere": null,
+  "teenage_mode": 1,
+  "is_chargeable_season": false,
+  "is_story": false,
+  "is_upower_exclusive": false,
+  "is_upower_play": false,
+  "is_upower_preview": false,
+  "enable_vt": 0,
+  "vt_display": "",
+  "is_upower_exclusive_with_qa": false,
+  "is_hua_sheng": false,
+  "no_cache": false,
+  "pages": [
+    {
+      "cid": 41357478700,
+      "page": 1,
+      "from": "vupload",
+      "part": "冒充客服恐吓退款？识破骗局巧求助！",
+      "duration": 157,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1920,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/_000027zd9inu3msz522y8ytzm7d0irb_firsti.jpg",
+      "ctime": 1787905514,
+      "asr_language": "cmn"
+    }
+  ],
+  "subtitle": {
+    "allow_submit": false,
+    "list": []
+  },
+  "is_season_display": false,
+  "user_garb": {
+    "url_image_ani_cut": ""
+  },
+  "honor_reply": {},
+  "like_icon": "",
+  "need_jump_bv": false,
+  "disable_show_up_info": false,
+  "is_story_play": 1,
+  "is_view_self": false,
+  "embedPlayer": {
+    "p": 1,
+    "aid": 117172160567463,
+    "bvid": "BV1J2tA62EAC",
+    "cid": 41357478700,
+    "vid": "",
+    "vtype": "vupload",
+    "stats": {
+      "spmId": "333.788.0.0",
+      "spmIdFrom": "333.788.0.0",
+      "trackId": ""
+    },
+    "t": 0,
+    "fromDid": null,
+    "featureList": {}
+  }
+}

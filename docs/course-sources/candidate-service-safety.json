@@ -1,0 +1,130 @@
+{
+  "bvid": "BV1Lu4y1C7qk",
+  "aid": 915905590,
+  "videos": 1,
+  "tid": 124,
+  "tid_v2": 2088,
+  "tname": "",
+  "tname_v2": "",
+  "copyright": 1,
+  "pic": "http://i1.hdslb.com/bfs/archive/d15ccfed2d8b8a2ecad744c6e57436fa016a4bd3.jpg",
+  "title": "反诈宣传视频5： 假冒客服",
+  "pubdate": 1694477275,
+  "ctime": 1694477276,
+  "desc": "",
+  "desc_v2": null,
+  "state": 0,
+  "duration": 121,
+  "rights": {
+    "bp": 0,
+    "elec": 0,
+    "download": 1,
+    "movie": 0,
+    "pay": 0,
+    "hd5": 1,
+    "no_reprint": 1,
+    "autoplay": 1,
+    "ugc_pay": 0,
+    "is_cooperation": 0,
+    "ugc_pay_preview": 0,
+    "no_background": 0,
+    "clean_mode": 0,
+    "is_stein_gate": 0,
+    "is_360": 0,
+    "no_share": 0,
+    "arc_pay": 0,
+    "free_watch": 0
+  },
+  "owner": {
+    "mid": 3546385632725559,
+    "name": "春蕾安全",
+    "face": "https://i0.hdslb.com/bfs/face/e2b6799a894ade7a45ff0ca16b2436e9d82a927c.jpg"
+  },
+  "stat": {
+    "aid": 915905590,
+    "view": 1123,
+    "danmaku": 0,
+    "reply": 0,
+    "favorite": 23,
+    "coin": 2,
+    "share": 44,
+    "now_rank": 0,
+    "his_rank": 0,
+    "like": 10,
+    "dislike": 0,
+    "evaluation": "",
+    "vt": 0
+  },
+  "argue_info": {
+    "argue_msg": "",
+    "argue_type": 0,
+    "argue_link": ""
+  },
+  "dynamic": "",
+  "cid": 1264658498,
+  "dimension": {
+    "width": 1920,
+    "height": 1080,
+    "rotate": 0
+  },
+  "premiere": null,
+  "teenage_mode": 0,
+  "is_chargeable_season": false,
+  "is_story": false,
+  "is_upower_exclusive": false,
+  "is_upower_play": false,
+  "is_upower_preview": false,
+  "enable_vt": 0,
+  "vt_display": "",
+  "is_upower_exclusive_with_qa": false,
+  "is_hua_sheng": false,
+  "no_cache": false,
+  "pages": [
+    {
+      "cid": 1264658498,
+      "page": 1,
+      "from": "vupload",
+      "part": "反诈宣传视频5： 假冒客服",
+      "duration": 121,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1920,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n230912sa2e6kwmgrqgt9d215845fe2k_firsti.jpg",
+      "ctime": 1694477276
+    }
+  ],
+  "subtitle": {
+    "allow_submit": false,
+    "list": []
+  },
+  "is_season_display": false,
+  "user_garb": {
+    "url_image_ani_cut": ""
+  },
+  "honor_reply": {},
+  "like_icon": "",
+  "need_jump_bv": false,
+  "disable_show_up_info": false,
+  "is_story_play": 1,
+  "is_view_self": false,
+  "embedPlayer": {
+    "p": 1,
+    "aid": 915905590,
+    "bvid": "BV1Lu4y1C7qk",
+    "cid": 1264658498,
+    "vid": "",
+    "vtype": "vupload",
+    "stats": {
+      "spmId": "333.788.0.0",
+      "spmIdFrom": "333.788.0.0",
+      "trackId": ""
+    },
+    "t": 0,
+    "fromDid": null,
+    "featureList": {}
+  }
+}

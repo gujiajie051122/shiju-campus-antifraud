@@ -1,0 +1,64 @@
+[
+  {
+    "id": "animation-rebate-mg",
+    "url": "https://www.bilibili.com/video/BV1nS4y197V8/",
+    "poster": "https://i1.hdslb.com/bfs/archive/307809c41ad940d18ba0e48acf46f658c1022e44.jpg",
+    "width": 964,
+    "height": 602,
+    "sourceTitle": "【MG动画】《刷单？有诈！》防刷单诈骗宣传片",
+    "publisher": "我才不会乱改名",
+    "duration": 154,
+    "videoSize": {
+      "width": 1920,
+      "height": 1080,
+      "rotate": 0
+    }
+  },
+  {
+    "id": "animation-rebate-dog",
+    "url": "https://www.bilibili.com/video/BV1t8hG6FE53/",
+    "poster": "https://i0.hdslb.com/bfs/archive/c587b77f7ac8c05c20fe4302dadb201afbdb4e2e.jpg",
+    "width": 1200,
+    "height": 675,
+    "sourceTitle": "陌生链接都敢乱点，刷单返利都敢乱信，你的胆子真是肥嘟嘟的！",
+    "publisher": "人民日报",
+    "duration": 8,
+    "videoSize": {
+      "width": 1440,
+      "height": 1080,
+      "rotate": 0
+    }
+  },
+  {
+    "id": "animation-service-game",
+    "url": "https://www.bilibili.com/video/BV1J2tA62EAC/",
+    "poster": "https://i2.hdslb.com/bfs/archive/0ce1b5533f5b4fb0c49843b9448151d4500cd9f2.jpg",
+    "width": 1920,
+    "height": 1080,
+    "sourceTitle": "冒充客服恐吓退款？识破骗局巧求助！",
+    "publisher": "和平精英",
+    "duration": 157,
+    "videoSize": {
+      "width": 1920,
+      "height": 1080,
+      "rotate": 0
+    }
+  },
+  {
+    "id": "animation-job-embassy",
+    "url": "https://gb.china-embassy.gov.cn/lsfw_137163/lsbhyxz/lstx/202602/t20260216_11860785.htm",
+    "poster": "https://svideo.mfa.gov.cn/masvod/public/2026/02/16/37824.images/v37824_b1771250554869.jpg",
+    "width": 3840,
+    "height": 2160,
+    "video": "https://svideo.mfa.gov.cn/masvod/public/2026/02/16/20260216_19c66b9b3b6_r1_1200k.mp4",
+    "note": "使馆系列动画第三集；只收录一次，归入求职专题。涉及境外求职环境。"
+  },
+  {
+    "id": "animation-trade-offline",
+    "url": "https://rizhao.dzwww.com/caijing/lcwq/202502/t20250205_15480420.html",
+    "poster": "https://vfile.dzwww.com/zycf/20250126132905-HvbUEA.jpg",
+    "width": 2160,
+    "height": 2880,
+    "video": "https://vfile.dzwww.com/zycf/20250126132905-HvbUEA.mp4?size=1440X1920&time=99.452"
+  }
+]

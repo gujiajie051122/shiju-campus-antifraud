@@ -1,0 +1,50 @@
+[
+  {
+    "name": "learning",
+    "kind": "source",
+    "width": 1487,
+    "height": 1058
+  },
+  {
+    "name": "learning",
+    "kind": "implementation",
+    "width": 1425,
+    "height": 990
+  },
+  {
+    "name": "simulation",
+    "kind": "source",
+    "width": 1487,
+    "height": 1058
+  },
+  {
+    "name": "simulation",
+    "kind": "implementation",
+    "width": 1425,
+    "height": 990
+  },
+  {
+    "name": "review",
+    "kind": "source",
+    "width": 1487,
+    "height": 1058
+  },
+  {
+    "name": "review",
+    "kind": "implementation",
+    "width": 1425,
+    "height": 990
+  },
+  {
+    "name": "records",
+    "kind": "source",
+    "width": 1487,
+    "height": 1058
+  },
+  {
+    "name": "records",
+    "kind": "implementation",
+    "width": 1425,
+    "height": 990
+  }
+]

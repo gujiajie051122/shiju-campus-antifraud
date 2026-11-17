@@ -1,0 +1,5 @@
+.shiju-logo{display:block;width:142px;height:auto;flex:none;object-fit:contain;user-select:none}
+.shiju-logo--inverse{filter:brightness(0) invert(1)}
+.site-logo,.case-brand{flex-shrink:0}
+.brand .shiju-logo{width:138px}
+@media(max-width:640px){.shiju-logo{width:124px}.brand .shiju-logo{width:124px}}

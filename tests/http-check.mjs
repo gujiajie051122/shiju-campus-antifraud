@@ -1,8 +1,9 @@
 import assert from 'node:assert/strict';
 const base=process.env.CHECK_URL||'http://127.0.0.1:5173';
+const checkGeneration=process.env.CHECK_GENERATION==='1';
 const state=await fetch(base+'/api/status');
-assert.equal(state.status,200);const status=await state.json();assert.equal(typeof status.avatarConfigured,'boolean');assert.ok(['configured','rules'].includes(status.dialogue));assert.equal('LLM_API_KEY' in status,false);
-if(!status.avatarConfigured)assert.equal((await fetch(base+'/api/avatar')).status,503);
+assert.equal(state.status,200);const status=await state.json();assert.equal('avatarConfigured' in status,false);assert.ok(['configured','rules'].includes(status.dialogue));assert.equal('LLM_API_KEY' in status,false);
+assert.equal((await fetch(base+'/api/avatar')).status,404);assert.equal((await fetch(base+'/api/video-session')).status,404);assert.equal((await fetch(base+'/simulation/video')).status,404);
 const usageResponse=await fetch(base+'/api/usage');assert.equal(usageResponse.status,200);assert.match(usageResponse.headers.get('Cache-Control'),/no-store/);
 const usage=await usageResponse.json();assert.equal(typeof usage.limit,'number');assert.equal(typeof usage.message,'string');assert.equal('actor_hash' in usage,false);assert.equal('LLM_API_KEY' in usage,false);
 const post=(body,headers={})=>fetch(base+'/api/dialogue',{method:'POST',headers:{'Content-Type':'application/json',...headers},body:JSON.stringify(body)});
@@ -23,6 +24,18 @@ const reviewInput={variant:'R',actions:[{id:'end',kind:'decision',decision:'paus
 assert.equal((await review({input:reviewInput})).status,400);
 assert.equal((await review({input:{...reviewInput,actions:[]},consent:true})).status,400);
 assert.equal((await review({input:reviewInput,consent:true},{Origin:'https://untrusted.example'})).status,403);
-const safeReview=await review({input:reviewInput,consent:true});assert.equal(safeReview.status,200);assert.match(safeReview.headers.get('Cache-Control'),/no-store/);
-const reviewed=await safeReview.json();assert.equal(reviewed.engine,'rules');assert.equal(reviewed.factorId,'insufficient');assert.equal(reviewed.budgetCode,'signin');
-console.log('PASS: HTTP validation, source boundaries, review consent and deterministic actions; zero provider calls');
+const jobInput={mode:'independent',actions:[{id:'attachment',action:'attachment'},{id:'directory',action:'directory'},{id:'decision',action:'decision',decision:'pause'}]};
+assert.equal((await review({jobInput})).status,400);
+assert.equal((await review({jobInput:{...jobInput,actions:jobInput.actions.slice(0,-1)},consent:true})).status,400);
+assert.equal((await review({jobInput,input:reviewInput,consent:true})).status,400);
+assert.equal((await review({jobInput,consent:true},{Origin:'https://untrusted.example'})).status,403);
+// Successful review requests can now call the configured model anonymously.
+// Keep the default smoke check free of provider calls; opt in explicitly.
+if(checkGeneration){
+ for(const input of [{input:reviewInput,consent:true},{jobInput,consent:true}]){
+  const response=await review(input);assert.equal(response.status,200);assert.match(response.headers.get('Cache-Control'),/no-store/);
+  const result=await response.json();assert.ok(['rules','model'].includes(result.engine));assert.equal(result.factorId,'insufficient');
+ }
+}
+for(const path of ['/','/learn','/simulation','/review','/records'])assert.equal((await fetch(base+path)).status,200,path);
+console.log('PASS: pages, HTTP validation, source boundaries, both review schemas, consent and deterministic actions; '+(checkGeneration?'generation opted in':'successful model requests skipped; zero provider calls'));

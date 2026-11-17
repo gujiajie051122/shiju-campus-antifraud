@@ -1,6 +1,6 @@
 {
-  "name": "shiju-pilot",
-  "version": "0.1.0",
+  "name": "shiju-mainline",
+  "version": "0.3.1",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
@@ -13,7 +13,8 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "db:init:local": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config wrangler.local.jsonc --file drizzle/0000_lucky_hammerhead.sql"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
@@ -25,6 +26,7 @@
     "date-fns": "^4.4.0",
     "drizzle-orm": "0.45.2",
     "embla-carousel-react": "^8.6.0",
+    "hls.js": "^1.7.4",
     "input-otp": "^1.4.2",
     "lucide-react": "^1.31.0",
     "next": "16.3.4",
@@ -39,8 +41,7 @@
     "sonner": "^2.0.8",
     "tailwind-merge": "3.6.0",
     "vaul": "^1.1.2",
-    "zod": "^3.25.76",
-    "@d-id/client-sdk": "3.0.8"
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.37.1",

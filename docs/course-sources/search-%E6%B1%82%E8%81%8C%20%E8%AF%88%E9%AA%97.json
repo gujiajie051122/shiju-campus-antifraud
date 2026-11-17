@@ -1,0 +1,320 @@
+{
+  "total": 412,
+  "totalpage": 21,
+  "timespans": {
+    "0": {
+      "NAME": "5分钟以内",
+      "COUNT": 170
+    },
+    "1": {
+      "NAME": "5-30分钟",
+      "COUNT": 86
+    },
+    "2": {
+      "NAME": "30-60分钟",
+      "COUNT": 153
+    },
+    "3": {
+      "NAME": "大于1小时",
+      "COUNT": 3
+    }
+  },
+  "daytimes": {
+    "2": {
+      "NAME": "一天以内",
+      "COUNT": 2
+    },
+    "3": {
+      "NAME": "一周以内",
+      "COUNT": 6
+    },
+    "4": {
+      "NAME": "一月以内",
+      "COUNT": 12
+    },
+    "5": {
+      "NAME": "一年以内",
+      "COUNT": 51
+    }
+  },
+  "channels": [
+    {
+      "NAME": "CCTV-13新闻频道",
+      "COUNT": 153
+    },
+    {
+      "NAME": "CCTV-2财经频道",
+      "COUNT": 143
+    },
+    {
+      "NAME": "CCTV-4中文国际频道",
+      "COUNT": 45
+    },
+    {
+      "NAME": "CCTV-12社会与法频道",
+      "COUNT": 38
+    },
+    {
+      "NAME": "CCTV-1综合频道",
+      "COUNT": 17
+    },
+    {
+      "NAME": "新闻",
+      "COUNT": 13
+    },
+    {
+      "NAME": "CCTV其他",
+      "COUNT": 2
+    },
+    {
+      "NAME": "视频频道",
+      "COUNT": 1
+    }
+  ],
+  "list": [
+    {
+      "id": "31711067",
+      "title": "[中国法治观察]法治前沿 浙江杭州 <font color=\"red\">求职</font>刷单遇<font color=\"red\">诈骗</font> 警银联手拦下80万元损失",
+      "all_title": "[中国法治观察]法治前沿 浙江杭州 求职刷单遇诈骗 警银联手拦下80万元损失",
+      "channel": "CCTV-12社会与法频道",
+      "urllink": "https://tv.cctv.com/2026/07/16/VIDE8rDDJJNJ3tUmfZlly1Z2260716.shtml",
+      "imglink": "https://p5.img.cctvpic.com/fmspic/2026/07/16/eb814dff2d0a4c548f9671d1adb0cd4f-1.jpg",
+      "durations": 282,
+      "TV": "其他",
+      "playtime": 1784201243000,
+      "uploadtime": "2026-07-16 19:27:23"
+    },
+    {
+      "id": "31325975",
+      "title": "[正点财经]<font color=\"red\">求职</font>司机深陷“套路租车”骗局 上海青浦警方捣毁一合同<font color=\"red\">诈骗</font>团伙",
+      "all_title": "[正点财经]求职司机深陷“套路租车”骗局 上海青浦警方捣毁一合同诈骗团伙",
+      "channel": "CCTV-2财经频道",
+      "urllink": "https://tv.cctv.com/2025/11/25/VIDEsluOImpFiFrLEU00zGD8251125.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2025/11/25/5f1b082376c94ab7b2dc1e0ddcf2b398-1.jpg",
+      "durations": 180,
+      "TV": "其他",
+      "playtime": 1764061208000,
+      "uploadtime": "2025-11-25 17:00:08"
+    },
+    {
+      "id": "20190162",
+      "title": "[新闻直播间]<font color=\"red\">求职</font>遭遇整容骗局 <font color=\"red\">求职</font>遭遇<font color=\"red\">诈骗</font> 年轻女孩“被整容”",
+      "all_title": "[新闻直播间]求职遭遇整容骗局 求职遭遇诈骗 年轻女孩“被整容”",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2018/12/24/VIDETFmUCThWOUjIDnkBbGKB181224.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2018/12/24/36fd7681ba8d45719d019ec8f5ac86ee-131.jpg",
+      "durations": 241,
+      "TV": "CCTV-13新闻",
+      "playtime": 1545641034000,
+      "uploadtime": "2018-12-24 16:43:54"
+    },
+    {
+      "id": "20261668",
+      "title": "[经济信息联播]<font color=\"red\">求职</font>遭遇整容骗局 <font color=\"red\">求职</font>遭遇<font color=\"red\">诈骗</font> 年轻女孩“被整容”",
+      "all_title": "[经济信息联播]求职遭遇整容骗局 求职遭遇诈骗 年轻女孩“被整容”",
+      "channel": "CCTV-2财经频道",
+      "urllink": "https://tv.cctv.com/2018/12/24/VIDEsI1BnE0kCldpsyHYZS7z181224.shtml",
+      "imglink": "https://p5.img.cctvpic.com/fmspic/2018/12/24/9356239a751e433aad34a1097c2cf9b1-69.jpg",
+      "durations": 116,
+      "TV": "其他",
+      "playtime": 1545656869000,
+      "uploadtime": "2018-12-24 21:07:49"
+    },
+    {
+      "id": "20388299",
+      "title": "[第一时间]<font color=\"red\">求职</font>遭遇整容骗局 <font color=\"red\">求职</font>遭遇<font color=\"red\">诈骗</font> 年轻女孩“被整容”",
+      "all_title": "[第一时间]求职遭遇整容骗局 求职遭遇诈骗 年轻女孩“被整容”",
+      "channel": "CCTV-2财经频道",
+      "urllink": "https://tv.cctv.com/2018/12/25/VIDEFLitaoKmWPQIjJ5OhYTx181225.shtml",
+      "imglink": "https://p1.img.cctvpic.com/fmspic/2018/12/25/10ce3b95fa8c4ab99b5dacc5f9b1ea18-130.jpg",
+      "durations": 237,
+      "TV": "其他",
+      "playtime": 1545700188000,
+      "uploadtime": "2018-12-25 09:09:48"
+    },
+    {
+      "id": "20265491",
+      "title": "[东方时空]帮你整容给你高薪工作？<font color=\"red\">求职</font>陷阱！<font color=\"red\">求职</font>遭遇<font color=\"red\">诈骗</font> 年轻女孩“被整容”",
+      "all_title": "[东方时空]帮你整容给你高薪工作？求职陷阱！求职遭遇诈骗 年轻女孩“被整容”",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2018/12/24/VIDE2mAMzYs44uDU637jxel0181224.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2018/12/24/07ad8b2d1c144c9d880f69d36f11b0c7-130.jpg",
+      "durations": 260,
+      "TV": "CCTV-13新闻",
+      "playtime": 1545657602000,
+      "uploadtime": "2018-12-24 21:20:02"
+    },
+    {
+      "id": "20388295",
+      "title": "[朝闻天下]年轻女性谨防<font color=\"red\">求职</font>陷阱 <font color=\"red\">求职</font>遭遇<font color=\"red\">诈骗</font> 年轻女孩“被整容”",
+      "all_title": "[朝闻天下]年轻女性谨防求职陷阱 求职遭遇诈骗 年轻女孩“被整容”",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2018/12/25/VIDED2FNc9D7LpHDnsJg0HKl181225.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2018/12/25/24394b23c4454c5fa63709ce5eb8b0bb-109.jpg",
+      "durations": 197,
+      "TV": "CCTV-13新闻",
+      "playtime": 1545700022000,
+      "uploadtime": "2018-12-25 09:07:02"
+    },
+    {
+      "id": "20200996",
+      "title": "[中国财经报道]<font color=\"red\">求职</font>遭遇整容骗局 <font color=\"red\">求职</font>遭遇<font color=\"red\">诈骗</font> 年轻女孩“被整容”",
+      "all_title": "[中国财经报道]求职遭遇整容骗局 求职遭遇诈骗 年轻女孩“被整容”",
+      "channel": "CCTV-2财经频道",
+      "urllink": "https://tv.cctv.com/2018/12/24/VIDEzvlkD1GPnxzm6M7CyU7x181224.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2018/12/24/ef1104ee280d44d9ad4af9e905cbb7b1-69.jpg",
+      "durations": 116,
+      "TV": "其他",
+      "playtime": 1545643429000,
+      "uploadtime": "2018-12-24 17:23:49"
+    },
+    {
+      "id": "20143172",
+      "title": "[新闻直播间]年轻女性谨防<font color=\"red\">求职</font>陷阱 <font color=\"red\">求职</font>遭遇<font color=\"red\">诈骗</font> 年轻女孩“被整容”",
+      "all_title": "[新闻直播间]年轻女性谨防求职陷阱 求职遭遇诈骗 年轻女孩“被整容”",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2018/12/24/VIDE0TMC848hh8LybT1FnGTK181224.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2018/12/24/09577d6a0af94aa5b06bdbe705dc38b6-130.jpg",
+      "durations": 238,
+      "TV": "CCTV-13新闻",
+      "playtime": 1545631069000,
+      "uploadtime": "2018-12-24 13:57:49"
+    },
+    {
+      "id": "16112989",
+      "title": "[生活圈]形形色色的<font color=\"red\">求职</font><font color=\"red\">诈骗</font>：应聘网络影评员 孰料坠入<font color=\"red\">求职</font>陷阱",
+      "all_title": "[生活圈]形形色色的求职诈骗：应聘网络影评员 孰料坠入求职陷阱",
+      "channel": "CCTV-1综合频道",
+      "urllink": "https://tv.cctv.com/2017/03/24/VIDEBw3zrOT2roHp8ElBs6vP170324.shtml",
+      "imglink": "https://p5.img.cctvpic.com/fmspic/2017/03/24/cd1e3153b9ff47ebb6615e47c7cc2da6-50.jpg",
+      "durations": 109,
+      "TV": "其他",
+      "playtime": 1490324059000,
+      "uploadtime": "2017-03-24 10:54:19"
+    },
+    {
+      "id": "31326944",
+      "title": "[第一时间]反诈第1线 <font color=\"red\">求职</font>司机深陷“套路租车”骗局 上海青浦警方捣毁一合同<font color=\"red\">诈骗</font>团伙",
+      "all_title": "[第一时间]反诈第1线 求职司机深陷“套路租车”骗局 上海青浦警方捣毁一合同诈骗团伙",
+      "channel": "CCTV-2财经频道",
+      "urllink": "https://tv.cctv.com/2025/11/26/VIDEWVADJgS1r7DxmbZTApEG251126.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2025/11/26/ede56251a1f943c9b7782ba166ef5cdf-1.jpg",
+      "durations": 182,
+      "TV": "其他",
+      "playtime": 1764118928000,
+      "uploadtime": "2025-11-26 09:02:08"
+    },
+    {
+      "id": "16112986",
+      "title": "[生活圈]形形色色的<font color=\"red\">求职</font><font color=\"red\">诈骗</font>：男子<font color=\"red\">求职</font>被骗 引发纠纷致一死一伤",
+      "all_title": "[生活圈]形形色色的求职诈骗：男子求职被骗 引发纠纷致一死一伤",
+      "channel": "CCTV-1综合频道",
+      "urllink": "https://tv.cctv.com/2017/03/24/VIDEQoRJRmOhhlQ04TON8UIN170324.shtml",
+      "imglink": "https://p5.img.cctvpic.com/fmspic/2017/03/24/27ff98cf417d4eddbfc82fb2dc96d96d-50.jpg",
+      "durations": 100,
+      "TV": "其他",
+      "playtime": 1490324060000,
+      "uploadtime": "2017-03-24 10:54:20"
+    },
+    {
+      "id": "16782873",
+      "title": "[视频]<font color=\"red\">求职</font><font color=\"red\">诈骗</font>",
+      "all_title": "[视频]求职诈骗",
+      "channel": "CCTV其他",
+      "urllink": "https://tv.cctv.com/2017/07/21/VIDEvZ7NvsNEgijlk0kxdnuo170721.shtml",
+      "imglink": "https://p5.img.cctvpic.com/fmspic/2017/07/21/4a7e4d2f4532462190931d55986a2992-180.jpg",
+      "durations": 325,
+      "TV": "其他",
+      "playtime": 1500622768000,
+      "uploadtime": "2017-07-21 15:39:28"
+    },
+    {
+      "id": "31252560",
+      "title": "[共同关注]<font color=\"red\">求职</font>者遭遇“刷单”骗局 牵出“案中案”<font color=\"red\">诈骗</font>链条 男子<font color=\"red\">求职</font>遇到“高薪邀约” 掉入“刷单”陷阱",
+      "all_title": "[共同关注]求职者遭遇“刷单”骗局 牵出“案中案”诈骗链条 男子求职遇到“高薪邀约” 掉入“刷单”陷阱",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2025/10/11/VIDEN1NzX22uqjQ3O4YM3Exe251011.shtml",
+      "imglink": "https://p1.img.cctvpic.com/fmspic/2025/10/11/37fb142bf01f47eb9acc13ed2d26ed71-1.jpg",
+      "durations": 120,
+      "TV": "其他",
+      "playtime": 1760178907000,
+      "uploadtime": "2025-10-11 18:35:07"
+    },
+    {
+      "id": "31252987",
+      "title": "[24小时]<font color=\"red\">求职</font>者遭遇“刷单”骗局 牵出“案中案”<font color=\"red\">诈骗</font>链条 男子<font color=\"red\">求职</font>遇到“高薪邀约” 掉入“刷单”陷阱",
+      "all_title": "[24小时]求职者遭遇“刷单”骗局 牵出“案中案”诈骗链条 男子求职遇到“高薪邀约” 掉入“刷单”陷阱",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2025/10/11/VIDEiDnjCX6vb7thUMh1vkHL251011.shtml",
+      "imglink": "https://p1.img.cctvpic.com/fmspic/2025/10/11/a4ce824f0b4844348708b19f80f1d8c7-1.jpg",
+      "durations": 121,
+      "TV": "其他",
+      "playtime": 1760197146000,
+      "uploadtime": "2025-10-11 23:39:06"
+    },
+    {
+      "id": "25439339",
+      "title": "[新闻直播间]湖北 阻击电信网络<font color=\"red\">诈骗</font>·网络直播<font color=\"red\">诈骗</font> <font color=\"red\">求职</font>者举报 <font color=\"red\">诈骗</font>团伙浮出水面",
+      "all_title": "[新闻直播间]湖北 阻击电信网络诈骗·网络直播诈骗 求职者举报 诈骗团伙浮出水面",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2021/04/14/VIDEagM1ZnBVM2zkx9bXRIdS210414.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2021/04/14/c2138a474450473490ba66376ff64c54-1.jpg",
+      "durations": 176,
+      "TV": "其他",
+      "playtime": 1618385974000,
+      "uploadtime": "2021-04-14 15:39:34"
+    },
+    {
+      "id": "31253118",
+      "title": "[朝闻天下]<font color=\"red\">求职</font>者遇“刷单”骗局 牵出“案中案”<font color=\"red\">诈骗</font>链条 <font color=\"red\">诈骗</font>团伙构建复杂“洗钱”链条 规避监管",
+      "all_title": "[朝闻天下]求职者遇“刷单”骗局 牵出“案中案”诈骗链条 诈骗团伙构建复杂“洗钱”链条 规避监管",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2025/10/12/VIDEsRRbLiL2rCBlNf7hfymE251012.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2025/10/12/6479a46beb444e0290f26f52dd17d866-1.jpg",
+      "durations": 100,
+      "TV": "其他",
+      "playtime": 1760222828000,
+      "uploadtime": "2025-10-12 06:47:08"
+    },
+    {
+      "id": "30847736",
+      "title": "[视频]<font color=\"red\">求职</font><font color=\"red\">诈骗</font>套路多 这些陷阱需警惕",
+      "all_title": "[视频]求职诈骗套路多 这些陷阱需警惕",
+      "channel": "CCTV-1综合频道",
+      "urllink": "https://tv.cctv.com/2025/02/13/VIDEHKzoC8jysq8OXARTrabU250213.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2025/02/13/da03cd6d4809457e94abb6295ccd94fe-1.jpg",
+      "durations": 232,
+      "TV": "CCTV-1高清",
+      "playtime": 1739456480000,
+      "uploadtime": "2025-02-13 22:21:20"
+    },
+    {
+      "id": "31252561",
+      "title": "[共同关注]<font color=\"red\">求职</font>者遭遇“刷单”骗局 牵出“案中案”<font color=\"red\">诈骗</font>链条 <font color=\"red\">诈骗</font>团伙构建复杂“洗钱”链条 规避监管",
+      "all_title": "[共同关注]求职者遭遇“刷单”骗局 牵出“案中案”诈骗链条 诈骗团伙构建复杂“洗钱”链条 规避监管",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2025/10/11/VIDEdlSsumlaBkMthK1sp85M251011.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2025/10/11/b971852ef3194c1a8a8c9c3bcbde083f-1.jpg",
+      "durations": 98,
+      "TV": "其他",
+      "playtime": 1760178907000,
+      "uploadtime": "2025-10-11 18:35:07"
+    },
+    {
+      "id": "31252986",
+      "title": "[24小时]<font color=\"red\">求职</font>者遭遇“刷单”骗局 牵出“案中案”<font color=\"red\">诈骗</font>链条 <font color=\"red\">诈骗</font>团伙构建复杂“洗钱”链条 规避监管",
+      "all_title": "[24小时]求职者遭遇“刷单”骗局 牵出“案中案”诈骗链条 诈骗团伙构建复杂“洗钱”链条 规避监管",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2025/10/11/VIDErQkV0gCQCQ0l5HktpBuy251011.shtml",
+      "imglink": "https://p1.img.cctvpic.com/fmspic/2025/10/11/c641d737b5404b6e9763182ffe5e1bfe-1.jpg",
+      "durations": 101,
+      "TV": "其他",
+      "playtime": 1760197147000,
+      "uploadtime": "2025-10-11 23:39:07"
+    }
+  ],
+  "flag": "ok",
+  "pageString": [
+    "<a href=\"Javascript:void(0);\" class=\"cur\" flag=\"1\" onclick=\"get_data('1','%E6%B1%82%E8%81%8C%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','求职 诈骗')\">1</a><a href=\"Javascript:void(0);\" flag=\"2\" class=\"page_cur\" onclick=\"get_data('2','%E6%B1%82%E8%81%8C%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','求职 诈骗')\">2</span></a><a href=\"Javascript:void(0);\" flag=\"3\" class=\"page_cur\" onclick=\"get_data('3','%E6%B1%82%E8%81%8C%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','求职 诈骗')\">3</span></a><a href=\"Javascript:void(0);\" flag=\"4\" class=\"page_cur\" onclick=\"get_data('4','%E6%B1%82%E8%81%8C%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','求职 诈骗')\">4</span></a><a href=\"Javascript:void(0);\" flag=\"5\" class=\"page_cur\" onclick=\"get_data('5','%E6%B1%82%E8%81%8C%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','求职 诈骗')\">5</span></a><a href=\"Javascript:void(0);\" flag=\"6\" class=\"page_cur\" onclick=\"get_data('6','%E6%B1%82%E8%81%8C%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','求职 诈骗')\">6</span></a><a href=\"Javascript:void(0);\" flag=\"7\" class=\"page_cur\" onclick=\"get_data('7','%E6%B1%82%E8%81%8C%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','求职 诈骗')\">7</span></a><a href=\"Javascript:void(0);\" flag=\"8\" class=\"page_cur\" onclick=\"get_data('8','%E6%B1%82%E8%81%8C%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','求职 诈骗')\">8</span></a><a href=\"Javascript:void(0);\" flag=\"9\" class=\"page_cur\" onclick=\"get_data('9','%E6%B1%82%E8%81%8C%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','求职 诈骗')\">9</span></a><a href=\"Javascript:void(0);\" flag=\"10\" class=\"page_cur\" onclick=\"get_data('10','%E6%B1%82%E8%81%8C%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','求职 诈骗')\">10</span></a><a href=\"Javascript:void(0);\" class=\"page-next page_cur\" flag=\"2\"  onclick=\"get_data('2','%E6%B1%82%E8%81%8C%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','求职 诈骗')\">下一页</a>"
+  ]
+}

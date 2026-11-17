@@ -1,0 +1,328 @@
+{
+  "total": 1853,
+  "totalpage": 50,
+  "timespans": {
+    "0": {
+      "NAME": "5分钟以内",
+      "COUNT": 692
+    },
+    "1": {
+      "NAME": "5-30分钟",
+      "COUNT": 351
+    },
+    "2": {
+      "NAME": "30-60分钟",
+      "COUNT": 804
+    },
+    "3": {
+      "NAME": "大于1小时",
+      "COUNT": 6
+    }
+  },
+  "daytimes": {
+    "2": {
+      "NAME": "一天以内",
+      "COUNT": 3
+    },
+    "3": {
+      "NAME": "一周以内",
+      "COUNT": 17
+    },
+    "4": {
+      "NAME": "一月以内",
+      "COUNT": 133
+    },
+    "5": {
+      "NAME": "一年以内",
+      "COUNT": 914
+    }
+  },
+  "channels": [
+    {
+      "NAME": "CCTV-13新闻频道",
+      "COUNT": 967
+    },
+    {
+      "NAME": "CCTV-2财经频道",
+      "COUNT": 535
+    },
+    {
+      "NAME": "CCTV-4中文国际频道",
+      "COUNT": 115
+    },
+    {
+      "NAME": "CCTV-12社会与法频道",
+      "COUNT": 113
+    },
+    {
+      "NAME": "CCTV-1综合频道",
+      "COUNT": 64
+    },
+    {
+      "NAME": "CCTV-6电影频道",
+      "COUNT": 27
+    },
+    {
+      "NAME": "视频频道",
+      "COUNT": 9
+    },
+    {
+      "NAME": "CCTV-14少儿频道",
+      "COUNT": 6
+    },
+    {
+      "NAME": "CCTV-7国防军事频道",
+      "COUNT": 4
+    },
+    {
+      "NAME": "CCTV特别节目",
+      "COUNT": 3
+    }
+  ],
+  "list": [
+    {
+      "id": "31823286",
+      "title": "[东方时空]警惕<font color=\"red\">AI</font><font color=\"red\">换脸</font>陷阱 打造虚假“白富美”人设 实施网恋<font color=\"red\">诈骗</font>",
+      "all_title": "[东方时空]警惕AI换脸陷阱 打造虚假“白富美”人设 实施网恋诈骗",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/09/22/VIDEzg5T2bbOn52rOrACLZvB260922.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2026/09/22/9ac13f288fcc4fb3948dc80a290b2789-1.jpg",
+      "durations": 242,
+      "TV": "其他",
+      "playtime": 1790081935000,
+      "uploadtime": "2026-09-22 20:58:55"
+    },
+    {
+      "id": "31822817",
+      "title": "[正点财经]警惕<font color=\"red\">AI</font><font color=\"red\">换脸</font>陷阱 打造虚假“白富美”人设 实施网恋<font color=\"red\">诈骗</font>",
+      "all_title": "[正点财经]警惕AI换脸陷阱 打造虚假“白富美”人设 实施网恋诈骗",
+      "channel": "CCTV-2财经频道",
+      "urllink": "https://tv.cctv.com/2026/09/22/VIDEcjtZzgrgguO9Ba5XhPsx260922.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2026/09/22/091e5ca99a0341b08b444da28ebc6667-1.jpg",
+      "durations": 242,
+      "TV": "其他",
+      "playtime": 1790067295000,
+      "uploadtime": "2026-09-22 16:54:55"
+    },
+    {
+      "id": "31822685",
+      "title": "[新闻直播间]警惕<font color=\"red\">AI</font><font color=\"red\">换脸</font>陷阱 打造虚假“白富美”人设 实施网恋<font color=\"red\">诈骗</font>",
+      "all_title": "[新闻直播间]警惕AI换脸陷阱 打造虚假“白富美”人设 实施网恋诈骗",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/09/22/VIDEJ3dIAxp0ZJPFvHg2FW5g260922.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2026/09/22/74c97c22d33a45efa5b4e9bd8481b8a8-1.jpg",
+      "durations": 241,
+      "TV": "其他",
+      "playtime": 1790063214000,
+      "uploadtime": "2026-09-22 15:46:54"
+    },
+    {
+      "id": "31823650",
+      "title": "[朝闻天下]警惕<font color=\"red\">AI</font><font color=\"red\">换脸</font>陷阱 打造虚假“白富美”人设 实施网恋<font color=\"red\">诈骗</font>",
+      "all_title": "[朝闻天下]警惕AI换脸陷阱 打造虚假“白富美”人设 实施网恋诈骗",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/09/23/VIDECq3NLNes1BfgdJOhmJbI260923.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2026/09/23/397db52717a040f78bbe473c385a58a1-1.jpg",
+      "durations": 187,
+      "TV": "其他",
+      "playtime": 1790120936000,
+      "uploadtime": "2026-09-23 07:48:56"
+    },
+    {
+      "id": "30541384",
+      "title": "[新闻直播间]警惕<font color=\"red\">AI</font><font color=\"red\">换脸</font><font color=\"red\">诈骗</font> <font color=\"red\">AI</font><font color=\"red\">换脸</font><font color=\"red\">诈骗</font>检测与预警技术正在测试中",
+      "all_title": "[新闻直播间]警惕AI换脸诈骗 AI换脸诈骗检测与预警技术正在测试中",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2024/08/18/VIDEMRSmg4vX0taMx5xUr8Lu240818.shtml",
+      "imglink": "https://p1.img.cctvpic.com/fmspic/2024/08/18/2a34208b810640c6b305936668d01d4f-1.jpg",
+      "durations": 113,
+      "TV": "其他",
+      "playtime": 1723949693000,
+      "uploadtime": "2024-08-18 10:54:53"
+    },
+    {
+      "id": "30541276",
+      "title": "[朝闻天下]警惕<font color=\"red\">AI</font><font color=\"red\">换脸</font><font color=\"red\">诈骗</font> <font color=\"red\">AI</font><font color=\"red\">换脸</font><font color=\"red\">诈骗</font>检测与预警技术正在测试中",
+      "all_title": "[朝闻天下]警惕AI换脸诈骗 AI换脸诈骗检测与预警技术正在测试中",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2024/08/18/VIDETZIYLklcNNKWJS8K7cgQ240818.shtml",
+      "imglink": "https://p1.img.cctvpic.com/fmspic/2024/08/18/9bb139da7277487faecda1d2923666a6-1.jpg",
+      "durations": 115,
+      "TV": "其他",
+      "playtime": 1723942614000,
+      "uploadtime": "2024-08-18 08:56:54"
+    },
+    {
+      "id": "30542285",
+      "title": "[24小时]警惕<font color=\"red\">AI</font><font color=\"red\">换脸</font><font color=\"red\">诈骗</font> <font color=\"red\">AI</font><font color=\"red\">换脸</font><font color=\"red\">诈骗</font>检测与预警技术正在测试中",
+      "all_title": "[24小时]警惕AI换脸诈骗 AI换脸诈骗检测与预警技术正在测试中",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2024/08/18/VIDE7fBwkoJ65wDqFEdlB6NP240818.shtml",
+      "imglink": "https://p5.img.cctvpic.com/fmspic/2024/08/18/895f0aff380b435199de97091e3a9e2d-1.jpg",
+      "durations": 113,
+      "TV": "其他",
+      "playtime": 1723995053000,
+      "uploadtime": "2024-08-18 23:30:53"
+    },
+    {
+      "id": "30171728",
+      "title": "[天下财经]关注<font color=\"red\">AI</font><font color=\"red\">换脸</font><font color=\"red\">诈骗</font> 学会几招 轻易识别<font color=\"red\">AI</font>“<font color=\"red\">换脸</font>换声”",
+      "all_title": "[天下财经]关注AI换脸诈骗 学会几招 轻易识别AI“换脸换声”",
+      "channel": "CCTV-2财经频道",
+      "urllink": "https://tv.cctv.com/2024/02/26/VIDEnr9xr5CstKmbZ9499ZQE240226.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2024/02/26/09b6454582074beebc3e30c6b1339542-1.jpg",
+      "durations": 62,
+      "TV": "其他",
+      "playtime": 1708923734000,
+      "uploadtime": "2024-02-26 13:02:14"
+    },
+    {
+      "id": "26859123",
+      "title": "[热线12]今日聚焦 <font color=\"red\">AI</font><font color=\"red\">换脸</font>乱象 视频效果逼真 骗子借助<font color=\"red\">AI</font><font color=\"red\">换脸</font>进行<font color=\"red\">诈骗</font>",
+      "all_title": "[热线12]今日聚焦 AI换脸乱象 视频效果逼真 骗子借助AI换脸进行诈骗",
+      "channel": "CCTV-12社会与法频道",
+      "urllink": "https://tv.cctv.com/2022/05/05/VIDEoxFWEnucpxFMkKQg69Xq220505.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2022/05/05/ada8b315532f42afa025f00999f69cdf-1.jpg",
+      "durations": 130,
+      "TV": "其他",
+      "playtime": 1651748427000,
+      "uploadtime": "2022-05-05 19:00:27"
+    },
+    {
+      "id": "30220072",
+      "title": "[新闻直播间]警惕“<font color=\"red\">AI</font><font color=\"red\">换脸</font>”<font color=\"red\">诈骗</font>陷阱 利用“<font color=\"red\">AI</font><font color=\"red\">换脸</font>”伪造色情视频进行敲诈",
+      "all_title": "[新闻直播间]警惕“AI换脸”诈骗陷阱 利用“AI换脸”伪造色情视频进行敲诈",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2024/03/17/VIDEi8xwkGHvwdXpuNVswtpn240317.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2024/03/17/93f34797fcdd422eb1ad9bb608569e8c-1.jpg",
+      "durations": 239,
+      "TV": "其他",
+      "playtime": 1710663187000,
+      "uploadtime": "2024-03-17 16:13:07"
+    },
+    {
+      "id": "31553944",
+      "title": "[今日环球]眼见不一定为“实” 警惕<font color=\"red\">AI</font><font color=\"red\">换脸</font><font color=\"red\">诈骗</font>",
+      "all_title": "[今日环球]眼见不一定为“实” 警惕AI换脸诈骗",
+      "channel": "CCTV-4中文国际频道",
+      "urllink": "https://tv.cctv.com/2026/04/14/VIDEBDddSIrwOY9Do9AOiVDh260414.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2026/04/14/d30c4649bf784fd58fe5a51c3858fb51-1.jpg",
+      "durations": 173,
+      "TV": "其他",
+      "playtime": 1776128235000,
+      "uploadtime": "2026-04-14 08:57:15"
+    },
+    {
+      "id": "30541610",
+      "title": "[新闻直播间]警惕<font color=\"red\">AI</font><font color=\"red\">换脸</font><font color=\"red\">诈骗</font> <font color=\"red\">AI</font><font color=\"red\">换脸</font><font color=\"red\">诈骗</font>检测与预警技术正在测试中",
+      "all_title": "[新闻直播间]警惕AI换脸诈骗 AI换脸诈骗检测与预警技术正在测试中",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2024/08/18/VIDEDYzRrf24vrOCLZLUwbCm240818.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2024/08/18/723519d5046943bf96fa8c04559cb06f-1.jpg",
+      "durations": 113,
+      "TV": "其他",
+      "playtime": 1723962653000,
+      "uploadtime": "2024-08-18 14:30:53"
+    },
+    {
+      "id": "26826622",
+      "title": "[第一时间]<font color=\"red\">AI</font><font color=\"red\">换脸</font>乱象 逼真视频竟是伪造 不法分子借助<font color=\"red\">AI</font><font color=\"red\">换脸</font><font color=\"red\">诈骗</font>",
+      "all_title": "[第一时间]AI换脸乱象 逼真视频竟是伪造 不法分子借助AI换脸诈骗",
+      "channel": "CCTV-2财经频道",
+      "urllink": "https://tv.cctv.com/2022/04/30/VIDEpdNf37IxyggVsb572elK220430.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2022/04/30/d6d1278bc2e046afba52999b6b4c5436-1.jpg",
+      "durations": 134,
+      "TV": "其他",
+      "playtime": 1651276844000,
+      "uploadtime": "2022-04-30 08:00:44"
+    },
+    {
+      "id": "30220302",
+      "title": "[共同关注]警惕“<font color=\"red\">AI</font><font color=\"red\">换脸</font>”<font color=\"red\">诈骗</font> 利用<font color=\"red\">AI</font><font color=\"red\">换脸</font>伪造色情视频进行敲诈勒索",
+      "all_title": "[共同关注]警惕“AI换脸”诈骗 利用AI换脸伪造色情视频进行敲诈勒索",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2024/03/17/VIDEd5762DJFI0SHW9Mkb9fJ240317.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2024/03/17/028ab45c69bb4517b9aee83669244c92-1.jpg",
+      "durations": 111,
+      "TV": "其他",
+      "playtime": 1710672067000,
+      "uploadtime": "2024-03-17 18:41:07"
+    },
+    {
+      "id": "26828045",
+      "title": "[天下财经]<font color=\"red\">AI</font><font color=\"red\">换脸</font>乱象 逼真视频竟是伪造 不法分子借助<font color=\"red\">AI</font><font color=\"red\">换脸</font><font color=\"red\">诈骗</font>",
+      "all_title": "[天下财经]AI换脸乱象 逼真视频竟是伪造 不法分子借助AI换脸诈骗",
+      "channel": "CCTV-2财经频道",
+      "urllink": "https://tv.cctv.com/2022/04/30/VIDEBsofNdAIvRjysGID86e1220430.shtml",
+      "imglink": "https://p1.img.cctvpic.com/fmspic/2022/04/30/9a9eecfb6a004f6eb1850804de339da4-1.jpg",
+      "durations": 133,
+      "TV": "其他",
+      "playtime": 1651292562000,
+      "uploadtime": "2022-04-30 12:22:42"
+    },
+    {
+      "id": "30170983",
+      "title": "[朝闻天下]警惕“<font color=\"red\">AI</font><font color=\"red\">换脸</font>换声”<font color=\"red\">诈骗</font> 仅通过一张照片就可快速实现“<font color=\"red\">AI</font><font color=\"red\">换脸</font>”",
+      "all_title": "[朝闻天下]警惕“AI换脸换声”诈骗 仅通过一张照片就可快速实现“AI换脸”",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2024/02/26/VIDELVkMU6sUvyY1wY8E6RMf240226.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2024/02/26/659411fff36048d6a7e7334d2e888602-1.jpg",
+      "durations": 79,
+      "TV": "其他",
+      "playtime": 1708901655000,
+      "uploadtime": "2024-02-26 06:54:15"
+    },
+    {
+      "id": "30541274",
+      "title": "[朝闻天下]警惕<font color=\"red\">AI</font><font color=\"red\">换脸</font><font color=\"red\">诈骗</font> <font color=\"red\">AI</font><font color=\"red\">换脸</font>解锁社交账号 非法获利40余万",
+      "all_title": "[朝闻天下]警惕AI换脸诈骗 AI换脸解锁社交账号 非法获利40余万",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2024/08/18/VIDErBPyECgfka5VBXgYjz7Z240818.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2024/08/18/92495ca121f04c5fa8672fe2569fa773-1.jpg",
+      "durations": 142,
+      "TV": "其他",
+      "playtime": 1723942614000,
+      "uploadtime": "2024-08-18 08:56:54"
+    },
+    {
+      "id": "30170986",
+      "title": "[朝闻天下]警惕“<font color=\"red\">AI</font><font color=\"red\">换脸</font>换声”<font color=\"red\">诈骗</font> 目前“<font color=\"red\">AI</font><font color=\"red\">换脸</font>”更多应用于娱乐视频录制",
+      "all_title": "[朝闻天下]警惕“AI换脸换声”诈骗 目前“AI换脸”更多应用于娱乐视频录制",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2024/02/26/VIDEOo76KudlhpRCw9eZZU9a240226.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2024/02/26/10beed92df234d1bbf240414e248eeeb-1.jpg",
+      "durations": 39,
+      "TV": "其他",
+      "playtime": 1708901895000,
+      "uploadtime": "2024-02-26 06:58:15"
+    },
+    {
+      "id": "30170133",
+      "title": "[共同关注]特别关注：“<font color=\"red\">换脸</font>换声”实施<font color=\"red\">诈骗</font> 警惕<font color=\"red\">AI</font>“深度造假” 学会几招 轻易识别<font color=\"red\">AI</font>“<font color=\"red\">换脸</font>换声”",
+      "all_title": "[共同关注]特别关注：“换脸换声”实施诈骗 警惕AI“深度造假” 学会几招 轻易识别AI“换脸换声”",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2024/02/25/VIDE2RoAwmH98Aw5rrNX0eBr240225.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2024/02/25/987aea8c471049a099e30c29291a2259-1.jpg",
+      "durations": 70,
+      "TV": "其他",
+      "playtime": 1708857976000,
+      "uploadtime": "2024-02-25 18:46:16"
+    },
+    {
+      "id": "30170121",
+      "title": "[共同关注]特别关注：“<font color=\"red\">换脸</font>换声”实施<font color=\"red\">诈骗</font> 警惕<font color=\"red\">AI</font>“深度造假” 目前<font color=\"red\">AI</font>“<font color=\"red\">换脸</font>”更多应用于娱乐视频录制",
+      "all_title": "[共同关注]特别关注：“换脸换声”实施诈骗 警惕AI“深度造假” 目前AI“换脸”更多应用于娱乐视频录制",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2024/02/25/VIDEHqqjH1adKaHcGuNHet7n240225.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2024/02/25/5fd15d8b6f8e414bb17b961349714a3b-1.jpg",
+      "durations": 93,
+      "TV": "其他",
+      "playtime": 1708857856000,
+      "uploadtime": "2024-02-25 18:44:16"
+    }
+  ],
+  "flag": "ok",
+  "pageString": [
+    "<a href=\"Javascript:void(0);\" class=\"cur\" flag=\"1\" onclick=\"get_data('1','AI%E6%8D%A2%E8%84%B8%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','AI换脸 诈骗')\">1</a><a href=\"Javascript:void(0);\" flag=\"2\" class=\"page_cur\" onclick=\"get_data('2','AI%E6%8D%A2%E8%84%B8%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','AI换脸 诈骗')\">2</span></a><a href=\"Javascript:void(0);\" flag=\"3\" class=\"page_cur\" onclick=\"get_data('3','AI%E6%8D%A2%E8%84%B8%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','AI换脸 诈骗')\">3</span></a><a href=\"Javascript:void(0);\" flag=\"4\" class=\"page_cur\" onclick=\"get_data('4','AI%E6%8D%A2%E8%84%B8%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','AI换脸 诈骗')\">4</span></a><a href=\"Javascript:void(0);\" flag=\"5\" class=\"page_cur\" onclick=\"get_data('5','AI%E6%8D%A2%E8%84%B8%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','AI换脸 诈骗')\">5</span></a><a href=\"Javascript:void(0);\" flag=\"6\" class=\"page_cur\" onclick=\"get_data('6','AI%E6%8D%A2%E8%84%B8%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','AI换脸 诈骗')\">6</span></a><a href=\"Javascript:void(0);\" flag=\"7\" class=\"page_cur\" onclick=\"get_data('7','AI%E6%8D%A2%E8%84%B8%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','AI换脸 诈骗')\">7</span></a><a href=\"Javascript:void(0);\" flag=\"8\" class=\"page_cur\" onclick=\"get_data('8','AI%E6%8D%A2%E8%84%B8%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','AI换脸 诈骗')\">8</span></a><a href=\"Javascript:void(0);\" flag=\"9\" class=\"page_cur\" onclick=\"get_data('9','AI%E6%8D%A2%E8%84%B8%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','AI换脸 诈骗')\">9</span></a><a href=\"Javascript:void(0);\" flag=\"10\" class=\"page_cur\" onclick=\"get_data('10','AI%E6%8D%A2%E8%84%B8%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','AI换脸 诈骗')\">10</span></a><a href=\"Javascript:void(0);\" class=\"page-next page_cur\" flag=\"2\"  onclick=\"get_data('2','AI%E6%8D%A2%E8%84%B8%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','AI换脸 诈骗')\">下一页</a>"
+  ]
+}

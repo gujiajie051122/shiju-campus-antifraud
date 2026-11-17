@@ -1,0 +1,83 @@
+/* Conversation view: compact site context around a familiar messenger. */
+.job-conversation{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;color:#222}
+.job-conversation .job-stage{max-width:1260px;padding:0 28px 18px;margin:auto}
+.job-context{height:64px;display:flex;align-items:center;gap:22px;font-size:12px;color:#85898c}
+.job-context>.job-back{font-size:12px;color:#666}
+.job-context>span{border-left:1px solid #ddd;padding-left:22px}
+.job-context>div{margin-left:auto;display:flex;align-items:center;gap:14px}
+.job-context .job-simulation-label{font-size:10px;color:#8d9396;border:1px solid #dce0e2;border-radius:3px;padding:3px 6px}
+.job-conversation .job-workspace{grid-template-columns:230px minmax(0,1fr);height:calc(100dvh - 204px);min-height:540px;max-height:850px;border:1px solid #d9dcde;border-radius:7px;box-shadow:0 15px 50px #18263310;position:relative}
+.job-conversation .job-contact-list{display:flex;flex-direction:column;background:#ebebeb;border-color:#dadada}
+.job-conversation .job-list-label{height:68px;padding:0 20px;font-size:16px;font-weight:500;color:#303436;flex-shrink:0}
+.job-list-label>span{font-size:11px;font-weight:400;color:#979b9d}
+.job-conversation .job-contact-selected{width:100%;border:0;border-radius:0;background:#d8d8d8;padding:17px 16px;position:relative;text-align:left;color:#222;gap:11px}
+.job-conversation .job-contact-selected strong{font-size:14px;font-weight:500}
+.job-conversation .job-contact-selected p{font-size:11px;color:#7a7d7f;margin:8px 0 0}
+.job-contact-selected time{position:absolute;right:12px;top:18px;font-size:10px;color:#929597}
+.job-conversation .job-avatar{width:40px;height:40px;border-radius:4px;object-fit:cover;display:block;background:#ddd}
+.job-sidebar-bottom{margin-top:auto;padding:18px;display:flex;gap:9px;align-items:center;color:#9a9d9f;border-top:1px solid #ddd}
+.job-sidebar-bottom span{font-size:10px;line-height:1.6}
+.job-conversation .job-chat{background:#f5f5f5;position:relative;height:auto;min-height:0}
+.job-conversation .job-chat>header{height:68px;padding:0 25px;background:#f5f5f5;border-bottom:1px solid #e5e5e5;position:relative;z-index:3}
+.job-chat-person{background:none;border:0;padding:0;text-align:left;color:#222}
+.job-conversation .job-chat-person strong{font-size:17px;font-weight:500;letter-spacing:0}
+.job-conversation .job-chat-person span{display:flex;align-items:center;gap:3px;font-size:10px;margin-top:4px;color:#929596}
+.job-chat-actions{display:flex;align-items:center;gap:19px}
+.job-chat-actions>button{background:none;border:0;padding:6px 0;color:#626769;display:flex;gap:5px;align-items:center}
+.job-conversation .job-chat-actions>button>span{font-size:11px;color:#777;margin:0}
+.job-menu-dismiss{position:fixed;inset:0;background:transparent;border:0;z-index:4}
+.job-menu{position:absolute;right:15px;top:56px;z-index:5;background:white;border:1px solid #ddd;border-radius:5px;box-shadow:0 8px 24px #0002;width:215px;padding:6px}
+.job-menu>button{border:0;background:white;display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:12px;font-size:13px;text-align:left;color:#333}
+.job-menu>button:hover{background:#f2f2f2}
+.job-menu>span{display:block;border-top:1px solid #eee;padding:12px 12px 5px;font-size:10px;color:#999;margin-top:4px}
+.job-conversation .job-chat-scroll{padding:8px 30px 25px;scrollbar-gutter:stable}
+.job-conversation .job-chat-date{font-size:11px;color:#aaa;margin:14px 0 16px}
+.job-chat-system{text-align:center;font-size:11px;color:#b1b1b1;margin:0 0 24px;line-height:1.8}
+.job-conversation .job-message{margin:18px 0;gap:12px}
+.job-conversation .job-message>div{max-width:75%}
+.job-avatar-button{padding:0;border:0;background:none;height:40px;flex-shrink:0}
+.job-avatar-button:disabled{opacity:1!important}
+.job-conversation .job-bubble{border:1px solid #e9e9e9;border-radius:4px;padding:10px 13px;font-size:14px;line-height:1.65;color:#222;background:white}
+.job-conversation .job-bubble:before{top:14px;width:8px;height:8px}
+.job-conversation .job-mine .job-bubble{background:#95ec69;border-color:#87dc61}
+.job-conversation .job-mine .job-bubble:before{background:#95ec69}
+.job-posting-card{display:flex;flex-direction:column;text-align:left;gap:8px;background:white;border:1px solid #e5e5e5;width:280px;max-width:100%;border-radius:4px;padding:16px 16px 0;margin-top:14px;color:#333}
+.job-posting-card .job-card-org{font-size:11px;color:#949a9e}
+.job-posting-card strong{font-size:17px;font-weight:500}
+.job-posting-card>span{font-size:11px;color:#85898b}
+.job-posting-card footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #eee;font-size:10px;color:#92989b;margin-top:5px;padding:9px 0;width:100%}
+.job-conversation .job-file-message{width:280px;padding:15px 16px;margin-top:13px;gap:18px;min-height:87px}
+.job-conversation .job-file-message strong{font-size:13px;line-height:1.6;color:#333}
+.job-conversation .job-file-message small{font-size:10px;margin-top:10px;color:#aaa}
+.job-pdf-icon{flex:none!important;background:#e77961;color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:3px;width:42px;height:48px}
+.job-pdf-icon b{font-size:8px;letter-spacing:1px;font-weight:500}
+.job-conversation .job-composer{padding:11px 24px 14px;border-color:#e5e5e5;position:relative;background:white}
+.job-conversation .job-composer-tools{color:#4f5355}
+.job-conversation .job-composer-tools>span{gap:19px}
+.job-conversation .job-composer-tools small{font-size:10px;color:#a8adaf}
+.job-conversation .job-composer-tools button{padding:3px}
+.job-conversation .job-composer textarea{height:62px;min-height:62px!important;padding:9px 0;font-size:14px;color:#333}
+.job-conversation .job-composer textarea::placeholder{color:#b7babb;font-size:12px}
+.job-conversation .job-send-row>small{font-size:10px;color:#b5b9bb}
+.job-conversation .job-send-row>button{background:#e9e9e9;color:#07a34a;font-size:12px;border-radius:3px;padding:7px 24px;display:block}
+.job-conversation .job-send-row>button:disabled{color:#b4b8ba;opacity:1}
+.job-emoji{position:absolute;left:20px;bottom:145px;background:white;box-shadow:0 4px 20px #0002;border:1px solid #ddd;padding:8px;border-radius:5px;display:flex}
+.job-emoji button{font-size:22px;border:0;background:none;padding:7px}
+.job-hint{display:flex;align-items:flex-start;gap:10px;padding:15px 22px;background:white;border-bottom:1px solid #e2e2e2;color:#667078}
+.job-hint>svg{flex:none;margin-top:3px}
+.job-hint p{font-size:12px;line-height:1.8;margin:0}
+.job-hint button{border:0;background:none;color:#999;margin-left:auto}
+.job-session-foot{display:flex;justify-content:space-between;gap:12px;font-size:10px;color:#a1a6a9;padding:13px 1px;line-height:1.7}
+.job-conversation .job-notice{font-size:10px;margin:0}
+.job-conversation .job-modal-backdrop{background:#18202a66;backdrop-filter:blur(2px)}
+.job-conversation .job-drawer{margin-left:auto;margin-right:max(20px,calc((100vw - 1200px)/2));max-width:380px;height:76dvh;padding:24px 0;box-shadow:0 20px 80px #0003}
+.job-conversation .job-desk{border:0;overflow:visible}
+.job-conversation .job-desk-tabs{padding-right:55px}
+.job-conversation .job-desk-tabs button{padding:10px 0 18px}
+.job-conversation .job-desk-body{padding:25px}
+.job-conversation .job-desk-body h2{font-size:22px;color:#333}
+.job-conversation .job-desk-body p{font-size:12px;line-height:1.9}
+.job-conversation .job-modal-close{z-index:2}
+@media(min-width:1450px){.job-conversation .job-workspace{grid-template-columns:250px minmax(0,1fr)}}
+@media(max-width:760px){.job-conversation .job-workspace{grid-template-columns:185px minmax(0,1fr)}.job-conversation .job-contact-selected{padding:15px 12px}.job-contact-selected time{display:none}.job-conversation .job-chat-scroll{padding:8px 20px 20px}.job-conversation .job-message>div{max-width:82%}.job-conversation .job-composer-tools small{font-size:8px}}
+@media(max-width:600px){.job-conversation .job-stage{padding:0 0 5px}.job-context{height:49px;padding:0 14px;gap:12px}.job-context>span{display:none}.job-context>div{gap:8px}.job-conversation .job-workspace{display:flex;height:calc(100dvh - 172px);min-height:470px;max-height:none;border-radius:0;border-left:0;border-right:0;box-shadow:none}.job-conversation .job-contact-list{display:none}.job-conversation .job-chat{height:100%;width:100%}.job-conversation .job-chat>header{height:61px;padding:0 17px}.job-chat-actions{gap:17px}.job-conversation .job-chat-scroll{padding:5px 15px 20px}.job-conversation .job-message{gap:9px}.job-conversation .job-message>div{max-width:calc(100% - 57px)}.job-conversation .job-avatar{width:35px;height:35px}.job-conversation .job-bubble{font-size:14px;padding:9px 12px}.job-conversation .job-file-message,.job-posting-card{width:245px}.job-conversation .job-composer{padding:9px 14px 12px}.job-conversation .job-composer textarea{height:45px;min-height:45px!important}.job-conversation .job-composer-tools small{font-size:8px}.job-session-foot{padding:9px 14px}.job-session-foot>span:first-child{display:none}.job-conversation .job-drawer{margin:0;max-width:100%;height:auto;max-height:85dvh}.job-hint{padding:12px}.job-conversation .job-notice{padding:0 14px}}

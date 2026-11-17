@@ -1,0 +1,83 @@
+/* Approved campus messenger concept. Scoped to the active conversation. */
+.job-conversation .site-nav{height:76px;min-height:76px;background:#fff;color:#202629;border-bottom:1px solid #e4e6e7;padding:0 max(28px,calc((100vw - 1400px)/2));gap:24px}
+.job-conversation .site-logo .shiju-logo{width:132px;filter:none}
+.job-conversation .site-tagline{display:none}
+.job-conversation .site-nav nav{gap:32px;height:100%;align-items:center}
+.job-conversation .site-nav nav a{color:#292f32;font-size:15px;font-weight:500;padding:26px 0 23px;border-bottom:3px solid transparent}
+.job-conversation .site-nav nav a[aria-current=page]{color:#173f32;border-bottom-color:#173f32}
+.job-conversation .job-stage{max-width:1600px;padding:0 26px 0}
+.job-context{height:66px;color:#353b3e;font-size:14px;gap:22px}
+.job-context>.job-back{font-size:14px;color:#30383c}
+.job-context>span{font-weight:500;padding-left:25px;border-color:#9ba1a5}
+.job-context>div{color:#7e858a;font-size:12px}
+.job-context .job-simulation-label{border:0;border-left:1px solid #c2c6c8;border-radius:0;font-size:12px;padding:0 0 0 14px;color:#7e858a}
+.job-conversation .job-workspace{grid-template-columns:22% minmax(0,1fr);height:calc(100dvh - 185px);min-height:540px;max-height:940px;border-color:#d2d6d9;border-radius:9px;box-shadow:0 2px 4px #111b2308}
+.job-conversation .job-contact-list{display:flex;background:#eceef1;border-color:#d2d6d9;min-width:0}
+.job-contact-search{height:66px;padding:14px 18px;display:flex;gap:9px;align-items:center;position:relative;color:#7c848b;flex-shrink:0}
+.job-contact-search>svg{position:absolute;left:30px;pointer-events:none}
+.job-contact-search input{min-width:0;width:100%;height:36px;padding:0 10px 0 35px;background:#f7f8fa;border:1px solid #d1d6da;border-radius:5px;color:#343c43;font:inherit;font-size:13px;outline-offset:2px}
+.job-conversation .job-contact-selected{background:#d7e2de;padding:17px 18px;gap:12px;align-items:center}
+.job-contact-selected>div{min-width:0;flex:1;padding-right:28px}
+.job-conversation .job-contact-selected strong{font-weight:600;font-size:14px}
+.job-conversation .job-contact-selected p{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width:100%;margin:8px 0 0;font-size:12px;color:#666f75}
+.job-conversation .job-contact-selected time{top:20px;right:14px;font-size:10px;color:#8d969b}
+.job-conversation .job-contact-selected .job-avatar{width:46px;height:46px}
+.job-no-contact{padding:20px;text-align:center;color:#777f84;font-size:12px}
+.job-sidebar-bottom{border:0;color:#8a949a;gap:7px;padding:18px 14px}
+.job-sidebar-bottom span{font-size:10px}
+.job-conversation .job-chat{background:#fff;flex-direction:column}
+.job-conversation .job-chat>header{height:66px;min-height:66px;background:#f9f9fa;border-color:#dce0e2;justify-content:center;padding:0 22px}
+.job-chat-person{text-align:center;max-width:65%}
+.job-conversation .job-chat-person strong{font-size:18px;font-weight:500}
+.job-conversation .job-chat-person span{justify-content:center;font-size:11px;margin-top:5px;color:#848b8f}
+.job-chat-actions{position:absolute;right:23px;top:18px;gap:20px}
+.job-chat-history{position:relative;flex:1;min-height:0;display:flex;background:#dce5e8 url('/design/chat-campus.webp') center center/cover no-repeat;isolation:isolate}
+.job-chat-history::before{content:'';position:absolute;inset:0;background:rgba(245,248,250,.28);z-index:-1;pointer-events:none}
+.job-wallpaper-brand{position:absolute;right:22px;bottom:13px;font-size:19px;letter-spacing:.1em;color:#fff9;font-weight:600;pointer-events:none;text-shadow:0 1px 4px #24342d25}
+.job-conversation .job-chat-scroll{padding:0 30px 25px;width:100%;background:transparent;scrollbar-gutter:stable;scrollbar-color:#ffffff88 transparent}
+.job-conversation .job-chat-date{margin:20px 0 24px;color:#535b60;font-size:12px;text-align:center}
+.job-chat-date time{padding:4px 10px;background:#ffffffb8;border-radius:5px;display:inline-block}
+.job-conversation .job-message{gap:13px;margin:17px 0;position:relative}
+.job-conversation .job-message>div{max-width:min(72%,480px)}
+.job-conversation .job-avatar{width:42px;height:42px;border-radius:4px;box-shadow:0 1px 2px #14232c08;object-fit:cover}
+.job-avatar-button{height:42px}
+.job-conversation .job-bubble{font-size:17px;line-height:1.55;padding:10px 14px;border:0;border-radius:6px;color:#202327;box-shadow:0 1px 2px #17302c10;text-align:left}
+.job-conversation .job-bubble::before{top:14px;width:9px;height:9px;left:-4px}
+.job-conversation .job-mine .job-bubble{background:#95ec69;border:0}
+.job-conversation .job-mine .job-bubble::before{left:auto;right:-4px;background:#95ec69}
+.job-quote{background:#f1f2f2ed;display:block;text-align:left;line-height:1.6;font-size:12px;color:#677077;margin-top:5px;padding:7px 11px;border-radius:4px;max-width:100%;overflow-wrap:anywhere;white-space:pre-wrap}
+.job-quote-action{align-self:center;flex:none;opacity:0;background:#fff;border:0;color:#6c757c;border-radius:4px;padding:6px;transition:opacity .15s}
+.job-message:hover .job-quote-action,.job-quote-action:focus-visible{opacity:1}
+.job-conversation .job-posting-card{margin:0;width:280px;border:0;border-radius:6px;box-shadow:0 1px 2px #17302c15;padding:13px 15px 0;gap:6px;position:relative}
+.job-posting-card:before,.job-conversation .job-file-message:before{content:'';position:absolute;left:-4px;top:15px;width:9px;height:9px;transform:rotate(45deg);background:#fff}
+.job-conversation .job-posting-card strong{font-size:15px;font-weight:500}
+.job-conversation .job-posting-card .job-card-org{font-size:11px;color:#7e898e}
+.job-conversation .job-posting-card footer{font-size:10px;color:#828a8e}
+.job-conversation .job-file-message{margin:0;width:280px;min-height:78px;padding:13px 16px;border:0;border-radius:6px;position:relative;box-shadow:0 1px 2px #17302c15}
+.job-conversation .job-file-message strong{font-size:14px;color:#292f33;font-weight:500;overflow-wrap:anywhere}
+.job-conversation .job-file-message small{font-size:11px;color:#858c91;margin-top:5px}
+.job-pdf-icon{background:#ed615d;width:40px;height:48px;border-radius:3px;gap:2px}
+.job-conversation .job-typing{display:inline-block;font-size:12px;background:#ffffffd9;color:#687177;border-radius:4px;padding:5px 10px}
+.job-conversation .job-composer{padding:10px 18px 12px;background:#fafafa;border-color:#d8dcdf;flex:none}
+.job-conversation .job-composer-tools{margin-bottom:8px;gap:16px;color:#37424a}
+.job-conversation .job-composer-tools>span{gap:18px}
+.job-conversation .job-composer-tools button{padding:1px;align-items:center}
+.job-conversation .job-composer-tools .job-verify-tool{font-size:12px;gap:5px;color:#46545b}
+.job-input-row{display:grid;grid-template-columns:minmax(0,1fr) 78px;gap:12px;position:relative;align-items:end}
+.job-conversation .job-composer textarea{border:1px solid #d4dadd!important;border-radius:5px;box-shadow:inset 0 1px 2px #24354103!important;background:#fff!important;height:54px;min-height:54px!important;max-height:80px;padding:9px 12px;font-size:14px;line-height:1.6}
+.job-conversation .job-composer textarea::placeholder{font-size:13px;color:#a0a8ae}
+.job-conversation .job-composer textarea:focus-visible{border-color:#829e93!important;outline:2px solid #315b4c33!important;outline-offset:1px}
+.job-conversation .job-send-row{display:block;padding-bottom:2px}
+.job-conversation .job-send-row>small{position:absolute;right:104px;bottom:7px;pointer-events:none;font-size:9px;color:#939ca2}
+.job-conversation .job-send-row>button{padding:9px 20px;background:#184d3c;color:#fff;font-size:13px;border-radius:4px;width:100%}
+.job-conversation .job-send-row>button:disabled{background:#dce3df;color:#93a59c}
+.job-composer-quote{grid-column:1/-1;display:flex;align-items:center;gap:12px;color:#647078;background:#eceff0;padding:7px 10px;border-radius:4px;font-size:12px;min-width:0}
+.job-composer-quote span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
+.job-composer-quote button{border:0;background:transparent;color:#737e84;display:flex;padding:4px}
+.job-emoji{bottom:108px}
+.job-session-foot{font-size:10px;padding:10px 0;color:#9aa2a6}
+.job-conversation button:focus-visible{outline:2px solid #56786a;outline-offset:3px}
+@media(min-width:1450px){.job-conversation .job-workspace{grid-template-columns:22% minmax(0,1fr)}}
+@media(max-width:900px){.job-conversation .site-nav nav{gap:18px}.job-conversation .job-workspace{grid-template-columns:190px minmax(0,1fr)}.job-conversation .job-contact-selected{padding:15px 12px}.job-contact-selected>div{padding-right:0}.job-contact-selected time{display:none}.job-conversation .job-chat-scroll{padding-inline:20px}.job-conversation .job-send-row>small{display:none}.job-conversation .job-message>div{max-width:76%}}
+@media(max-width:640px){.job-conversation .site-nav{height:105px;min-height:105px;padding:12px 16px 0;gap:10px}.job-conversation .site-logo .shiju-logo{width:100px}.job-conversation .site-nav nav{height:auto;width:100%;gap:0;justify-content:space-between}.job-conversation .site-nav nav a{font-size:12px;min-height:34px;padding:0 0 10px}.job-conversation .job-stage{padding:0}.job-context{height:47px;padding:0 15px}.job-context>.job-back{font-size:12px}.job-context>span{display:none}.job-context>div{font-size:10px;gap:10px}.job-context .job-simulation-label{font-size:10px}.job-conversation .job-workspace{height:calc(100dvh - 152px);min-height:420px;max-height:none;display:flex;border-radius:0;border-left:0;border-right:0}.job-conversation .job-contact-list{display:none}.job-conversation .job-chat>header{height:58px;min-height:58px;padding:0 15px}.job-chat-actions{right:16px;top:14px;gap:15px}.job-conversation .job-chat-person strong{font-size:16px}.job-conversation .job-chat-person span{font-size:10px}.job-conversation .job-chat-scroll{padding:0 14px 25px}.job-conversation .job-chat-date{font-size:11px;margin:17px 0 22px}.job-conversation .job-message{gap:10px;margin:17px 0}.job-conversation .job-message>div{max-width:calc(100% - 74px)}.job-conversation .job-avatar{width:36px;height:36px}.job-avatar-button{height:36px}.job-conversation .job-bubble{font-size:14px;padding:9px 12px}.job-quote-action{opacity:.65;position:absolute;right:0;top:0;padding:3px;background:#fffc}.job-mine .job-quote-action{right:auto;left:0}.job-conversation .job-file-message,.job-conversation .job-posting-card{width:245px;max-width:calc(100% - 57px)}.job-conversation .job-composer{padding:9px 12px 12px}.job-conversation .job-composer textarea{height:44px;min-height:44px!important;padding:8px 10px}.job-input-row{grid-template-columns:minmax(0,1fr) 60px;gap:9px}.job-conversation .job-send-row>button{padding:9px 10px;font-size:12px}.job-conversation .job-composer-tools .job-verify-tool{font-size:11px}.job-session-foot{display:none}.job-wallpaper-brand{font-size:16px;bottom:10px;right:14px}.job-conversation .job-drawer{margin:0;max-width:100%;height:auto;max-height:85dvh}.job-emoji{bottom:97px}.job-conversation .job-notice{margin:10px 0;padding:0 12px}}
+@media(prefers-reduced-motion:reduce){.job-quote-action{transition:none}.job-chat-scroll{scroll-behavior:auto}}

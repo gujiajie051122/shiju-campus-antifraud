@@ -1,0 +1,39 @@
+{
+  "desktop_css": [
+    1487,
+    1057
+  ],
+  "mobile_css": [
+    390,
+    844
+  ],
+  "desktop_panels": 150,
+  "mobile_panels": 150,
+  "single_panel": true,
+  "horizontal_overflow": false,
+  "broken_images": 0,
+  "console_errors": 0,
+  "dialog_mobile": {
+    "width": 350,
+    "height": 608.5546875,
+    "x": 20,
+    "y": 117.79947662353516
+  },
+  "verified": [
+    "dialog_escape",
+    "dialog_close",
+    "background_unlock",
+    "return_focus",
+    "tab_arrow",
+    "tab_home_end",
+    "chapter_reload",
+    "quiz_wrong_retry_correct",
+    "saved_answer_reload",
+    "finish",
+    "next_course"
+  ],
+  "http": "passed; zero provider calls",
+  "tests": 120,
+  "typecheck": "passed",
+  "build": "passed"
+}

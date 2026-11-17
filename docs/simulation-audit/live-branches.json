@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-11-17",
+  "target": "http://127.0.0.1:5173/simulation",
+  "rows": [
+    {
+      "label": "多项提问",
+      "input": {
+        "history": [],
+        "checks": [],
+        "mode": "learning",
+        "opened": false,
+        "text": "具体做什么，工资怎么结算，每周几小时？"
+      },
+      "engine": "model",
+      "warning": null,
+      "budgetCode": null,
+      "reply": "主要整理公开活动资料，辅助撰写校园活动文案。\n\n报酬单价和结算周期还没有书面约定，这两项需要在开始工作前确认。\n\n每周约6小时，具体时段还需要双方商量，不要求现在作出决定。",
+      "allReplyPartsFromFixedMenu": true,
+      "elapsedMs": 5273
+    },
+    {
+      "label": "愿意继续",
+      "input": {
+        "history": [],
+        "checks": [],
+        "mode": "learning",
+        "opened": true,
+        "text": "我愿意交298元，下一步怎么操作？"
+      },
+      "engine": "model",
+      "warning": null,
+      "budgetCode": null,
+      "reply": "通知里写了岗前培训费298元，你可以先看清楚里面的要求。\n\n报酬单价和结算周期还没有书面约定，这两项需要在开始工作前确认。\n\n好的，你可以先暂停。如果不合适，也可以结束这次沟通。",
+      "allReplyPartsFromFixedMenu": true,
+      "elapsedMs": 17969
+    },
+    {
+      "label": "犹豫缺钱",
+      "input": {
+        "history": [],
+        "checks": [],
+        "mode": "learning",
+        "opened": true,
+        "text": "我现在钱不够，能不能先开始工作，以后再说？"
+      },
+      "engine": "rules",
+      "warning": "已使用情境预设回复",
+      "budgetCode": null,
+      "reply": "主要整理公开活动资料，辅助撰写校园活动文案。",
+      "allReplyPartsFromFixedMenu": true,
+      "elapsedMs": 18048
+    },
+    {
+      "label": "明确拒绝",
+      "input": {
+        "history": [],
+        "checks": [],
+        "mode": "learning",
+        "opened": true,
+        "text": "我不交钱了，不做了。"
+      },
+      "engine": "rules",
+      "warning": null,
+      "budgetCode": null,
+      "reply": "好的，你可以先暂停。如果不合适，也可以结束这次沟通。",
+      "allReplyPartsFromFixedMenu": true,
+      "elapsedMs": 22
+    },
+    {
+      "label": "软件核验",
+      "input": {
+        "history": [],
+        "checks": [],
+        "mode": "independent",
+        "opened": true,
+        "text": "怎么安装这个软件，需要共享什么？"
+      },
+      "engine": "model",
+      "warning": null,
+      "budgetCode": null,
+      "reply": "通知写的是安装协作助手并开启屏幕共享，不收培训费。你可以先看清楚具体要求。",
+      "allReplyPartsFromFixedMenu": true,
+      "elapsedMs": 17467
+    },
+    {
+      "label": "核实后质疑",
+      "input": {
+        "history": [],
+        "checks": [
+          "contact",
+          "directory"
+        ],
+        "mode": "independent",
+        "opened": true,
+        "text": "公开渠道说你不在授权名单，附件的软件要求也不一致，你怎么解释？"
+      },
+      "engine": "model",
+      "warning": null,
+      "budgetCode": null,
+      "reply": "你查到的授权结果和我自称的身份不一致。这种情况下，可以先停止办理，再通过工作室公开渠道确认。\n\n附件中的私发软件和屏幕共享要求，与你查到的公开邮箱办理方式不一致。可以先暂停，不用现在安装。",
+      "allReplyPartsFromFixedMenu": true,
+      "elapsedMs": 14459
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "files": {
+    "scene-jobs": {
+      "source": "exec-8d6ec693-6d61-41cc-9392-d47035dbb1a7.png",
+      "bytes": 62594,
+      "sha256": "2e900244e4c070ada455e102f2beee27ebac996323fd9e00f71b3401bdb9ebb4"
+    },
+    "scene-job-fee": {
+      "source": "exec-ae0f50d2-749e-46f0-8c3e-6eb63c716c8b.png",
+      "bytes": 69184,
+      "sha256": "b3558099d8868f84ba021d916eb6cfe0b5cdf0fdea5b2ab1e406de1dc3938cf7"
+    },
+    "scene-job-channel": {
+      "source": "exec-3e7bcc9e-f08b-45e3-95f1-76428fc1d11f.png",
+      "bytes": 71284,
+      "sha256": "9e8e0cec18ebfdc066b6449f0a4afd66406f93038d4b1dcb31cbcb0140ee3844"
+    },
+    "scene-job-app": {
+      "source": "exec-9e1b66de-a0ed-4d68-aa47-e8f67f9fef2b.png",
+      "bytes": 59116,
+      "sha256": "d61ac2af2ae425044c2d44984b4c3ff361d0a80011a2476249b60057285d0a20"
+    },
+    "scene-job-record": {
+      "source": "exec-04754406-f282-4cfd-9e79-b094e9143ca0.png",
+      "bytes": 70988,
+      "sha256": "3755ea66cc754ea1728f43e9718f6d9e8d792da386350fbeb93f37ebe129b0d4"
+    },
+    "scene-rewards": {
+      "source": "exec-b9011b77-5b93-4870-a69a-fdd3b3412f66.png",
+      "bytes": 68224,
+      "sha256": "d563017ce13ebf723a6a19a8424a3672875172ec364d8a653e95e6b3e9f9bd78"
+    },
+    "scene-reward-upgrade": {
+      "source": "exec-b7863fc1-c622-40c8-8eab-278e30fa9381.png",
+      "bytes": 67180,
+      "sha256": "8f85dba833cfbec0c5a79b9b3f4cc4e999d5b78f0cb4bff10fa6442ebdae300f"
+    },
+    "scene-reward-freeze": {
+      "source": "exec-0b82e0d2-5a54-4fb6-819e-c743297e3aaa.png",
+      "bytes": 70564,
+      "sha256": "52e81c6bd6c849d7c315e1fd288a4aeeeea0ea0dcc8518ccc090c45a14db70ed"
+    },
+    "scene-cost": {
+      "source": "exec-b60a76ec-14ca-42b0-968b-07800d1e9eaa.png",
+      "bytes": 61912,
+      "sha256": "c907138ef8528437455543dfc7f37ad78ba279ac143cc8ffe9ca547c1d48e147"
+    },
+    "scene-reward-proof": {
+      "source": "exec-5fde5605-0011-4bb4-b20a-f3fce21cee85.png",
+      "bytes": 64664,
+      "sha256": "5a7e5006b91940c25e09972bdf2c497b9c1b499da75f12f65a9d8b123997511a"
+    },
+    "scene-trade-platform": {
+      "source": "exec-d46def13-e045-497b-a0e2-4c14fba31c23.png",
+      "bytes": 75490,
+      "sha256": "1635d9f84859db2d5476b30cb94fe613a4ef4bdad7b8437afb6bdd3ca72b625d"
+    },
+    "scene-trade-link": {
+      "source": "exec-1190d1e9-ffa9-4668-a599-3db2203db05e.png",
+      "bytes": 85318,
+      "sha256": "43d3719fb80052cebcd39f43383184801d2e1e8a9e5798bdab3313415a729e80"
+    },
+    "scene-trade-frozen": {
+      "source": "exec-91a06bf4-45cd-4a5c-a1c3-f2b6a28ae213.png",
+      "bytes": 56406,
+      "sha256": "af8244cc80304cc731eedb5ee2ff177da423f8b07cfb584ca8825731abc35b0c"
+    },
+    "scene-trade-screen": {
+      "source": "exec-137f7447-b964-4171-8d09-7b2886069312.png",
+      "bytes": 82820,
+      "sha256": "d7e01c6a3121be4bf77521ef7c46173f4815a4f9153680ed231dd77c7b0cf029"
+    },
+    "scene-trade-record": {
+      "source": "exec-796b19ce-b12c-49e0-86dc-29d57c2bc5bf.png",
+      "bytes": 89758,
+      "sha256": "fc14ed6ee6d0a86a78131d80d8253275a6ae024494f6a995d9adc3d21233ac31"
+    },
+    "scene-service-call": {
+      "source": "exec-cdbddc09-0417-407d-b634-173f3286a9ca.png",
+      "bytes": 63676,
+      "sha256": "45dd1a10cc9197b0210a10f5f9180c2425bab50d254e9d9a466fa84f52b2b76b"
+    },
+    "scene-service-code": {
+      "source": "exec-347f558c-17d2-4cff-8de9-5d586f1f50f1.png",
+      "bytes": 67300,
+      "sha256": "889c20676af418c31346ab406facf734656dee158c7c3d33ddfe73d8ef309e11"
+    },
+    "scene-service-share": {
+      "source": "exec-d4164272-382c-4328-aa08-d9aba5c41ea8.png",
+      "bytes": 74882,
+      "sha256": "8c30022be2ec92241ab44062c75e9b9ced3383130bee937ce8e1cf1ff77f3193"
+    },
+    "scene-service-urgency": {
+      "source": "exec-f0809aea-742c-40d4-83f6-8aa6f96aba4f.png",
+      "bytes": 65962,
+      "sha256": "150db6f464009bf7a0f55f2cf287c1ae7ee60946ebec74e137344c21d1db3ec8"
+    },
+    "scene-service-app": {
+      "source": "exec-016d4378-3d68-47f1-8d92-1531597afcc1.png",
+      "bytes": 71496,
+      "sha256": "151300b057a4ec165c7fe5ed697be84f86e00d5a92c99abc07ec82cbb1a0ecb5"
+    },
+    "scene-identity": {
+      "source": "exec-b4608915-691e-42ac-885f-0819db6d81f1.png",
+      "bytes": 55324,
+      "sha256": "22bbdc4e8e9bd5ff8b285743152ee0fb52dae12cf33a3314f7bc96f9fafbc8f1"
+    },
+    "scene-identity-voice": {
+      "source": "exec-1baf9347-8d51-4bcf-8c20-c333fd0ea559.png",
+      "bytes": 58040,
+      "sha256": "64faa8d8e17141781ed9e225c3dba2e2a6efe77dc51e376ca35f50f0b5847d6a"
+    },
+    "scene-identity-secret": {
+      "source": "exec-87588705-8f31-445c-8505-a3e6faff5fc7.png",
+      "bytes": 97156,
+      "sha256": "c9f2f535ed25a8906c2e8cb45d4b744f7ec453878bbf050ba18182065901a210"
+    },
+    "scene-identity-callback": {
+      "source": "exec-d75db089-82a6-4bb8-88d2-24ce235fbf2e.png",
+      "bytes": 66906,
+      "sha256": "ff4e3b6d94afa90835acae8bd53464c5556ba79799f4b3bcad365a1018bd5973"
+    },
+    "scene-identity-cost": {
+      "source": "exec-5f3d87a0-49c5-4c3f-8d82-61757d073f52.png",
+      "bytes": 58580,
+      "sha256": "91a79e1e4470a89c905aa620c4d36c4b8c3f1fd148cb8af3f093bf110e34a16e"
+    },
+    "scene-ticket-channel": {
+      "source": "exec-93e87ccf-7349-4ca8-acc6-daa33226b7fa.png",
+      "bytes": 75856,
+      "sha256": "a101cee1224d39a892109c127f80fef758e3b383a9fcc9e619171a447dee8e6f"
+    },
+    "scene-ticket-image": {
+      "source": "exec-160010c5-5910-4574-8c23-f2d303de5ab2.png",
+      "bytes": 71728,
+      "sha256": "ae4e334496364315e4b524a9aeca19ef8258f5b20b7e60c6b020c3e696c1d80d"
+    },
+    "scene-ticket-extra": {
+      "source": "exec-bc17f8e1-2e0d-4e91-b6a8-0e3114984dd1.png",
+      "bytes": 74282,
+      "sha256": "7ec622f7432c438f5e7d9ed28e0175e3ddb5d885fcad03553f287df51adc2816"
+    },
+    "scene-ticket-qr": {
+      "source": "exec-3c7589cb-a286-4670-8816-99d48da1c644.png",
+      "bytes": 61030,
+      "sha256": "2380114877eca633f12da140bffbfa34362a9f85ca27701bb74501c2b65986b2"
+    },
+    "scene-ticket-record": {
+      "source": "exec-bf2b4a51-10ed-44ce-83ae-7897761fb210.png",
+      "bytes": 90470,
+      "sha256": "ed8151b13dae99aa21c325894eee02e552e6a41947d58d337a26e3fe247e45cb"
+    },
+    "method-employer": {
+      "source": "exec-00fb0c4d-7f92-4aff-84c6-5dacebfaa2e9.png",
+      "bytes": 82100,
+      "sha256": "ce822e43f5950bad75045f7e4ce5da4cf0df896a54589d25589fc8b1d5f68b4b"
+    },
+    "method-fees": {
+      "source": "exec-6cdcb43b-363a-440a-9ea2-75909063fd24.png",
+      "bytes": 79906,
+      "sha256": "d815cfbeb5f84c196d1f2a9c2ea9bc145497ea478bbe7537276a32820d586537"
+    },
+    "method-records": {
+      "source": "exec-cbc512fb-346a-454f-b2bf-82f6eb41bc69.png",
+      "bytes": 69926,
+      "sha256": "c7bc87a5c8cbc8bea7644593b0e5b9fbf6ee76af0ed2dde56f6a0cd97cf15c28"
+    },
+    "method-platform": {
+      "source": "exec-41f2c17b-ca01-40a1-b84f-1fa8666e497c.png",
+      "bytes": 65498,
+      "sha256": "c51bf77ec46a41285fadbe1b76a2be5b29cf5b9d5c0aab31dac73c626053f828"
+    },
+    "method-payments": {
+      "source": "exec-9836d99e-3cd5-41a7-b566-2b2660f95f0b.png",
+      "bytes": 70532,
+      "sha256": "f4b280edb7c676c64625756e5f839842177ad66879c5b257f79dc3619efb95da"
+    },
+    "method-support": {
+      "source": "exec-08b86e35-170a-4a4e-8c09-c0dd8af6a504.png",
+      "bytes": 77950,
+      "sha256": "b8f3f1d520f811691b3c258a69c9b2f9cb7c9b044f49635333ec6aaf11de9192"
+    },
+    "method-account": {
+      "source": "exec-4cb9b642-5026-47cb-a0f3-528dacc07df2.png",
+      "bytes": 71278,
+      "sha256": "492e10666c2f91a6fd4a7e3909d14194a39ef901031745d968b917e4fd74534f"
+    },
+    "method-friend": {
+      "source": "exec-6f347b78-3a37-4d54-9a30-9610031e739d.png",
+      "bytes": 65176,
+      "sha256": "3ef4977b7a8c7e9f7327725303fc27c02b6236496091d104ec70938992d76058"
+    },
+    "method-tickets": {
+      "source": "exec-531f902e-4da3-4bf5-9105-32e66171cd0f.png",
+      "bytes": 64986,
+      "sha256": "1b1f13aa45931b634e45ec782ffa05e6144ddf2955d4cce6da4d7363af9834bf"
+    }
+  },
+  "lessons": {
+    "jobs": {
+      "scene": "/lesson-photos/scene-jobs.webp",
+      "method": "/lesson-photos/method-employer.webp"
+    },
+    "job-fee": {
+      "scene": "/lesson-photos/scene-job-fee.webp",
+      "method": "/lesson-photos/method-fees.webp"
+    },
+    "job-channel": {
+      "scene": "/lesson-photos/scene-job-channel.webp",
+      "method": "/lesson-photos/method-employer.webp"
+    },
+    "job-app": {
+      "scene": "/lesson-photos/scene-job-app.webp",
+      "method": "/lesson-photos/method-employer.webp"
+    },
+    "job-record": {
+      "scene": "/lesson-photos/scene-job-record.webp",
+      "method": "/lesson-photos/method-records.webp"
+    },
+    "rewards": {
+      "scene": "/lesson-photos/scene-rewards.webp",
+      "method": "/lesson-photos/method-payments.webp"
+    },
+    "reward-upgrade": {
+      "scene": "/lesson-photos/scene-reward-upgrade.webp",
+      "method": "/lesson-photos/method-payments.webp"
+    },
+    "reward-freeze": {
+      "scene": "/lesson-photos/scene-reward-freeze.webp",
+      "method": "/lesson-photos/method-payments.webp"
+    },
+    "cost": {
+      "scene": "/lesson-photos/scene-cost.webp",
+      "method": "/lesson-photos/method-payments.webp"
+    },
+    "reward-proof": {
+      "scene": "/lesson-photos/scene-reward-proof.webp",
+      "method": "/lesson-photos/method-records.webp"
+    },
+    "trade-platform": {
+      "scene": "/lesson-photos/scene-trade-platform.webp",
+      "method": "/lesson-photos/method-platform.webp"
+    },
+    "trade-link": {
+      "scene": "/lesson-photos/scene-trade-link.webp",
+      "method": "/lesson-photos/method-platform.webp"
+    },
+    "trade-frozen": {
+      "scene": "/lesson-photos/scene-trade-frozen.webp",
+      "method": "/lesson-photos/method-platform.webp"
+    },
+    "trade-screen": {
+      "scene": "/lesson-photos/scene-trade-screen.webp",
+      "method": "/lesson-photos/method-platform.webp"
+    },
+    "trade-record": {
+      "scene": "/lesson-photos/scene-trade-record.webp",
+      "method": "/lesson-photos/method-records.webp"
+    },
+    "service-call": {
+      "scene": "/lesson-photos/scene-service-call.webp",
+      "method": "/lesson-photos/method-support.webp"
+    },
+    "service-code": {
+      "scene": "/lesson-photos/scene-service-code.webp",
+      "method": "/lesson-photos/method-support.webp"
+    },
+    "service-share": {
+      "scene": "/lesson-photos/scene-service-share.webp",
+      "method": "/lesson-photos/method-support.webp"
+    },
+    "service-urgency": {
+      "scene": "/lesson-photos/scene-service-urgency.webp",
+      "method": "/lesson-photos/method-support.webp"
+    },
+    "service-app": {
+      "scene": "/lesson-photos/scene-service-app.webp",
+      "method": "/lesson-photos/method-account.webp"
+    },
+    "identity": {
+      "scene": "/lesson-photos/scene-identity.webp",
+      "method": "/lesson-photos/method-friend.webp"
+    },
+    "identity-voice": {
+      "scene": "/lesson-photos/scene-identity-voice.webp",
+      "method": "/lesson-photos/method-friend.webp"
+    },
+    "identity-secret": {
+      "scene": "/lesson-photos/scene-identity-secret.webp",
+      "method": "/lesson-photos/method-friend.webp"
+    },
+    "identity-callback": {
+      "scene": "/lesson-photos/scene-identity-callback.webp",
+      "method": "/lesson-photos/method-friend.webp"
+    },
+    "identity-cost": {
+      "scene": "/lesson-photos/scene-identity-cost.webp",
+      "method": "/lesson-photos/method-friend.webp"
+    },
+    "ticket-channel": {
+      "scene": "/lesson-photos/scene-ticket-channel.webp",
+      "method": "/lesson-photos/method-tickets.webp"
+    },
+    "ticket-image": {
+      "scene": "/lesson-photos/scene-ticket-image.webp",
+      "method": "/lesson-photos/method-tickets.webp"
+    },
+    "ticket-extra": {
+      "scene": "/lesson-photos/scene-ticket-extra.webp",
+      "method": "/lesson-photos/method-tickets.webp"
+    },
+    "ticket-qr": {
+      "scene": "/lesson-photos/scene-ticket-qr.webp",
+      "method": "/lesson-photos/method-tickets.webp"
+    },
+    "ticket-record": {
+      "scene": "/lesson-photos/scene-ticket-record.webp",
+      "method": "/lesson-photos/method-records.webp"
+    }
+  }
+}

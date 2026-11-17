@@ -61,11 +61,13 @@ export function reflectionContext(input:ReviewInput){
  const hypotheses:Factor[]=input.selfReport?(Object.entries(factors) as [Exclude<FactorId,"insufficient">,typeof factors.authority][]).filter(([,f])=>clauses.some(text=>f.pattern.test(text)&&!/(不是|并非|没有|不受|不会|没被|不担心|不觉得|不相信|并不|未受|不着急|不怕|无关|引用|假设|如果|是否|[“”「」？?])/.test(text))).map(([id,f])=>({id,title:f.title,question:f.question,evidenceIds:[input.selfReport!.id],skill:f.skill})):[];
  return {evidence,candidates,hypotheses,usedHints:a.some(x=>x.kind==="hint")};
 }
-export function validateReviewSelection(value:unknown,input:ReviewInput):{focusIds:FocusId[];factorId:FactorId}|null{
- if(!value||typeof value!=="object")return null;const v=value as ReviewSelection,c=reflectionContext(input);
+export type ReflectionContext=ReturnType<typeof reflectionContext>;
+export function validateContextSelection(value:unknown,c:ReflectionContext):{focusIds:FocusId[];factorId:FactorId}|null{
+ if(!value||typeof value!=="object")return null;const v=value as ReviewSelection;
  if(!Array.isArray(v.focusIds)||!v.focusIds.length||v.focusIds.length>2||new Set(v.focusIds).size!==v.focusIds.length||v.focusIds.some(id=>!c.candidates.some(x=>x.id===id))||!(v.factorId==="insufficient"||c.hypotheses.some(x=>x.id===v.factorId)))return null;
  return {focusIds:v.focusIds,factorId:v.factorId};
 }
+export function validateReviewSelection(value:unknown,input:ReviewInput){return validateContextSelection(value,reflectionContext(input));}
 export const reviewBasis=(input:ReviewInput)=>JSON.stringify(input);
 export function practiceSkill(selection:Pick<ReviewSelection,"focusIds"|"factorId">,input:ReviewInput,feedback?:"confirm"|"reject"|"unsure"):Skill{
  const context=reflectionContext(input),factor=context.hypotheses.find(f=>f.id===selection.factorId);

@@ -2,7 +2,7 @@
 import {useEffect,useRef,useState} from "react";
 import {ArrowRight,BookOpen,ExternalLink,Loader2,Square} from "lucide-react";
 import type {KnowledgeAnswer} from "@/lib/knowledge-answer";
-export function KnowledgeDesk({modelConfigured=false}:{modelConfigured?:boolean}){
+export function KnowledgeDesk({modelConfigured=false,initiallyOpen=false}:{modelConfigured?:boolean;initiallyOpen?:boolean}){
  const [question,setQuestion]=useState(""),[answer,setAnswer]=useState<KnowledgeAnswer|null>(null),[busy,setBusy]=useState(false),[error,setError]=useState("");
  const controller=useRef<AbortController|null>(null),epoch=useRef(0);
  useEffect(()=>()=>{epoch.current++;controller.current?.abort();},[]);
@@ -13,7 +13,7 @@ export function KnowledgeDesk({modelConfigured=false}:{modelConfigured?:boolean}
   finally{if(token===epoch.current)setBusy(false);}
  }
  function cancel(){epoch.current++;controller.current?.abort();setBusy(false);setError("已停止本次查询，可以修改问题后再查。");}
- return <details className="panel knowledge-desk">
+ return <details className="panel knowledge-desk" open={initiallyOpen||undefined}>
   <summary><BookOpen size={17}/><span>查一条建议</span><small>资料与出处</small></summary>
   <div className="knowledge-body">
    <p>把疑问带回资料里，看看依据是什么。</p>

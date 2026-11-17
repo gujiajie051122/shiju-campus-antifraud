@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     ".sites-runtime/**",
     "outputs/**",
     "work/**",
+    // Downloaded source-site scripts are research references, never app code.
+    "docs/course-sources/**/*.js",
   ]),
   {
     files: ["components/ui/**/*.{ts,tsx}", "hooks/use-mobile.ts"],

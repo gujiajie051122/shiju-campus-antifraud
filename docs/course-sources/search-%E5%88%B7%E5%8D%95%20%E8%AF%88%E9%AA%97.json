@@ -1,0 +1,328 @@
+{
+  "total": 1613,
+  "totalpage": 50,
+  "timespans": {
+    "0": {
+      "NAME": "5分钟以内",
+      "COUNT": 787
+    },
+    "1": {
+      "NAME": "5-30分钟",
+      "COUNT": 346
+    },
+    "2": {
+      "NAME": "30-60分钟",
+      "COUNT": 468
+    },
+    "3": {
+      "NAME": "大于1小时",
+      "COUNT": 12
+    }
+  },
+  "daytimes": {
+    "2": {
+      "NAME": "一天以内",
+      "COUNT": 0
+    },
+    "3": {
+      "NAME": "一周以内",
+      "COUNT": 0
+    },
+    "4": {
+      "NAME": "一月以内",
+      "COUNT": 24
+    },
+    "5": {
+      "NAME": "一年以内",
+      "COUNT": 210
+    }
+  },
+  "channels": [
+    {
+      "NAME": "CCTV-13新闻频道",
+      "COUNT": 690
+    },
+    {
+      "NAME": "CCTV-2财经频道",
+      "COUNT": 594
+    },
+    {
+      "NAME": "CCTV-12社会与法频道",
+      "COUNT": 187
+    },
+    {
+      "NAME": "CCTV-4中文国际频道",
+      "COUNT": 62
+    },
+    {
+      "NAME": "CCTV-1综合频道",
+      "COUNT": 34
+    },
+    {
+      "NAME": "新闻",
+      "COUNT": 15
+    },
+    {
+      "NAME": "CCTV-6电影频道",
+      "COUNT": 9
+    },
+    {
+      "NAME": "CCTV-17农业农村频道",
+      "COUNT": 6
+    },
+    {
+      "NAME": "视频频道",
+      "COUNT": 4
+    },
+    {
+      "NAME": "央视网报",
+      "COUNT": 3
+    }
+  ],
+  "list": [
+    {
+      "id": "31814174",
+      "title": "[法治在线]反诈最前沿 警惕“爱心捐赠”变<font color=\"red\">刷单</font><font color=\"red\">诈骗</font>",
+      "all_title": "[法治在线]反诈最前沿 警惕“爱心捐赠”变刷单诈骗",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/09/17/VIDE7fu6kKhZz5mdq3W1g8de260917.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2026/09/17/51271a2249b6454abb63c3f59ad8c07d-1.jpg",
+      "durations": 198,
+      "TV": "其他",
+      "playtime": 1789621608000,
+      "uploadtime": "2026-09-17 13:06:48"
+    },
+    {
+      "id": "31711067",
+      "title": "[中国法治观察]法治前沿 浙江杭州 求职<font color=\"red\">刷单</font>遇<font color=\"red\">诈骗</font> 警银联手拦下80万元损失",
+      "all_title": "[中国法治观察]法治前沿 浙江杭州 求职刷单遇诈骗 警银联手拦下80万元损失",
+      "channel": "CCTV-12社会与法频道",
+      "urllink": "https://tv.cctv.com/2026/07/16/VIDE8rDDJJNJ3tUmfZlly1Z2260716.shtml",
+      "imglink": "https://p5.img.cctvpic.com/fmspic/2026/07/16/eb814dff2d0a4c548f9671d1adb0cd4f-1.jpg",
+      "durations": 282,
+      "TV": "其他",
+      "playtime": 1784201243000,
+      "uploadtime": "2026-07-16 19:27:23"
+    },
+    {
+      "id": "31318223",
+      "title": "[新闻直播间]警惕“<font color=\"red\">刷单</font>类”<font color=\"red\">诈骗</font>陷阱 吉林 男子“高薪<font color=\"red\">刷单</font>”被骗 警方追回部分钱款",
+      "all_title": "[新闻直播间]警惕“刷单类”诈骗陷阱 吉林 男子“高薪刷单”被骗 警方追回部分钱款",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2025/11/20/VIDEPgDiHi7lqDxpO6wOCU7X251120.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2025/11/20/827e271c24764410b62c463d68b54144-1.jpg",
+      "durations": 283,
+      "TV": "其他",
+      "playtime": 1763625242000,
+      "uploadtime": "2025-11-20 15:54:02"
+    },
+    {
+      "id": "31793322",
+      "title": "[新闻直播间]反诈最前沿 警惕“特殊交友”陷阱 从交友到<font color=\"red\">刷单</font> <font color=\"red\">诈骗</font>“剧本”全曝光",
+      "all_title": "[新闻直播间]反诈最前沿 警惕“特殊交友”陷阱 从交友到刷单 诈骗“剧本”全曝光",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/09/04/VIDEYcFeINgksI88o5mtf05J260904.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2026/09/04/084771f873584feebee5d703e2fcfad6-1.jpg",
+      "durations": 138,
+      "TV": "其他",
+      "playtime": 1788508352000,
+      "uploadtime": "2026-09-04 15:52:32"
+    },
+    {
+      "id": "31618905",
+      "title": "[新闻直播间]警惕连环式电诈新套路 湖南湘潭 误入<font color=\"red\">刷单</font><font color=\"red\">诈骗</font>陷阱 沦为电诈洗钱工具",
+      "all_title": "[新闻直播间]警惕连环式电诈新套路 湖南湘潭 误入刷单诈骗陷阱 沦为电诈洗钱工具",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/05/22/VIDEw0iry3VnPpPjHSjsZsCU260522.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2026/05/22/867abec2469f4c378b1eba31c254dc65-1.jpg",
+      "durations": 109,
+      "TV": "其他",
+      "playtime": 1779416168000,
+      "uploadtime": "2026-05-22 10:16:08"
+    },
+    {
+      "id": "31619329",
+      "title": "[新闻直播间]警惕连环式电诈新套路 湖南湘潭 误入<font color=\"red\">刷单</font><font color=\"red\">诈骗</font>陷阱 沦为电诈洗钱工具",
+      "all_title": "[新闻直播间]警惕连环式电诈新套路 湖南湘潭 误入刷单诈骗陷阱 沦为电诈洗钱工具",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/05/22/VIDEt8KZSWplvQActK9X81S6260522.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2026/05/22/b3223c4af9914a7dadd9ec6cf4d6c025-1.jpg",
+      "durations": 109,
+      "TV": "其他",
+      "playtime": 1779432848000,
+      "uploadtime": "2026-05-22 14:54:08"
+    },
+    {
+      "id": "31318224",
+      "title": "[新闻直播间]警惕“<font color=\"red\">刷单</font>类”<font color=\"red\">诈骗</font>陷阱 分工明确 <font color=\"red\">诈骗</font>流程环环相扣",
+      "all_title": "[新闻直播间]警惕“刷单类”诈骗陷阱 分工明确 诈骗流程环环相扣",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2025/11/20/VIDEHd1CCNNmV8hAqEYVOPrU251120.shtml",
+      "imglink": "https://p1.img.cctvpic.com/fmspic/2025/11/20/527fe1987fbd4156adf9d9ff361769a9-1.jpg",
+      "durations": 276,
+      "TV": "其他",
+      "playtime": 1763625360000,
+      "uploadtime": "2025-11-20 15:56:00"
+    },
+    {
+      "id": "31349186",
+      "title": "[新闻直播间]新闻提示 牢记“<font color=\"red\">刷单</font>就是<font color=\"red\">诈骗</font>”的铁律",
+      "all_title": "[新闻直播间]新闻提示 牢记“刷单就是诈骗”的铁律",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2025/12/09/VIDEc2z0hraJ6BACjiesXvAw251209.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2025/12/09/4706e112034b4768a7d61510257ff6c6-1.jpg",
+      "durations": 34,
+      "TV": "其他",
+      "playtime": 1765266505000,
+      "uploadtime": "2025-12-09 15:48:25"
+    },
+    {
+      "id": "31322476",
+      "title": "[新闻直播间]警惕<font color=\"red\">刷单</font>返利类<font color=\"red\">诈骗</font> 请牢记“十个凡是”",
+      "all_title": "[新闻直播间]警惕刷单返利类诈骗 请牢记“十个凡是”",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2025/11/23/VIDEPI03Qnf5IVnSiOCooHY4251123.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2025/11/23/e734c15e6c674961b8a5bae43d91a3b0-1.jpg",
+      "durations": 114,
+      "TV": "其他",
+      "playtime": 1763867524000,
+      "uploadtime": "2025-11-23 11:12:04"
+    },
+    {
+      "id": "29893524",
+      "title": "[共同关注]关注·服务：<font color=\"red\">刷单</font><font color=\"red\">诈骗</font>套路深 天降“馅饼”莫当真 图解<font color=\"red\">刷单</font><font color=\"red\">诈骗</font>具体套路",
+      "all_title": "[共同关注]关注·服务：刷单诈骗套路深 天降“馅饼”莫当真 图解刷单诈骗具体套路",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2023/11/04/VIDEAg6S7C1LCDdcaTHED90y231104.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2023/11/04/e9fab03af40549ffb0fea87c4bf2773f-1.jpg",
+      "durations": 64,
+      "TV": "其他",
+      "playtime": 1699095568000,
+      "uploadtime": "2023-11-04 18:59:28"
+    },
+    {
+      "id": "29893543",
+      "title": "[共同关注]关注·服务：<font color=\"red\">刷单</font><font color=\"red\">诈骗</font>套路深 天降“馅饼”莫当真 警方提示：近期<font color=\"red\">刷单</font><font color=\"red\">诈骗</font>主要有两种套路",
+      "all_title": "[共同关注]关注·服务：刷单诈骗套路深 天降“馅饼”莫当真 警方提示：近期刷单诈骗主要有两种套路",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2023/11/04/VIDE5wwgYBdPKNNpDSuQ1Mng231104.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2023/11/04/1ffdbe82c2c84da498085ed8900b0fec-1.jpg",
+      "durations": 43,
+      "TV": "其他",
+      "playtime": 1699096048000,
+      "uploadtime": "2023-11-04 19:07:28"
+    },
+    {
+      "id": "28679399",
+      "title": "[共同关注]一问到底：居于电信网络<font color=\"red\">诈骗</font>之首 如何防范“<font color=\"red\">刷单</font>”骗局？ “兼职<font color=\"red\">刷单</font>”？小心落入<font color=\"red\">诈骗</font>陷阱",
+      "all_title": "[共同关注]一问到底：居于电信网络诈骗之首 如何防范“刷单”骗局？ “兼职刷单”？小心落入诈骗陷阱",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2022/08/11/VIDE7bYMOAW0TIoD3pyMsYKO220811.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2022/08/11/c19c2a0b3a7447c39753883b41e54c3d-1.jpg",
+      "durations": 66,
+      "TV": "其他",
+      "playtime": 1660214834000,
+      "uploadtime": "2022-08-11 18:47:14"
+    },
+    {
+      "id": "31347325",
+      "title": "[新闻直播间]一点现场 广西天峨 及时止损！遭网络<font color=\"red\">刷单</font><font color=\"red\">诈骗</font> 民警上门劝阻",
+      "all_title": "[新闻直播间]一点现场 广西天峨 及时止损！遭网络刷单诈骗 民警上门劝阻",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2025/12/08/VIDECG6v6P9xYGFMFYmFpMXO251208.shtml",
+      "imglink": "https://p1.img.cctvpic.com/fmspic/2025/12/08/fbc0645d2b7c4ee0b4772c76e72284b4-1.jpg",
+      "durations": 98,
+      "TV": "其他",
+      "playtime": 1765174944000,
+      "uploadtime": "2025-12-08 14:22:24"
+    },
+    {
+      "id": "28681026",
+      "title": "[新闻直播间]一问到底：居于电信网络<font color=\"red\">诈骗</font>之首 如何防范“<font color=\"red\">刷单</font>”骗局？“兼职<font color=\"red\">刷单</font>”？小心落入<font color=\"red\">诈骗</font>陷阱",
+      "all_title": "[新闻直播间]一问到底：居于电信网络诈骗之首 如何防范“刷单”骗局？“兼职刷单”？小心落入诈骗陷阱",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2022/08/12/VIDEcUh6dgOwmwlTVuGAUX2j220812.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2022/08/12/1423cf51e12c4c3cbc4b5f8c5dfd8848-1.jpg",
+      "durations": 68,
+      "TV": "其他",
+      "playtime": 1660254194000,
+      "uploadtime": "2022-08-12 05:43:14"
+    },
+    {
+      "id": "28679420",
+      "title": "[共同关注]一问到底：居于电信网络<font color=\"red\">诈骗</font>之首 如何防范“<font color=\"red\">刷单</font>”骗局？ 警方提醒：所有的<font color=\"red\">刷单</font>都是<font color=\"red\">诈骗</font>",
+      "all_title": "[共同关注]一问到底：居于电信网络诈骗之首 如何防范“刷单”骗局？ 警方提醒：所有的刷单都是诈骗",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2022/08/11/VIDEetpAIXAyaJgrfaKXON0C220811.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2022/08/11/e93b66f9541d45598166190c8c22808b-1.jpg",
+      "durations": 43,
+      "TV": "其他",
+      "playtime": 1660215075000,
+      "uploadtime": "2022-08-11 18:51:15"
+    },
+    {
+      "id": "28681029",
+      "title": "[新闻直播间]一问到底：居于电信网络<font color=\"red\">诈骗</font>之首 如何防范“<font color=\"red\">刷单</font>”骗局？警方提醒：所有的<font color=\"red\">刷单</font>都是<font color=\"red\">诈骗</font>",
+      "all_title": "[新闻直播间]一问到底：居于电信网络诈骗之首 如何防范“刷单”骗局？警方提醒：所有的刷单都是诈骗",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2022/08/12/VIDEtmyiPnRqDr5hnZ7akmjS220812.shtml",
+      "imglink": "https://p5.img.cctvpic.com/fmspic/2022/08/12/95180a23eb4a4090af9e95d5836214c6-1.jpg",
+      "durations": 45,
+      "TV": "其他",
+      "playtime": 1660254434000,
+      "uploadtime": "2022-08-12 05:47:14"
+    },
+    {
+      "id": "28681027",
+      "title": "[新闻直播间]一问到底：居于电信网络<font color=\"red\">诈骗</font>之首 如何防范“<font color=\"red\">刷单</font>”骗局？<font color=\"red\">诈骗</font>手法在演变 什么是“做任务式”<font color=\"red\">刷单</font>？",
+      "all_title": "[新闻直播间]一问到底：居于电信网络诈骗之首 如何防范“刷单”骗局？诈骗手法在演变 什么是“做任务式”刷单？",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2022/08/12/VIDEkzOPA0SM1gVJpIqC62Dd220812.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2022/08/12/d2d8c6672abd4c948c1c2235aaf116fa-1.jpg",
+      "durations": 49,
+      "TV": "其他",
+      "playtime": 1660254194000,
+      "uploadtime": "2022-08-12 05:43:14"
+    },
+    {
+      "id": "28679395",
+      "title": "[共同关注]一问到底：居于电信网络<font color=\"red\">诈骗</font>之首 如何防范“<font color=\"red\">刷单</font>”骗局？ 为何要集中打击<font color=\"red\">刷单</font>类电信网络<font color=\"red\">诈骗</font>？",
+      "all_title": "[共同关注]一问到底：居于电信网络诈骗之首 如何防范“刷单”骗局？ 为何要集中打击刷单类电信网络诈骗？",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2022/08/11/VIDElUumIzr7vzu2yMjBrjiU220811.shtml",
+      "imglink": "https://p1.img.cctvpic.com/fmspic/2022/08/11/697336c745c64bb2990ab3ec3536149d-1.jpg",
+      "durations": 90,
+      "TV": "其他",
+      "playtime": 1660214835000,
+      "uploadtime": "2022-08-11 18:47:15"
+    },
+    {
+      "id": "28679401",
+      "title": "[共同关注]一问到底：居于电信网络<font color=\"red\">诈骗</font>之首 如何防范“<font color=\"red\">刷单</font>”骗局？ <font color=\"red\">诈骗</font>手法在演变 什么是“做任务式”<font color=\"red\">刷单</font>？",
+      "all_title": "[共同关注]一问到底：居于电信网络诈骗之首 如何防范“刷单”骗局？ 诈骗手法在演变 什么是“做任务式”刷单？",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2022/08/11/VIDEHZ4CBnxaTFe4Mj91SC30220811.shtml",
+      "imglink": "https://p5.img.cctvpic.com/fmspic/2022/08/11/bf6678ea4b6e457295c459ae5e1f5263-1.jpg",
+      "durations": 48,
+      "TV": "其他",
+      "playtime": 1660214955000,
+      "uploadtime": "2022-08-11 18:49:15"
+    },
+    {
+      "id": "29343805",
+      "title": "[天下财经]警惕“<font color=\"red\">刷单</font>”骗局 警方提醒：<font color=\"red\">刷单</font><font color=\"red\">诈骗</font>形式多 电话 短信有猫腻",
+      "all_title": "[天下财经]警惕“刷单”骗局 警方提醒：刷单诈骗形式多 电话 短信有猫腻",
+      "channel": "CCTV-2财经频道",
+      "urllink": "https://tv.cctv.com/2023/04/05/VIDEtYDnRNBxlIr8TRrOl3gt230405.shtml",
+      "imglink": "https://p5.img.cctvpic.com/fmspic/2023/04/05/1d2764aa07ab4f239d3e631cd11e87ca-1.jpg",
+      "durations": 123,
+      "TV": "其他",
+      "playtime": 1680669331000,
+      "uploadtime": "2023-04-05 12:35:31"
+    }
+  ],
+  "flag": "ok",
+  "pageString": [
+    "<a href=\"Javascript:void(0);\" class=\"cur\" flag=\"1\" onclick=\"get_data('1','%E5%88%B7%E5%8D%95%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','刷单 诈骗')\">1</a><a href=\"Javascript:void(0);\" flag=\"2\" class=\"page_cur\" onclick=\"get_data('2','%E5%88%B7%E5%8D%95%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','刷单 诈骗')\">2</span></a><a href=\"Javascript:void(0);\" flag=\"3\" class=\"page_cur\" onclick=\"get_data('3','%E5%88%B7%E5%8D%95%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','刷单 诈骗')\">3</span></a><a href=\"Javascript:void(0);\" flag=\"4\" class=\"page_cur\" onclick=\"get_data('4','%E5%88%B7%E5%8D%95%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','刷单 诈骗')\">4</span></a><a href=\"Javascript:void(0);\" flag=\"5\" class=\"page_cur\" onclick=\"get_data('5','%E5%88%B7%E5%8D%95%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','刷单 诈骗')\">5</span></a><a href=\"Javascript:void(0);\" flag=\"6\" class=\"page_cur\" onclick=\"get_data('6','%E5%88%B7%E5%8D%95%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','刷单 诈骗')\">6</span></a><a href=\"Javascript:void(0);\" flag=\"7\" class=\"page_cur\" onclick=\"get_data('7','%E5%88%B7%E5%8D%95%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','刷单 诈骗')\">7</span></a><a href=\"Javascript:void(0);\" flag=\"8\" class=\"page_cur\" onclick=\"get_data('8','%E5%88%B7%E5%8D%95%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','刷单 诈骗')\">8</span></a><a href=\"Javascript:void(0);\" flag=\"9\" class=\"page_cur\" onclick=\"get_data('9','%E5%88%B7%E5%8D%95%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','刷单 诈骗')\">9</span></a><a href=\"Javascript:void(0);\" flag=\"10\" class=\"page_cur\" onclick=\"get_data('10','%E5%88%B7%E5%8D%95%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','刷单 诈骗')\">10</span></a><a href=\"Javascript:void(0);\" class=\"page-next page_cur\" flag=\"2\"  onclick=\"get_data('2','%E5%88%B7%E5%8D%95%20%E8%AF%88%E9%AA%97','relevance','video','-1','1','','20','1','刷单 诈骗')\">下一页</a>"
+  ]
+}

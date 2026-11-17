@@ -1,0 +1,26 @@
+[
+  {
+    "category": "骗局识别",
+    "descriptions": true,
+    "overflow": false,
+    "questions": 6
+  },
+  {
+    "category": "心理误区",
+    "descriptions": true,
+    "overflow": false,
+    "questions": 6
+  },
+  {
+    "category": "身份核实",
+    "descriptions": true,
+    "overflow": false,
+    "questions": 6
+  },
+  {
+    "category": "遇骗应对",
+    "descriptions": true,
+    "overflow": false,
+    "questions": 6
+  }
+]

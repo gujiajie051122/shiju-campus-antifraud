@@ -1,0 +1,81 @@
+/* Evidence-led review, with a restrained white editorial layout. */
+.job-review-page .job-report{max-width:1240px;padding:30px 42px 72px}
+.job-review-page .job-report-heading{padding:30px 0 28px;border-bottom:0}
+.job-review-page .job-report-heading>span{font-size:12px;letter-spacing:.08em;color:#8c674d}
+.job-review-page .job-report-heading h1{font-size:clamp(28px,3vw,39px);font-weight:600;letter-spacing:-.05em;margin:15px 0 18px;line-height:1.35;color:#232b30}
+.job-review-page .job-report-heading p{display:flex;gap:20px;flex-wrap:wrap;font-size:13px;color:#717b81;margin:0}
+.job-review-page .job-report-heading p span{border-left:1px solid #d4d8da;padding-left:20px;color:#424f57}
+.job-review-summary{display:grid;grid-template-columns:180px 200px 1fr;gap:30px;align-items:center;border-top:2px solid #29333a;border-bottom:1px solid #e1e5e7;padding:24px 0 26px}
+.job-review-summary>div{display:flex;flex-direction:column;gap:9px}
+.job-review-summary strong{font-size:26px;font-weight:500;line-height:1.4;color:#2e3941}
+.job-review-summary strong small{font-size:14px;color:#9ba2a6}
+.job-review-summary span{font-size:12px;color:#79848a;line-height:1.7}
+.job-review-summary>p{padding-left:32px;border-left:1px solid #e2e6e8;line-height:1.9;font-size:13px;color:#748087;margin:0}
+.job-review-page .job-report-layout{grid-template-columns:minmax(0,1fr) 245px;gap:58px;padding-top:18px}
+.job-review-page .job-finding{gap:25px;padding:26px 0}
+.job-review-page .job-finding>span{font-size:13px;color:#ad7856;padding-top:4px}
+.job-review-page .job-finding h2{font-size:21px;font-weight:500;margin:8px 0 12px}
+.job-review-page .job-finding small{color:#7a858b;font-size:11px}
+.job-review-page .job-finding p,.job-review-page .job-psych p{font-size:14px;line-height:1.95;color:#58666e}
+.job-your-reason{margin:20px 0 0;padding:5px 0 5px 20px;border-left:2px solid #bc8967}
+.job-your-reason>span{font-size:11px;color:#8a786b}
+.job-your-reason p{line-height:1.8;font-size:16px;color:#33434b;margin:9px 0;overflow-wrap:anywhere;white-space:pre-wrap}
+.job-your-reason small{font-size:11px;color:#8c969b}
+.job-next-check{padding:27px 0;border-bottom:1px solid #e3e6e8}
+.job-next-check h2{font-size:17px;font-weight:500;margin:0 0 13px}
+.job-next-check p,.job-next-check li{font-size:13px;color:#64727a;line-height:1.9}
+.job-next-check ul{margin:0;padding-left:18px}
+.job-next-check li+li{margin-top:7px}
+.job-review-page .job-psych{padding:30px 0;border-bottom:1px solid #e3e6e8}
+.job-section-kicker{font-size:11px;letter-spacing:.06em;color:#a27353}
+.job-review-page .job-psych h2{font-size:21px;font-weight:500;margin:11px 0 23px}
+.job-psych>div+div{margin-top:22px}
+.job-psych h3{font-size:14px;font-weight:600;margin:0 0 8px}
+.job-psych>small{display:block;font-size:11px;color:#929a9f;margin-top:20px;line-height:1.8}
+.job-targeted{padding:28px 0}
+.job-targeted>header{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:8px}
+.job-targeted h2{font-size:18px;font-weight:500;margin:0}
+.job-targeted>header>span{font-size:11px;color:#949ca2}
+.job-targeted article{display:flex;gap:22px;padding:20px 0;border-bottom:1px solid #edf0f1}
+.job-targeted article>span{font-size:11px;color:#b48565;padding-top:3px}
+.job-targeted h3{font-size:15px;font-weight:500;margin:0 0 7px}
+.job-targeted p{font-size:12px;line-height:1.8;color:#77848c;margin:0 0 13px}
+.job-targeted article>div>div{display:flex;gap:24px;flex-wrap:wrap}
+.job-targeted a{display:inline-flex;gap:6px;align-items:center;font-size:12px;color:#3d5664;text-decoration:none;border-bottom:1px solid #c8d0d4;padding-bottom:3px}
+.job-review-page .job-report-layout>aside{padding-top:22px;padding-left:24px}
+.job-review-page .job-report-layout>aside h2{font-size:15px;font-weight:500;margin:0 0 8px}
+.job-timeline-intro{font-size:11px;color:#939ca2;margin-bottom:25px}
+.job-review-timeline{margin:0 0 25px;padding:0 0 0 13px;list-style:none;border-left:1px solid #e1e5e8}
+.job-review-timeline li{position:relative;padding-bottom:24px;padding-left:7px}
+.job-review-timeline li::before{content:'';position:absolute;left:-17px;top:5px;width:6px;height:6px;border:1px solid #aab5bc;background:white;border-radius:50%}
+.job-review-timeline time{display:block;font-size:10px;color:#9aa3a9;margin-bottom:7px}
+.job-review-timeline strong{display:block;font-size:12px;font-weight:400;line-height:1.7;color:#4c5b65}
+.job-review-timeline details{margin-top:7px;font-size:11px;line-height:1.8;color:#8b959c}
+.job-review-timeline summary{cursor:pointer}
+.job-review-timeline details p{font-size:11px;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere;color:#74818a}
+.job-transcript{margin:30px 0;border-block:1px solid #e0e4e6;padding:18px 0}.job-transcript summary{cursor:pointer;font-size:14px;color:#293740}.job-transcript ol{list-style:none;padding:0}.job-transcript li{padding:18px 0;border-bottom:1px solid #eef0f1}.job-transcript li header{display:flex;gap:15px;align-items:center;font-size:12px}.job-transcript time{color:#8a949a}.job-transcript p{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;line-height:1.9}.job-transcript blockquote{margin:10px 0;border-left:2px solid #ccd2d5;padding:5px 12px;font-size:12px;color:#768189}
+.job-history{margin:30px 0}.job-history>header{display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding-bottom:20px;border-bottom:1px solid #d7dde0}.job-history h2{font-size:22px}.job-history header>span,.job-history small,.job-history time{font-size:12px;color:#7b858b}.job-history>article{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #e1e5e7;padding:25px 0}.job-history h3{font-size:20px;margin:10px 0}.job-history p{font-size:13px;color:#657179}.job-history article>div:last-child{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:16px}.job-history a{font-size:14px;color:#293b46}.job-history button{border:0;background:transparent;padding:5px 0;font-size:12px;color:#7b858b;cursor:pointer}
+@media(max-width:640px){.job-history>header,.job-history>article{display:block}.job-history article>div:last-child{align-items:flex-start;flex-direction:row;justify-content:flex-start;margin-top:18px;gap:24px}.job-transcript p{font-size:13px}}
+.job-decision-reason{display:block;margin:23px 0 0;font-size:13px;color:#39464e}
+.job-decision-reason span{display:block;font-size:11px;color:#8d969b;margin-top:6px}
+.job-decision-reason textarea{display:block;width:100%;resize:vertical;min-height:90px;border:1px solid #d9dfe2;border-radius:4px;margin-top:12px;padding:10px 12px;font-size:13px!important;line-height:1.8;color:#3f4e57;background:white}
+.job-decision-reason textarea::placeholder{color:#a3aaae}
+.job-notice>a{color:#3a5261;white-space:nowrap;text-decoration:underline;text-underline-offset:3px;margin-left:auto;padding-left:15px}
+@media(max-width:900px){.job-review-page .job-report{padding-inline:25px}.job-review-page .job-report-layout{gap:30px;grid-template-columns:minmax(0,1fr) 210px}.job-review-summary{grid-template-columns:1fr 1fr;gap:20px}.job-review-summary>p{grid-column:1/-1;padding:0;border:0}}
+@media(max-width:640px){.job-review-page .job-report{padding:22px 20px 45px}.job-review-page .job-report-layout{display:flex;flex-direction:column;gap:0}.job-review-page .job-report-heading p{gap:8px;font-size:12px}.job-review-page .job-report-heading p span{padding-left:10px}.job-review-page .job-report-heading h1{font-size:28px;letter-spacing:-1px}.job-review-summary{padding-block:19px;gap:14px}.job-review-summary strong{font-size:22px}.job-review-summary span{font-size:11px}.job-review-summary>p{font-size:12px}.job-review-page .job-report-layout>aside{border-left:0;padding-left:0}.job-review-page .job-finding{gap:18px}.job-review-page .job-finding p,.job-review-page .job-psych p{font-size:13px}}
+
+/* Model-assisted review keeps its consent and source visible. */
+.job-ai-reflection{border:1px solid #dce2e5;border-top:3px solid #946c50;background:#fafbf9;padding:24px;margin-bottom:30px;min-width:0}
+.job-ai-reflection>header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.job-ai-reflection h2{font-size:22px;margin:10px 0 14px}.job-ai-reflection h3{font-size:16px;line-height:1.6;margin:0 0 8px}
+.job-ai-reflection p{font-size:14px;line-height:1.85;overflow-wrap:anywhere;margin:10px 0;color:#47545c}
+.job-ai-reflection .job-section-kicker{display:flex;align-items:center;gap:7px}.job-ai-badge{font-size:12px;padding:6px 10px;background:#eaf0e8;color:#3f5a3b;border-radius:4px}
+.job-ai-reflection small{display:block;font-size:12px;line-height:1.8;color:#64716e;margin-top:10px}
+.job-ai-focus,.job-ai-factor{border-top:1px solid #dce2e5;padding:18px 0 6px;margin-top:16px}
+.job-ai-reflection details{font-size:12px;margin-top:12px}.job-ai-reflection summary{cursor:pointer;color:#5d624a;min-height:30px}.job-ai-evidence{padding:8px 12px;border-left:2px solid #a0ad92;margin:10px 0}.job-ai-evidence p{font-size:12px;white-space:pre-wrap}
+.job-ai-generate{border-top:1px solid #dce2e5;padding-top:18px;margin-top:18px}.job-ai-generate label{display:flex;align-items:flex-start;gap:9px;font-size:13px;line-height:1.8;cursor:pointer}.job-ai-generate input{accent-color:#52664b;margin-top:5px;flex-shrink:0}
+.job-ai-generate-button{display:flex;align-items:center;gap:8px;background:#27343c;color:#fff;border-radius:4px;padding:12px 18px;margin-top:15px;min-height:44px}.job-ai-generate-button:disabled{opacity:.5;cursor:not-allowed}
+.job-ai-reflection .job-ai-notice{background:#f4eddf;padding:12px 14px;font-size:13px}.job-ai-signin{display:inline-block;margin:12px 0;text-decoration:underline;text-underline-offset:4px;color:#455c39}
+.job-ai-feedback{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}.job-ai-feedback button{border:1px solid #b8c1b6;border-radius:4px;padding:8px 14px;min-height:40px;font-size:13px}.job-ai-feedback button[aria-pressed=true]{background:#e6edde;border-color:#6c805d;color:#334929}
+.library-progress-note{font-size:12px;line-height:1.8;color:#616f75;margin:8px 0 18px}
+@media(max-width:640px){.job-ai-reflection{padding:18px}.job-ai-reflection h2{font-size:20px}.job-ai-generate-button{width:100%;justify-content:center}.library-progress-note{font-size:12px;padding:0 2px}}

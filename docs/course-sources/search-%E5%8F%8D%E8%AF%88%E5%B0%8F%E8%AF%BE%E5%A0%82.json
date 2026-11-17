@@ -1,0 +1,328 @@
+{
+  "total": 586,
+  "totalpage": 30,
+  "timespans": {
+    "0": {
+      "NAME": "5分钟以内",
+      "COUNT": 136
+    },
+    "1": {
+      "NAME": "5-30分钟",
+      "COUNT": 148
+    },
+    "2": {
+      "NAME": "30-60分钟",
+      "COUNT": 283
+    },
+    "3": {
+      "NAME": "大于1小时",
+      "COUNT": 19
+    }
+  },
+  "daytimes": {
+    "2": {
+      "NAME": "一天以内",
+      "COUNT": 1
+    },
+    "3": {
+      "NAME": "一周以内",
+      "COUNT": 3
+    },
+    "4": {
+      "NAME": "一月以内",
+      "COUNT": 8
+    },
+    "5": {
+      "NAME": "一年以内",
+      "COUNT": 156
+    }
+  },
+  "channels": [
+    {
+      "NAME": "CCTV-13新闻频道",
+      "COUNT": 309
+    },
+    {
+      "NAME": "CCTV-2财经频道",
+      "COUNT": 112
+    },
+    {
+      "NAME": "CCTV-12社会与法频道",
+      "COUNT": 29
+    },
+    {
+      "NAME": "CCTV-10科教频道",
+      "COUNT": 25
+    },
+    {
+      "NAME": "CCTV-4中文国际频道",
+      "COUNT": 25
+    },
+    {
+      "NAME": "CCTV-1综合频道",
+      "COUNT": 17
+    },
+    {
+      "NAME": "CCTV-6电影频道",
+      "COUNT": 17
+    },
+    {
+      "NAME": "CCTV-7国防军事频道",
+      "COUNT": 8
+    },
+    {
+      "NAME": "CCTV特别节目",
+      "COUNT": 8
+    },
+    {
+      "NAME": "央视网报",
+      "COUNT": 6
+    }
+  ],
+  "list": [
+    {
+      "id": "31395659",
+      "title": "[朝闻天下]<font color=\"red\">反</font><font color=\"red\">诈</font>知识“随车行” 安全<font color=\"red\">课堂</font>进车厢",
+      "all_title": "[朝闻天下]反诈知识“随车行” 安全课堂进车厢",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/01/06/VIDElmTyPUkoluwoqqxo7gxu260106.shtml",
+      "imglink": "https://p1.img.cctvpic.com/fmspic/2026/01/06/42beaece4c9d41c3b1c7e9be0e2e2a31-1.jpg",
+      "durations": 80,
+      "TV": "其他",
+      "playtime": 1767653103000,
+      "uploadtime": "2026-01-06 06:45:03"
+    },
+    {
+      "id": "31798709",
+      "title": "[24<font color=\"red\">小</font>时]快速识<font color=\"red\">诈</font>防<font color=\"red\">诈</font> “国家<font color=\"red\">反</font><font color=\"red\">诈</font>AI”App正式上线 三大功能：智能问答 <font color=\"red\">反</font><font color=\"red\">诈</font>资讯 <font color=\"red\">反</font><font color=\"red\">诈</font>辞典",
+      "all_title": "[24小时]快速识诈防诈 “国家反诈AI”App正式上线 三大功能：智能问答 反诈资讯 反诈辞典",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/09/07/VIDEGLdNHTyre84c03EoJkzv260907.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2026/09/07/6143655c045d4d14b43c4a1c5cef2622-1.jpg",
+      "durations": 82,
+      "TV": "其他",
+      "playtime": 1788795035000,
+      "uploadtime": "2026-09-07 23:30:35"
+    },
+    {
+      "id": "31337828",
+      "title": "[热线12]热线关注 山东烟台 民警自制<font color=\"red\">反</font><font color=\"red\">诈</font>微短剧成防骗新<font color=\"red\">课堂</font>",
+      "all_title": "[热线12]热线关注 山东烟台 民警自制反诈微短剧成防骗新课堂",
+      "channel": "CCTV-12社会与法频道",
+      "urllink": "https://tv.cctv.com/2025/12/02/VIDEatxeYUWoTjReuy2LOdxO251202.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2025/12/02/a4e1ecdb547f4ee5985a3394ff0a396b-1.jpg",
+      "durations": 28,
+      "TV": "其他",
+      "playtime": 1764673216000,
+      "uploadtime": "2025-12-02 19:00:16"
+    },
+    {
+      "id": "31798711",
+      "title": "[24<font color=\"red\">小</font>时]快速识<font color=\"red\">诈</font>防<font color=\"red\">诈</font> “国家<font color=\"red\">反</font><font color=\"red\">诈</font>AI”App正式上线 市民陷刷单骗局 民警借“国家<font color=\"red\">反</font><font color=\"red\">诈</font>AI”唤醒",
+      "all_title": "[24小时]快速识诈防诈 “国家反诈AI”App正式上线 市民陷刷单骗局 民警借“国家反诈AI”唤醒",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/09/07/VIDEiujMwLpOfR8Ji8nU9brp260907.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2026/09/07/ced94b997cb641b4a8e3af613c221fdc-1.jpg",
+      "durations": 114,
+      "TV": "其他",
+      "playtime": 1788795035000,
+      "uploadtime": "2026-09-07 23:30:35"
+    },
+    {
+      "id": "31798710",
+      "title": "[24<font color=\"red\">小</font>时]快速识<font color=\"red\">诈</font>防<font color=\"red\">诈</font> “国家<font color=\"red\">反</font><font color=\"red\">诈</font>AI”App正式上线 识别涉<font color=\"red\">诈</font>App：谨慎“翻墙”下载境外软件",
+      "all_title": "[24小时]快速识诈防诈 “国家反诈AI”App正式上线 识别涉诈App：谨慎“翻墙”下载境外软件",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/09/07/VIDEQH33fVSpaqqKMkwL5je9260907.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2026/09/07/4acaa5f92bb3435ea719d66dd0251bba-1.jpg",
+      "durations": 109,
+      "TV": "其他",
+      "playtime": 1788795035000,
+      "uploadtime": "2026-09-07 23:30:35"
+    },
+    {
+      "id": "31090978",
+      "title": "[新闻直播间]海南海口 <font color=\"red\">反</font><font color=\"red\">诈</font>知识进<font color=\"red\">课堂</font> 合力应变共防范",
+      "all_title": "[新闻直播间]海南海口 反诈知识进课堂 合力应变共防范",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2025/07/04/VIDEI8E40X4Q6gR83wBjkvWM250704.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2025/07/04/a237af889d0f4f50a5e9b196d624d86b-1.jpg",
+      "durations": 85,
+      "TV": "其他",
+      "playtime": 1751602254000,
+      "uploadtime": "2025-07-04 12:10:54"
+    },
+    {
+      "id": "31194415",
+      "title": "[热线12]热线关注 山东威海 军训场变“安全<font color=\"red\">课堂</font>” “<font color=\"red\">反</font><font color=\"red\">诈</font>第一课”开讲",
+      "all_title": "[热线12]热线关注 山东威海 军训场变“安全课堂” “反诈第一课”开讲",
+      "channel": "CCTV-12社会与法频道",
+      "urllink": "https://tv.cctv.com/2025/09/04/VIDEQfzaRCqtq6znO5zInP7z250904.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2025/09/04/386f968807d14964927794b5cf1f23c3-1.jpg",
+      "durations": 79,
+      "TV": "其他",
+      "playtime": 1756984817000,
+      "uploadtime": "2025-09-04 19:20:17"
+    },
+    {
+      "id": "31477780",
+      "title": "[视频]【<font color=\"red\">反</font><font color=\"red\">诈</font>最前沿】“扫码领豪礼”？警惕涉<font color=\"red\">诈</font>引流<font color=\"red\">小</font>卡片",
+      "all_title": "[视频]【反诈最前沿】“扫码领豪礼”？警惕涉诈引流小卡片",
+      "channel": "CCTV-1综合频道",
+      "urllink": "https://tv.cctv.com/2026/02/26/VIDEti5yZufEfNEFJSRHVuDM260226.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2026/02/26/d7d0f86800ed46bfb2e123ef1558c0d9-1.jpg",
+      "durations": 111,
+      "TV": "CCTV-1高清",
+      "playtime": 1772116136000,
+      "uploadtime": "2026-02-26 22:28:56"
+    },
+    {
+      "id": "31476912",
+      "title": "[法治在线]<font color=\"red\">反</font><font color=\"red\">诈</font>最前沿 “扫码领豪礼”？警惕涉<font color=\"red\">诈</font>引流<font color=\"red\">小</font>卡片",
+      "all_title": "[法治在线]反诈最前沿 “扫码领豪礼”？警惕涉诈引流小卡片",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/02/26/VIDEu7afWWxrd8FWCOMF1fHw260226.shtml",
+      "imglink": "https://p3.img.cctvpic.com/fmspic/2026/02/26/970e37ff91c14c30894a2c6b981c4092-1.jpg",
+      "durations": 113,
+      "TV": "其他",
+      "playtime": 1772081293000,
+      "uploadtime": "2026-02-26 12:48:13"
+    },
+    {
+      "id": "31658647",
+      "title": "[新闻直播间]<font color=\"red\">反</font><font color=\"red\">诈</font>最前沿 拆解婚恋骗局套路 不轻易相信别人 却被“<font color=\"red\">小</font>甜头”套牢",
+      "all_title": "[新闻直播间]反诈最前沿 拆解婚恋骗局套路 不轻易相信别人 却被“小甜头”套牢",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/06/15/VIDEnGKFhDoTBBoNv0wIkAyh260615.shtml",
+      "imglink": "https://p1.img.cctvpic.com/fmspic/2026/06/15/8234acf479f443f78b730747bc4176e1-1.jpg",
+      "durations": 145,
+      "TV": "其他",
+      "playtime": 1781510681000,
+      "uploadtime": "2026-06-15 16:04:41"
+    },
+    {
+      "id": "31793319",
+      "title": "[新闻直播间]<font color=\"red\">反</font><font color=\"red\">诈</font>最前沿 警惕“特殊交友”陷阱 弹窗<font color=\"red\">小</font>广告引发兴趣 心动中“红娘”登场",
+      "all_title": "[新闻直播间]反诈最前沿 警惕“特殊交友”陷阱 弹窗小广告引发兴趣 心动中“红娘”登场",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/09/04/VIDEDQ67fZEXWafsZiZqOIkF260904.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2026/09/04/abaae86454ea41dc88be9fc5ea401418-1.jpg",
+      "durations": 181,
+      "TV": "其他",
+      "playtime": 1788507870000,
+      "uploadtime": "2026-09-04 15:44:30"
+    },
+    {
+      "id": "31656303",
+      "title": "[24<font color=\"red\">小</font>时]轻信熟人“有国企人脉” 高额投资打水漂 层层铺垫 <font color=\"red\">反</font><font color=\"red\">诈</font>中心揭示“熟人骗局”套路",
+      "all_title": "[24小时]轻信熟人“有国企人脉” 高额投资打水漂 层层铺垫 反诈中心揭示“熟人骗局”套路",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/06/13/VIDEAhWjkcH9k614T04AYhn2260613.shtml",
+      "imglink": "https://p5.img.cctvpic.com/fmspic/2026/06/13/552396b470164aa4bcf3d0176f68dcdb-1.jpg",
+      "durations": 138,
+      "TV": "其他",
+      "playtime": 1781365118000,
+      "uploadtime": "2026-06-13 23:38:38"
+    },
+    {
+      "id": "31682541",
+      "title": "[新闻直播间]<font color=\"red\">反</font><font color=\"red\">诈</font>最前沿 因一张<font color=\"red\">小</font>卡片险失27万 涉黄App连环诈骗",
+      "all_title": "[新闻直播间]反诈最前沿 因一张小卡片险失27万 涉黄App连环诈骗",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/06/29/VIDEitFAJ8VATlfGO4oFVH1I260629.shtml",
+      "imglink": "https://p5.img.cctvpic.com/fmspic/2026/06/29/f3e1e001c9364baebb13703d6c837256-1.jpg",
+      "durations": 236,
+      "TV": "其他",
+      "playtime": 1782719340000,
+      "uploadtime": "2026-06-29 15:49:00"
+    },
+    {
+      "id": "31477034",
+      "title": "[新闻直播间]<font color=\"red\">反</font><font color=\"red\">诈</font>最前沿 “扫码领豪礼”？警惕涉<font color=\"red\">诈</font>引流<font color=\"red\">小</font>卡片",
+      "all_title": "[新闻直播间]反诈最前沿 “扫码领豪礼”？警惕涉诈引流小卡片",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/02/26/VIDEoIe3PBVqtHCfRbKaCKFS260226.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2026/02/26/6401487311b7405cab4716218f01237c-1.jpg",
+      "durations": 113,
+      "TV": "其他",
+      "playtime": 1772087172000,
+      "uploadtime": "2026-02-26 14:26:12"
+    },
+    {
+      "id": "31385581",
+      "title": "[24<font color=\"red\">小</font>时]国家<font color=\"red\">反</font><font color=\"red\">诈</font>中心 虚假投资类诈骗今年电<font color=\"red\">诈</font>案中单案损失最大",
+      "all_title": "[24小时]国家反诈中心 虚假投资类诈骗今年电诈案中单案损失最大",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2025/12/30/VIDEZQMgmYCl7BwyRPNjKDTD251230.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2025/12/30/0b541b9b50944e9ba3eaef3e1c1928f6-1.jpg",
+      "durations": 21,
+      "TV": "其他",
+      "playtime": 1767109494000,
+      "uploadtime": "2025-12-30 23:44:54"
+    },
+    {
+      "id": "30062636",
+      "title": "[我的艺术清单]“识<font color=\"red\">诈</font>防骗”<font color=\"red\">小</font><font color=\"red\">课堂</font>",
+      "all_title": "[我的艺术清单]“识诈防骗”小课堂",
+      "channel": "CCTV-3综艺频道",
+      "urllink": "https://tv.cctv.com/2024/01/10/VIDESHET1dlmBkxd4OZHsGAZ240110.shtml",
+      "imglink": "https://p5.img.cctvpic.com/fmspic/2024/01/10/1201494d659a4d69a9f9464639a19912-1.jpg",
+      "durations": 260,
+      "TV": "CCTV-3高清",
+      "playtime": 1704899005000,
+      "uploadtime": "2024-01-10 23:03:25"
+    },
+    {
+      "id": "31419259",
+      "title": "[新闻直播间]<font color=\"red\">反</font><font color=\"red\">诈</font>最前沿 民警演示：“远程支付” 小心这些<font color=\"red\">小</font>细节",
+      "all_title": "[新闻直播间]反诈最前沿 民警演示：“远程支付” 小心这些小细节",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/01/20/VIDE4ktBclsmPZEqNSgUl7DJ260120.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2026/01/20/2dbb412418684679bd3c24ec55c96307-1.jpg",
+      "durations": 275,
+      "TV": "其他",
+      "playtime": 1768891882000,
+      "uploadtime": "2026-01-20 14:51:22"
+    },
+    {
+      "id": "29541859",
+      "title": "[24<font color=\"red\">小</font>时]<font color=\"red\">反</font><font color=\"red\">诈</font>“国家队”推出七大<font color=\"red\">反</font><font color=\"red\">诈</font>利器 国家<font color=\"red\">反</font><font color=\"red\">诈</font>中心应用程序累计预警3.1亿次",
+      "all_title": "[24小时]反诈“国家队”推出七大反诈利器 国家反诈中心应用程序累计预警3.1亿次",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2023/06/19/VIDEIzZtYeIYuwi3hdRe9bwk230619.shtml",
+      "imglink": "https://p2.img.cctvpic.com/fmspic/2023/06/19/fcd38fa3c39e43ee927b99c278006393-1.jpg",
+      "durations": 157,
+      "TV": "其他",
+      "playtime": 1687188696000,
+      "uploadtime": "2023-06-19 23:31:36"
+    },
+    {
+      "id": "31559098",
+      "title": "[24<font color=\"red\">小</font>时]<font color=\"red\">反</font><font color=\"red\">诈</font>最前沿 18人存款深夜被盗刷 只因下载色情App",
+      "all_title": "[24小时]反诈最前沿 18人存款深夜被盗刷 只因下载色情App",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2026/04/16/VIDEsCnrts06oKoSSxlAZWYb260416.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2026/04/16/50b4cafd0ffd4dcca1893f985ccde237-1.jpg",
+      "durations": 128,
+      "TV": "其他",
+      "playtime": 1776354919000,
+      "uploadtime": "2026-04-16 23:55:19"
+    },
+    {
+      "id": "31376155",
+      "title": "[24<font color=\"red\">小</font>时]<font color=\"red\">反</font><font color=\"red\">诈</font>最前沿 好悬！多亏快递员 600克黄金保住了",
+      "all_title": "[24小时]反诈最前沿 好悬！多亏快递员 600克黄金保住了",
+      "channel": "CCTV-13新闻频道",
+      "urllink": "https://tv.cctv.com/2025/12/24/VIDET2Szi5lvw9v3OvpZ22v8251224.shtml",
+      "imglink": "https://p4.img.cctvpic.com/fmspic/2025/12/24/b1f0fb809fe048a69017e6d14a803491-1.jpg",
+      "durations": 155,
+      "TV": "其他",
+      "playtime": 1766591206000,
+      "uploadtime": "2025-12-24 23:46:46"
+    }
+  ],
+  "flag": "ok",
+  "pageString": [
+    "<a href=\"Javascript:void(0);\" class=\"cur\" flag=\"1\" onclick=\"get_data('1','%E5%8F%8D%E8%AF%88%E5%B0%8F%E8%AF%BE%E5%A0%82','relevance','video','-1','1','','20','1','反诈小课堂')\">1</a><a href=\"Javascript:void(0);\" flag=\"2\" class=\"page_cur\" onclick=\"get_data('2','%E5%8F%8D%E8%AF%88%E5%B0%8F%E8%AF%BE%E5%A0%82','relevance','video','-1','1','','20','1','反诈小课堂')\">2</span></a><a href=\"Javascript:void(0);\" flag=\"3\" class=\"page_cur\" onclick=\"get_data('3','%E5%8F%8D%E8%AF%88%E5%B0%8F%E8%AF%BE%E5%A0%82','relevance','video','-1','1','','20','1','反诈小课堂')\">3</span></a><a href=\"Javascript:void(0);\" flag=\"4\" class=\"page_cur\" onclick=\"get_data('4','%E5%8F%8D%E8%AF%88%E5%B0%8F%E8%AF%BE%E5%A0%82','relevance','video','-1','1','','20','1','反诈小课堂')\">4</span></a><a href=\"Javascript:void(0);\" flag=\"5\" class=\"page_cur\" onclick=\"get_data('5','%E5%8F%8D%E8%AF%88%E5%B0%8F%E8%AF%BE%E5%A0%82','relevance','video','-1','1','','20','1','反诈小课堂')\">5</span></a><a href=\"Javascript:void(0);\" flag=\"6\" class=\"page_cur\" onclick=\"get_data('6','%E5%8F%8D%E8%AF%88%E5%B0%8F%E8%AF%BE%E5%A0%82','relevance','video','-1','1','','20','1','反诈小课堂')\">6</span></a><a href=\"Javascript:void(0);\" flag=\"7\" class=\"page_cur\" onclick=\"get_data('7','%E5%8F%8D%E8%AF%88%E5%B0%8F%E8%AF%BE%E5%A0%82','relevance','video','-1','1','','20','1','反诈小课堂')\">7</span></a><a href=\"Javascript:void(0);\" flag=\"8\" class=\"page_cur\" onclick=\"get_data('8','%E5%8F%8D%E8%AF%88%E5%B0%8F%E8%AF%BE%E5%A0%82','relevance','video','-1','1','','20','1','反诈小课堂')\">8</span></a><a href=\"Javascript:void(0);\" flag=\"9\" class=\"page_cur\" onclick=\"get_data('9','%E5%8F%8D%E8%AF%88%E5%B0%8F%E8%AF%BE%E5%A0%82','relevance','video','-1','1','','20','1','反诈小课堂')\">9</span></a><a href=\"Javascript:void(0);\" flag=\"10\" class=\"page_cur\" onclick=\"get_data('10','%E5%8F%8D%E8%AF%88%E5%B0%8F%E8%AF%BE%E5%A0%82','relevance','video','-1','1','','20','1','反诈小课堂')\">10</span></a><a href=\"Javascript:void(0);\" class=\"page-next page_cur\" flag=\"2\"  onclick=\"get_data('2','%E5%8F%8D%E8%AF%88%E5%B0%8F%E8%AF%BE%E5%A0%82','relevance','video','-1','1','','20','1','反诈小课堂')\">下一页</a>"
+  ]
+}
