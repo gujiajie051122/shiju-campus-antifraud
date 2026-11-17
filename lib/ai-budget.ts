@@ -14,7 +14,7 @@ const messages:Record<BudgetCode,string>={
 };
 export function budgetPolicy(env:Record<string,string|undefined>=process.env):BudgetPolicy|null{
  const read=(key:string,fallback:number,max:number)=>{const raw=env[key];if(raw===undefined||raw==="")return fallback;if(!/^\d+$/.test(raw))throw Error("Invalid budget setting");const n=Number(raw);if(!Number.isSafeInteger(n)||n>max)throw Error("Invalid budget setting");return n;};
- try{return {userDaily:read("AI_USER_DAILY_LIMIT",40,10000),siteDaily:read("AI_SITE_DAILY_LIMIT",200,100000),perMinute:read("AI_USER_PER_MINUTE",6,60),minIntervalMs:read("AI_MIN_INTERVAL_MS",1500,60000),userConcurrent:1,siteConcurrent:read("AI_SITE_CONCURRENT",3,20)};}catch{return null;}
+ try{return {userDaily:read("AI_USER_DAILY_LIMIT",200,10000),siteDaily:read("AI_SITE_DAILY_LIMIT",1000,100000),perMinute:read("AI_USER_PER_MINUTE",6,60),minIntervalMs:read("AI_MIN_INTERVAL_MS",1500,60000),userConcurrent:1,siteConcurrent:read("AI_SITE_CONCURRENT",3,20)};}catch{return null;}
 }
 export function budgetDay(now:number){const shifted=now+8*3600000;const day=new Date(shifted).toISOString().slice(0,10);return {day,resetsAt:new Date((Math.floor(shifted/86400000)+1)*86400000-8*3600000).toISOString()};}
 export async function actorHash(id:string){const bytes=await crypto.subtle.digest("SHA-256",new TextEncoder().encode("shiju:appgprj_6aef3fc7ab888191933ff7d3ac43e3c2:"+id));return Array.from(new Uint8Array(bytes),b=>b.toString(16).padStart(2,"0")).join("");}

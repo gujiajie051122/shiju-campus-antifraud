@@ -22,9 +22,23 @@ test('Shanghai day boundary and reset are independent of server timezone',()=>{
  assert.deepEqual(budgetDay(Date.parse('2026-11-08T16:00:00Z')),{day:'2026-11-09',resetsAt:'2026-11-09T16:00:00.000Z'});
 });
 test('configuration has bounded defaults, allows zero to disable and rejects malformed limits',()=>{
- assert.equal(budgetPolicy({}).userDaily,40);assert.equal(budgetPolicy({}).siteDaily,200);
+ assert.equal(budgetPolicy({}).userDaily,200);assert.equal(budgetPolicy({}).siteDaily,1000);
  assert.equal(budgetPolicy({AI_SITE_DAILY_LIMIT:'0'}).siteDaily,0);
  for(const raw of ['-1','Infinity','3.5','100001',' '])assert.equal(budgetPolicy({AI_SITE_DAILY_LIMIT:raw}),null);
+});
+
+test('review allowance continues beyond 40 calls while retaining personal and site ceilings',async()=>{
+ const {db,sql}=sqliteD1(),p=budgetPolicy({});
+ const seed=sql.prepare("INSERT INTO ai_requests (request_id,actor_hash,day,feature,model,started_at,lease_until,outcome) VALUES (?,?,?,?,?,?,?,'model')");
+ let serial=0;
+ const add=(hash,n)=>{for(let i=0;i<n;i++)seed.run('seed-'+serial++,hash,budgetDay(now).day,'knowledge','test',now-120000,now-120000);};
+ add('reviewer',40);
+ const next=await reserve(db,'reviewer','reflection','test',p,now);assert.ok(next.id);await finish(db,next.id,'model',now,{});
+ add('reviewer',159);
+ assert.equal((await reserve(db,'reviewer','dialogue','test',p,now+60001)).code,'user_daily');
+ add('another-reviewer',800);
+ assert.equal((await reserve(db,'fresh-reviewer','knowledge','test',p,now+60001)).code,'site_daily');
+ assert.equal(sql.prepare('SELECT COUNT(*) AS n FROM ai_requests').get().n,1000);sql.close();
 });
 test('dialogue and knowledge share a per-user cap; no reservation when rejected',async()=>{
  const {db,sql}=setup();const p={...policy,userDaily:2};
@@ -78,7 +92,7 @@ test('real generation records provider tokens and metadata without keys or promp
  const {ctx,sql}=setup();const result=await invoke(ctx);assert.equal(result.engine,'model');
  const saved=row(sql);assert.equal(saved.total_tokens,30);assert.equal(saved.outcome,'model');assert.equal(saved.http_status,200);
  assert.equal(saved.actor_hash,await actorHash('user-a'));assert.doesNotMatch(JSON.stringify(saved),/secret-not-for-logs|周末|user-a|Bearer|model.example/);
- const snap=await usageSnapshot(ctx,true);assert.equal(snap.used,1);assert.equal(snap.remaining,39);assert.equal(snap.tokens,30);sql.close();
+ const snap=await usageSnapshot(ctx,true);assert.equal(snap.used,1);assert.equal(snap.remaining,199);assert.equal(snap.tokens,30);sql.close();
 });
 test('disabled cap never calls provider and still returns a usable actor fallback',async()=>{
  const {ctx,sql}=setup({...policy,siteDaily:0});let calls=0;ctx.transport=async()=>{calls++;return model();};
@@ -103,7 +117,7 @@ test('missing visitor identity, storage or valid policy fails closed without pro
 test('provider errors retain quota, release overlap guard and report unknown token usage',async()=>{
  const {ctx,sql}=setup();ctx.transport=async()=>new Response('',{status:503});assert.equal((await invoke(ctx)).engine,'rules');
  assert.equal(row(sql).outcome,'failed');assert.equal(row(sql).total_tokens,null);
- const snap=await usageSnapshot(ctx,true);assert.equal(snap.failures,1);assert.equal(snap.unknownTokens,1);assert.equal(snap.remaining,39);
+ const snap=await usageSnapshot(ctx,true);assert.equal(snap.failures,1);assert.equal(snap.unknownTokens,1);assert.equal(snap.remaining,199);
  ctx.transport=model;assert.equal((await invoke(ctx)).engine,'model');sql.close();
 });
 test('invalid model output still records billed usage and a validation fallback',async()=>{
