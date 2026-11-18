@@ -1,0 +1,10 @@
+{
+  "secretAndDescriptionIssues": [],
+  "runtimeFileMismatches": [],
+  "singleExport": {
+    "validJSON": true,
+    "mode": "learning",
+    "decision": "report",
+    "logs": 7
+  }
+}

@@ -1,2 +1,0 @@
-import fs from 'node:fs/promises';
-for(const q of process.argv.slice(2)){let r=await(await fetch('https://api.bilibili.com/x/web-interface/search/type?search_type=video&keyword='+encodeURIComponent(q))).json();await fs.writeFile('docs/course-sources/bili-'+encodeURIComponent(q)+'.json',JSON.stringify(r,null,2));console.log('\n'+q,r.code);for(let x of r.data?.result||[])console.log(x.bvid+' | '+x.author+' | '+x.title.replace(/<[^>]*>/g,'')+' | '+x.description.slice(0,120));}

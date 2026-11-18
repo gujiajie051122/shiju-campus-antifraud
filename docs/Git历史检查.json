@@ -1,0 +1,5 @@
+{
+  "reachableBlobsChecked": 950,
+  "tokenPatternMatches": 0,
+  "note": "启发式检查，不替代供应商密钥审计；公开前仍应保留真实配置不入库。"
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "feature": "dialogue",
+    "outcome": "model",
+    "http_status": 200,
+    "requests": 1,
+    "total_tokens": 956
+  },
+  {
+    "feature": "knowledge",
+    "outcome": "model",
+    "http_status": 200,
+    "requests": 1,
+    "total_tokens": 870
+  },
+  {
+    "feature": "reflection",
+    "outcome": "model",
+    "http_status": 200,
+    "requests": 1,
+    "total_tokens": 775
+  }
+]
